@@ -1,3 +1,25 @@
 # Godot 4+ specific ignores
 .godot/
 /android/
+.nomedia
+
+# Godot-specific ignores
+.import/
+export.cfg
+export_credentials.cfg
+
+# Imported translations
+*.translations
+
+# Mono-specific Ignores
+.mono/
+data_*/
+mono_crash.*.json
+
+# Game Builds
+builds/
+dist/
+
+# Linux
+*~
+.nfs*
