@@ -1,3 +1,61 @@
 [gd_scene format=3 uid="uid://dl5e0ariy2k46"]
 
+[ext_resource type="Texture2D" uid="uid://cfg3lxeqhe5c2" path="res://black-color.png" id="1_6yjli"]
+[ext_resource type="Script" uid="uid://b0ftargnqcuxo" path="res://Scenes/timer_screen.gd" id="1_glb20"]
+[ext_resource type="Texture2D" uid="uid://cl04wsoc8uem" path="res://tyleruploads-tn.png" id="2_6yjli"]
+
 [node name="level_screen" type="Node2D" unique_id=438889296]
+script = ExtResource("1_glb20")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=720669567]
+offset_right = 1158.0
+offset_bottom = 650.0
+texture = ExtResource("1_6yjli")
+
+[node name="LivesContainer" type="HBoxContainer" parent="." unique_id=1960962950]
+offset_left = 242.0
+offset_top = 137.0
+offset_right = 898.0
+offset_bottom = 265.0
+alignment = 1
+
+[node name="Life1" type="TextureRect" parent="LivesContainer" unique_id=530060594]
+layout_mode = 2
+texture = ExtResource("2_6yjli")
+expand_mode = 3
+
+[node name="Life2" type="TextureRect" parent="LivesContainer" unique_id=315190003]
+layout_mode = 2
+texture = ExtResource("2_6yjli")
+expand_mode = 3
+
+[node name="Life3" type="TextureRect" parent="LivesContainer" unique_id=1492768855]
+layout_mode = 2
+texture = ExtResource("2_6yjli")
+expand_mode = 3
+
+[node name="Life4" type="TextureRect" parent="LivesContainer" unique_id=580080319]
+layout_mode = 2
+texture = ExtResource("2_6yjli")
+expand_mode = 3
+
+[node name="Life5" type="TextureRect" parent="LivesContainer" unique_id=307113191]
+layout_mode = 2
+texture = ExtResource("2_6yjli")
+expand_mode = 3
+
+[node name="Level" type="RichTextLabel" parent="." unique_id=491872836]
+offset_left = 500.0
+offset_top = 279.0
+offset_right = 645.0
+offset_bottom = 338.0
+theme_override_font_sizes/normal_font_size = 42
+text = "Level #"
+
+[node name="Timer" type="RichTextLabel" parent="." unique_id=1470427690]
+offset_left = 518.0
+offset_top = 559.0
+offset_right = 619.0
+offset_bottom = 620.0
+theme_override_font_sizes/normal_font_size = 42
+text = "0.0"

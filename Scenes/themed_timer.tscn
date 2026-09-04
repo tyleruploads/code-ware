@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://emf0g4bjn1j4"]
+
+[ext_resource type="Script" uid="uid://cjyxu8x0vmi4v" path="res://Scenes/themed_timer.gd" id="1_moll0"]
+
+[node name="themed_timer" type="Node2D" unique_id=26861477]
+process_mode = 3
+script = ExtResource("1_moll0")
+
+[node name="timer" type="Label" parent="." unique_id=428222142]
+unique_name_in_owner = true
+z_index = 78
+offset_left = -84.0
+offset_top = 84.0
+offset_right = -52.613247
+offset_bottom = 133.41127
+text = "0.0"

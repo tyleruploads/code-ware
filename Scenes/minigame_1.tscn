@@ -1,0 +1,261 @@
+[gd_scene format=3 uid="uid://b8lg7ycfwtsyu"]
+
+[ext_resource type="Script" uid="uid://cq1hqrjnjfkhj" path="res://Scenes/minigame_1.gd" id="1_5txvl"]
+[ext_resource type="Texture2D" uid="uid://3utbfv7mvh6w" path="res://minigame-1-bg.png" id="1_enoba"]
+[ext_resource type="PackedScene" uid="uid://cdnk1d5up5lbm" path="res://Scenes/player.tscn" id="2_11mgy"]
+[ext_resource type="Texture2D" uid="uid://cl04wsoc8uem" path="res://tyleruploads-tn.png" id="3_f6tb2"]
+[ext_resource type="Script" uid="uid://dxyhy3hk13sw8" path="res://tyleruploads.gd" id="3_o6yob"]
+[ext_resource type="Script" uid="uid://c14kvx1xeeuol" path="res://Scenes/self_timer.gd" id="5_5txvl"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_cvnsp"]
+friction = 0.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_chyva"]
+size = Vector2(40, 40)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1giwu"]
+radius = 4.1297708
+
+[node name="minigame_1" type="Node2D" unique_id=1330645649]
+position = Vector2(548, 602)
+scale = Vector2(28.585958, 2.301155)
+script = ExtResource("1_5txvl")
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=1002748790]
+repeat_size = Vector2(40, 0)
+autoscroll = Vector2(-10, 0)
+repeat_times = 7
+
+[node name="ScrollingBackground" type="TextureRect" parent="Parallax2D" unique_id=442738098]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -19.065304
+offset_top = -268.5608
+offset_right = 506.10474
+offset_bottom = 15.209747
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.07646966, 1)
+texture = ExtResource("1_enoba")
+expand_mode = 2
+
+[node name="Platform1" type="StaticBody2D" parent="." unique_id=1298227282]
+z_index = -1
+position = Vector2(19.065306, 14.340607)
+scale = Vector2(1.9944751, 1.1965525)
+physics_material_override = SubResource("PhysicsMaterial_cvnsp")
+
+[node name="ColorRect" type="ColorRect" parent="Platform1" unique_id=501766784]
+offset_left = -18.995338
+offset_top = -14.164001
+offset_right = 21.004662
+offset_bottom = 25.835999
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform1" unique_id=1251919743]
+position = Vector2(0.99975467, 6.90046)
+shape = SubResource("RectangleShape2D_chyva")
+one_way_collision = true
+one_way_collision_margin = 8.4
+
+[node name="Platform2" type="StaticBody2D" parent="." unique_id=777006870]
+position = Vector2(5.911994, -51.713154)
+scale = Vector2(0.18416566, 0.3510081)
+physics_material_override = SubResource("PhysicsMaterial_cvnsp")
+
+[node name="ColorRect" type="ColorRect" parent="Platform2" unique_id=317870253]
+offset_left = -104.472336
+offset_top = 63.140396
+offset_right = -64.472336
+offset_bottom = 103.140396
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform2" unique_id=585694411]
+position = Vector2(-84.47724, 84.20486)
+shape = SubResource("RectangleShape2D_chyva")
+one_way_collision = true
+one_way_collision_margin = 8.4
+
+[node name="Platform3" type="StaticBody2D" parent="." unique_id=188242646]
+position = Vector2(25.467049, -98.6461)
+scale = Vector2(0.18468103, 0.35199034)
+physics_material_override = SubResource("PhysicsMaterial_cvnsp")
+
+[node name="ColorRect" type="ColorRect" parent="Platform3" unique_id=330681611]
+offset_left = -156.13866
+offset_top = 115.13834
+offset_right = -116.13866
+offset_bottom = 155.13834
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform3" unique_id=646441072]
+position = Vector2(-136.14355, 136.2028)
+shape = SubResource("RectangleShape2D_chyva")
+one_way_collision = true
+one_way_collision_margin = 8.4
+
+[node name="Platform4" type="StaticBody2D" parent="." unique_id=438176244]
+position = Vector2(43.447906, -136.88777)
+scale = Vector2(0.18468103, 0.35199034)
+physics_material_override = SubResource("PhysicsMaterial_cvnsp")
+
+[node name="ColorRect" type="ColorRect" parent="Platform4" unique_id=1327484272]
+offset_left = -197.54768
+offset_top = 162.18411
+offset_right = -157.54768
+offset_bottom = 202.18411
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform4" unique_id=1543630538]
+position = Vector2(-177.5526, 183.24858)
+shape = SubResource("RectangleShape2D_chyva")
+one_way_collision = true
+one_way_collision_margin = 8.4
+
+[node name="Platform5" type="StaticBody2D" parent="." unique_id=1439709655]
+position = Vector2(63.317802, -189.03549)
+scale = Vector2(0.18468103, 0.35199034)
+physics_material_override = SubResource("PhysicsMaterial_cvnsp")
+
+[node name="ColorRect" type="ColorRect" parent="Platform5" unique_id=2063003964]
+offset_left = -258.7115
+offset_top = 252.5615
+offset_right = -218.71149
+offset_bottom = 292.5615
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform5" unique_id=2101058367]
+position = Vector2(-238.7164, 273.62595)
+shape = SubResource("RectangleShape2D_chyva")
+one_way_collision = true
+one_way_collision_margin = 8.4
+
+[node name="Player" parent="." unique_id=1240348216 instance=ExtResource("2_11mgy")]
+position = Vector2(-17.945875, -51.713165)
+scale = Vector2(0.030293195, 0.33105382)
+
+[node name="tyleruploads1" type="Node2D" parent="." unique_id=1866193915]
+script = ExtResource("3_o6yob")
+
+[node name="Area2D" type="Area2D" parent="tyleruploads1" unique_id=186245739]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tyleruploads1/Area2D" unique_id=258912019]
+position = Vector2(3.3932753, -20.424522)
+scale = Vector2(0.57280695, -3.5367715)
+shape = SubResource("CircleShape2D_1giwu")
+one_way_collision_margin = 7.4
+
+[node name="tyleruploads" type="TextureRect" parent="tyleruploads1" unique_id=1575899020]
+offset_left = 1.0843143
+offset_top = -34.00553
+offset_right = 501.08432
+offset_bottom = 465.99448
+scale = Vector2(0.009809125, 0.057939928)
+texture = ExtResource("3_f6tb2")
+expand_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="tyleruploads2" type="Node2D" parent="." unique_id=1596752660]
+position = Vector2(-3.1833813, -53.885983)
+script = ExtResource("3_o6yob")
+
+[node name="Area2D" type="Area2D" parent="tyleruploads2" unique_id=1375110757]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tyleruploads2/Area2D" unique_id=1382723562]
+position = Vector2(3.3932753, -20.424522)
+scale = Vector2(0.57280695, -3.5367715)
+shape = SubResource("CircleShape2D_1giwu")
+one_way_collision_margin = 7.4
+
+[node name="tyleruploads" type="TextureRect" parent="tyleruploads2" unique_id=1982662271]
+offset_left = 1.0843143
+offset_top = -34.00553
+offset_right = 501.08432
+offset_bottom = 465.99448
+scale = Vector2(0.009809125, 0.057939928)
+texture = ExtResource("3_f6tb2")
+expand_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="tyleruploads3" type="Node2D" parent="." unique_id=1250319238]
+position = Vector2(15.741996, -96.4733)
+script = ExtResource("3_o6yob")
+
+[node name="Area2D" type="Area2D" parent="tyleruploads3" unique_id=449660895]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tyleruploads3/Area2D" unique_id=669478021]
+position = Vector2(3.3932753, -20.424522)
+scale = Vector2(0.57280695, -3.5367715)
+shape = SubResource("CircleShape2D_1giwu")
+one_way_collision_margin = 7.4
+
+[node name="tyleruploads" type="TextureRect" parent="tyleruploads3" unique_id=245534729]
+offset_left = 1.0843143
+offset_top = -34.00553
+offset_right = 501.08432
+offset_bottom = 465.99448
+scale = Vector2(0.009809125, 0.057939928)
+texture = ExtResource("3_f6tb2")
+expand_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="tyleruploads4" type="Node2D" parent="." unique_id=1274821834]
+position = Vector2(14.797476, 0)
+script = ExtResource("3_o6yob")
+
+[node name="Area2D" type="Area2D" parent="tyleruploads4" unique_id=1268045823]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tyleruploads4/Area2D" unique_id=985025478]
+position = Vector2(3.3932753, -20.424522)
+scale = Vector2(0.57280695, -3.5367715)
+shape = SubResource("CircleShape2D_1giwu")
+one_way_collision_margin = 7.4
+
+[node name="tyleruploads" type="TextureRect" parent="tyleruploads4" unique_id=1476638671]
+offset_left = 1.0843143
+offset_top = -34.00553
+offset_right = 501.08432
+offset_bottom = 465.99448
+scale = Vector2(0.009809125, 0.057939928)
+texture = ExtResource("3_f6tb2")
+expand_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="tyleruploads5" type="Node2D" parent="." unique_id=543309761]
+position = Vector2(7.0664063, -115.59413)
+script = ExtResource("3_o6yob")
+
+[node name="Area2D" type="Area2D" parent="tyleruploads5" unique_id=675198887]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tyleruploads5/Area2D" unique_id=1226151353]
+position = Vector2(3.3932753, -20.424522)
+scale = Vector2(0.57280695, -3.5367715)
+shape = SubResource("CircleShape2D_1giwu")
+one_way_collision_margin = 7.4
+
+[node name="tyleruploads" type="TextureRect" parent="tyleruploads5" unique_id=566817359]
+offset_left = 1.0843143
+offset_top = -34.00553
+offset_right = 501.08432
+offset_bottom = 465.99448
+scale = Vector2(0.009809125, 0.057939928)
+texture = ExtResource("3_f6tb2")
+expand_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="." unique_id=2105423015]
+offset_left = -14.027867
+offset_top = -207.28722
+offset_right = 25.972134
+offset_bottom = -184.28722
+text = "0.0"
+script = ExtResource("5_5txvl")
+
+[connection signal="tyler_collected" from="tyleruploads1" to="." method="tyler_collect"]
+[connection signal="tyler_collected" from="tyleruploads2" to="." method="tyler_collect"]
+[connection signal="tyler_collected" from="tyleruploads3" to="." method="tyler_collect"]
+[connection signal="tyler_collected" from="tyleruploads4" to="." method="tyler_collect"]
+[connection signal="tyler_collected" from="tyleruploads5" to="." method="tyler_collect"]
