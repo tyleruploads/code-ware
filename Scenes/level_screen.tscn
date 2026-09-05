@@ -12,6 +12,22 @@ offset_right = 1158.0
 offset_bottom = 650.0
 texture = ExtResource("1_6yjli")
 
+[node name="Lives Label" type="Label" parent="." unique_id=1670250845]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 470.0
+offset_top = 11.0
+offset_right = 668.0
+offset_bottom = 124.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 82
+text = "Lives"
+horizontal_alignment = 1
+
 [node name="LivesContainer" type="HBoxContainer" parent="." unique_id=1960962950]
 offset_left = 242.0
 offset_top = 137.0
@@ -45,12 +61,19 @@ texture = ExtResource("2_6yjli")
 expand_mode = 3
 
 [node name="Level" type="RichTextLabel" parent="." unique_id=491872836]
-offset_left = 500.0
-offset_top = 279.0
-offset_right = 645.0
-offset_bottom = 338.0
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 6.0
+offset_top = 301.0
+offset_right = 1162.0
+offset_bottom = 401.0
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_font_sizes/normal_font_size = 42
 text = "Level #"
+horizontal_alignment = 1
 
 [node name="Timer" type="RichTextLabel" parent="." unique_id=1470427690]
 offset_left = 518.0

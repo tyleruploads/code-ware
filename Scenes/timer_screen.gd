@@ -8,17 +8,24 @@ extends Node2D
 @onready var level: RichTextLabel = $Level
 @onready var timer: RichTextLabel = $Timer
 
-var time # Updated each delta of _process
+var time: float = 0.0 # Updated each delta of _process
 
 var minigames_until_end = 1
 
 func _ready() -> void:
 	if Global.minigames_done < minigames_until_end:
+		level.text = "Level " + str(Global.minigames_done + 1)
+		print(Global.minigames_done, " minigames done")
 		await Timer(5.0)
 		Global.minigames_done += 1
 		get_tree().change_scene_to_file("res://Scenes/minigame_" + str(Global.minigames_done) + ".tscn")
 	else:
 		level.text = "Game complete! Heading home."
+		print("Game complete! Heading home.")
+		
+		# Reset game
+		Global.minigames_done = 0
+		
 		await Timer(5.0)
 		get_tree().change_scene_to_file("res://Scenes/title_screen.tscn")
 
@@ -29,22 +36,19 @@ func _process(delta: float) -> void: # runs every frame
 		lives_container.show()
 		var children = lives_container.get_children()
 		for i in range(children.size()):
-			children[i].visible = i < (children.size() - Global.lives)
-			
-	timer.text = str(time)
-	level.text = "Level " + str(Global.minigames_done + 1)
+			children[i].visible = i < Global.lives
+
+	timer.text = str(snapped(time, 0.1))
 
 func Timer(start_time: float):
 	# Once it reaches zero, it will go to next scene
 	
 	time = start_time
 	
-	while time > 0.0:
-		await wait(0.1)
+	while time > 0.001:
+		await get_tree().create_timer(0.1).timeout
 		time -= 0.1
+	time = 0.0
+	timer.text = "0.0"
 		
 	return
-
-
-func wait(seconds: float):
-	await get_tree().create_timer(seconds).timeout
