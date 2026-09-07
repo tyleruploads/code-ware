@@ -35,7 +35,7 @@ jobs:
 
       - name: Export Game Executables
         run: |
-          mkdir -p build/windows build/linux build/mac build/web
+          mkdir -p src/build/windows src/build/linux src/build/mac src/build/web
 
           godot --headless --path src --export-release "Windows Desktop" build/windows/game.exe
           godot --headless --path src --export-release "Linux x86_64" build/linux/game.x86_64
@@ -44,10 +44,11 @@ jobs:
 
       - name: Archive and build packages
         run: |
-          cd build/web && zip -r ../../web-build.zip . && cd ../..
-          cd build/linux && zip -r ../../linux-build.zip . && cd ../..
-          mv build/windows/game.exe ./windows-build.exe
-          mv build/mac/game.zip ./mac-build.zip
+          
+          (cd src/build/web && zip -r ../../../web-build.zip .)
+          (cd src/build/linux && zip -r ../../../linux-build.zip .)
+          mv src/build/windows/game.exe "$GITHUB_WORKSPACE/windows-build.exe"
+          mv src/build/mac/game.zip "$GITHUB_WORKSPACE/mac-build.zip"
 
       - name: Publish to GitHub Releases
         if: startsWith(github.ref, 'refs/tags/v')
@@ -60,7 +61,3 @@ jobs:
             web-build.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-
-
-      # Do whatever you want!
