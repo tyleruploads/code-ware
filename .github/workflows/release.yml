@@ -1,0 +1,69 @@
+name: 🚥 Status Checks
+on:
+  push:
+    tags:
+      - 'v*' # Only runs if pushing a tag
+
+jobs:
+  tests:
+    name: 👀 Evaluate on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      # Don't cancel other OS runners if one fails.
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest] # Runs only on Linux, still cross-compiles all builds
+    defaults:
+      run:
+        # Use bash shells on all platforms.
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+        name: 🧾 Checkout
+
+      - uses: chickensoft-games/setup-godot@v2
+        name: 🤖 Setup Godot
+        with:
+          version: 4.7.2
+          use-dotnet: false
+          # Include the Godot Export Templates (the default is false).
+          include-templates: true
+
+      - name: 🔬 Verify Setup
+        run: |
+          godot --version
+
+      - name: Configure Godot Template Path
+        run: |
+          mkdir -p ~/.config/godot/
+          echo "export_templates_path = \"$GODOT_TEMPLATES_PATH\"" >> ~/.config/godot/editor_settings-4.tres
+
+      - name: Initial Godot Asset Import
+        run: |
+          godot --headless --path src --editor --quit || exit 0
+
+      - name: Export Game Executables
+        run: |
+          mkdir -p src/build/windows src/build/linux src/build/web
+
+          godot --headless --path src --export-release "Windows Desktop" build/windows/game.exe
+          godot --headless --path src --export-release "Linux x86_64" build/linux/game.x86_64
+          godot --headless --path src --export-release "Web" build/web/index.html
+
+      - name: Archive and build packages
+        run: |
+          
+          (cd src/build/web && zip -r ../../../web-build.zip .)
+          (cd src/build/linux && zip -r ../../../linux-build.zip .)
+          mv src/build/windows/game.exe "$GITHUB_WORKSPACE/windows-build.exe"
+
+      - name: Publish to GitHub Releases
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            windows-build.exe
+            linux-build.zip
+            web-build.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
