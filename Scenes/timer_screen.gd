@@ -10,10 +10,8 @@ extends Node2D
 
 var time: float = 0.0 # Updated each delta of _process
 
-var minigames_until_end = 1
-
 func _ready() -> void:
-	if Global.minigames_done < minigames_until_end:
+	if Global.minigames_done < Global.minigames_until_end:
 		level.text = "Level " + str(Global.minigames_done + 1)
 		print(Global.minigames_done, " minigames done")
 		await Timer(5.0)
