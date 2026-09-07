@@ -33,9 +33,13 @@ jobs:
         run: |
           godot --version
 
+      - name: Configure Godot Template Path
+        run: |
+          mkdir -p ~/.config/godot/
+          echo "export_templates_path = \"$GODOT_TEMPLATES_PATH\"" >> ~/.config/godot/editor_settings-4.tres
+
       - name: Initial Godot Asset Import
         run: |
-          cd src
           godot --headless --path src --editor --quit || exit 0
 
       - name: Export Game Executables
