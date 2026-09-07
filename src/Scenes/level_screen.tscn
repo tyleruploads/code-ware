@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://dl5e0ariy2k46"]
 
-[ext_resource type="Texture2D" uid="uid://cfg3lxeqhe5c2" path="res://black-color.png" id="1_6yjli"]
-[ext_resource type="Script" uid="uid://b0ftargnqcuxo" path="res://Scenes/timer_screen.gd" id="1_glb20"]
-[ext_resource type="Texture2D" uid="uid://cl04wsoc8uem" path="res://tyleruploads-tn.png" id="2_6yjli"]
+[ext_resource type="Texture2D" uid="uid://cfg3lxeqhe5c2" path="res://third-party-assets/black-color.png" id="1_6yjli"]
+[ext_resource type="Script" uid="uid://b0ftargnqcuxo" path="res://Scenes/level_screen.gd" id="1_glb20"]
+[ext_resource type="Texture2D" uid="uid://cl04wsoc8uem" path="res://meta/tyleruploads-tn.png" id="2_6yjli"]
 
 [node name="level_screen" type="Node2D" unique_id=438889296]
 script = ExtResource("1_glb20")
@@ -75,10 +75,31 @@ theme_override_font_sizes/normal_font_size = 42
 text = "Level #"
 horizontal_alignment = 1
 
+[node name="Prompt" type="RichTextLabel" parent="." unique_id=1903280930]
+offset_left = 4.0
+offset_top = 353.0
+offset_right = 1161.0
+offset_bottom = 479.0
+theme_override_colors/default_color = Color(1, 0.5372549, 0, 1)
+theme_override_font_sizes/normal_font_size = 90
+text = "ACTION!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Description" type="RichTextLabel" parent="." unique_id=1678552872]
+offset_left = 4.0
+offset_top = 454.0
+offset_right = 1156.0
+offset_bottom = 555.0
+theme_override_font_sizes/normal_font_size = 30
+text = "Description"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="Timer" type="RichTextLabel" parent="." unique_id=1470427690]
-offset_left = 518.0
-offset_top = 559.0
-offset_right = 619.0
-offset_bottom = 620.0
+offset_left = 571.0
+offset_top = 574.0
+offset_right = 632.0
+offset_bottom = 634.0
 theme_override_font_sizes/normal_font_size = 42
 text = "0.0"

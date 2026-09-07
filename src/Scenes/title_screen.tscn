@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c8k6x4bhacx4u"]
 
-[ext_resource type="Texture2D" uid="uid://de2rky4ir8rle" path="res://tylerstreasure.png" id="1_klylv"]
+[ext_resource type="Texture2D" uid="uid://de2rky4ir8rle" path="res://assets/tylerstreasure.png" id="1_klylv"]
 [ext_resource type="Script" uid="uid://cewu4attjdsup" path="res://Scenes/title_screen.gd" id="1_p3fck"]
 
 [node name="TitleScreen" type="Node2D" unique_id=482817235]

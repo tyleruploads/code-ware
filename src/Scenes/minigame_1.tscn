@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://b8lg7ycfwtsyu"]
 
 [ext_resource type="Script" uid="uid://cq1hqrjnjfkhj" path="res://Scenes/minigame_1.gd" id="1_5txvl"]
-[ext_resource type="Texture2D" uid="uid://3utbfv7mvh6w" path="res://minigame-1-bg.png" id="1_enoba"]
+[ext_resource type="Texture2D" uid="uid://3utbfv7mvh6w" path="res://assets/minigame-1-bg.png" id="1_enoba"]
 [ext_resource type="PackedScene" uid="uid://cdnk1d5up5lbm" path="res://Scenes/player.tscn" id="2_11mgy"]
-[ext_resource type="Texture2D" uid="uid://cl04wsoc8uem" path="res://tyleruploads-tn.png" id="3_f6tb2"]
-[ext_resource type="Script" uid="uid://dxyhy3hk13sw8" path="res://tyleruploads.gd" id="3_o6yob"]
+[ext_resource type="Texture2D" uid="uid://cl04wsoc8uem" path="res://meta/tyleruploads-tn.png" id="3_f6tb2"]
+[ext_resource type="Script" uid="uid://dxyhy3hk13sw8" path="res://Scenes/tyleruploads.gd" id="3_o6yob"]
 [ext_resource type="Script" uid="uid://c14kvx1xeeuol" path="res://Scenes/self_timer.gd" id="5_5txvl"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_cvnsp"]
@@ -487,7 +487,7 @@ offset_top = 33.0
 offset_right = 153.0
 offset_bottom = 143.0
 theme_override_font_sizes/font_size = 80
-text = "0.0"
+text = "15.0"
 script = ExtResource("5_5txvl")
 
 [connection signal="tyler_collected" from="tyleruploads1" to="." method="tyler_collect"]

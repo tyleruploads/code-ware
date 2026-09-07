@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qrdnmwu5yyna"
-path="res://.godot/imported/github-logo.png-1376f55497e927ca96a0ad84e24f5195.ctex"
+uid="uid://oacfoe4hoitt"
+path="res://.godot/imported/minigame_1_hero.png-e3a86cced6b6fe78068e036176a37491.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://github-logo.png"
-dest_files=["res://.godot/imported/github-logo.png-1376f55497e927ca96a0ad84e24f5195.ctex"]
+source_file="res://media/minigame_1_hero.png"
+dest_files=["res://.godot/imported/minigame_1_hero.png-e3a86cced6b6fe78068e036176a37491.ctex"]
 
 [params]
 

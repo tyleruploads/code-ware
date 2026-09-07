@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cfg3lxeqhe5c2"
-path="res://.godot/imported/black-color.png-77d063eb341c351e4f4d12a84ee64ea5.ctex"
+uid="uid://de2rky4ir8rle"
+path="res://.godot/imported/tylerstreasure.png-3d638beb8ebfb2c4e6063a0e1d14dbd6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://black-color.png"
-dest_files=["res://.godot/imported/black-color.png-77d063eb341c351e4f4d12a84ee64ea5.ctex"]
+source_file="res://assets/tylerstreasure.png"
+dest_files=["res://.godot/imported/tylerstreasure.png-3d638beb8ebfb2c4e6063a0e1d14dbd6.ctex"]
 
 [params]
 

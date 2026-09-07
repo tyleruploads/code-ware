@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://qhalkd6yuku4"]
 
-[ext_resource type="Texture2D" uid="uid://3utbfv7mvh6w" path="res://minigame-1-bg.png" id="1_l4g8r"]
+[ext_resource type="Texture2D" uid="uid://3utbfv7mvh6w" path="res://assets/minigame-1-bg.png" id="1_l4g8r"]
 [ext_resource type="Script" uid="uid://d2bmumoba01ot" path="res://Scenes/minigame_2.gd" id="1_rfxq2"]
-[ext_resource type="Texture2D" uid="uid://cl04wsoc8uem" path="res://tyleruploads-tn.png" id="2_dfb65"]
+[ext_resource type="Texture2D" uid="uid://cl04wsoc8uem" path="res://meta/tyleruploads-tn.png" id="2_dfb65"]
 [ext_resource type="Script" uid="uid://cylmlo51rk7vf" path="res://Scenes/button.gd" id="3_rfxq2"]
 [ext_resource type="Script" uid="uid://d3qj44arei5s0" path="res://Scenes/minigame_2_timer.gd" id="4_dfb65"]
 
@@ -209,5 +209,5 @@ offset_top = 10.0
 offset_right = 159.0
 offset_bottom = 120.0
 theme_override_font_sizes/font_size = 80
-text = "0.0"
+text = "12.0"
 script = ExtResource("4_dfb65")

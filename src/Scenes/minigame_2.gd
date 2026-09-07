@@ -1,5 +1,8 @@
 extends Node2D
 
+@export var prompt: String = "CLICK!"
+@export var description: String = "Click on 18 tyleruploads orbs in 12s with your mouse."
+
 var buttons_pressed: int = 0
 
 func _process(delta: float) -> void:

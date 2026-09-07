@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://de2rky4ir8rle"
-path="res://.godot/imported/tylerstreasure.png-2cbce481685830e739a4fe8d1f096bde.ctex"
+uid="uid://0lrybf4nqeoj"
+path="res://.godot/imported/minigame_2_hero.png-5ced66ae9c0c7a8f691b95899465df5c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tylerstreasure.png"
-dest_files=["res://.godot/imported/tylerstreasure.png-2cbce481685830e739a4fe8d1f096bde.ctex"]
+source_file="res://media/minigame_2_hero.png"
+dest_files=["res://.godot/imported/minigame_2_hero.png-5ced66ae9c0c7a8f691b95899465df5c.ctex"]
 
 [params]
 

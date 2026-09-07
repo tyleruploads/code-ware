@@ -7,18 +7,30 @@ extends Node2D
 @onready var live_5: TextureRect = $LivesContainer/Life5
 @onready var level: RichTextLabel = $Level
 @onready var timer: RichTextLabel = $Timer
+@onready var prompt: RichTextLabel = $Prompt
+@onready var description: RichTextLabel = $Description
 
 var time: float = 0.0 # Updated each delta of _process
 
 func _ready() -> void:
 	if Global.minigames_done < Global.minigames_until_end:
+		var new_scene_path := "res://Scenes/minigame_{x}.tscn".format({'x': Global.minigames_done + 1})
+		var new_scene_instance = load(new_scene_path).instantiate()
+		
 		level.text = "Level " + str(Global.minigames_done + 1)
+		prompt.text = new_scene_instance.prompt
+		description.text = new_scene_instance.description
+		
+		new_scene_instance.queue_free()
+
 		print(Global.minigames_done, " minigames done")
 		await Timer(5.0)
 		Global.minigames_done += 1
-		get_tree().change_scene_to_file("res://Scenes/minigame_" + str(Global.minigames_done) + ".tscn")
+		get_tree().change_scene_to_file(new_scene_path)
 	else:
-		level.text = "Game complete! Heading home."
+		level.text = ""
+		prompt.text = "GAME COMPLETE"
+		description.text = "Heading home."
 		print("Game complete! Heading home.")
 		
 		# Reset game

@@ -1,5 +1,8 @@
 extends Node2D
 
+@export var prompt: String = "COLLECT!"
+@export var description: String = "Gather 7 tyleruploads orbs in 25s using Arrow Keys & Spacebar."
+
 var tylers_collected = 0
 
 func _ready() -> void:
