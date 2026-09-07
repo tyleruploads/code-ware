@@ -35,6 +35,7 @@ jobs:
 
       - name: Initial Godot Asset Import
         run: |
+          cd src
           godot --headless --path src --editor --quit || exit 0
 
       - name: Export Game Executables
