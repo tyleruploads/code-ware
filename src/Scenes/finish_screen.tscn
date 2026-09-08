@@ -1,0 +1,188 @@
+[gd_scene format=3 uid="uid://g2kq272174ss"]
+
+[ext_resource type="Texture2D" uid="uid://cfg3lxeqhe5c2" path="res://third-party-assets/black-color.png" id="1_p6faf"]
+[ext_resource type="Script" uid="uid://cig8d5eqdvrv" path="res://Scenes/credits_container.gd" id="2_erjf3"]
+[ext_resource type="Script" uid="uid://c0jglolx5umca" path="res://credits_text.gd" id="3_5dik1"]
+
+[sub_resource type="Gradient" id="Gradient_p6faf"]
+interpolation_mode = 1
+interpolation_color_space = 1
+offsets = PackedFloat32Array(0, 0.32228917, 0.55421686, 0.8192771, 1)
+colors = PackedColorArray(1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_5dik1"]
+gradient = SubResource("Gradient_p6faf")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_i2610"]
+particle_flag_disable_z = true
+emission_shape = 1
+emission_sphere_radius = 128.0
+angle_min = -28.2
+angle_max = 236.0
+initial_velocity_min = 1000.0
+initial_velocity_max = 1000.0
+angular_velocity_min = -720.0
+angular_velocity_max = -720.0
+orbit_velocity_min = 1000.0
+orbit_velocity_max = 1000.0
+gravity = Vector3(10000, 2000, 0)
+linear_accel_min = 100.0
+linear_accel_max = 100.0
+color_initial_ramp = SubResource("GradientTexture1D_5dik1")
+hue_variation_min = -1.0
+hue_variation_max = -0.72
+anim_speed_min = 128.0
+anim_speed_max = 128.0
+anim_offset_max = 0.68
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_epu05"]
+gradient = SubResource("Gradient_p6faf")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_d3xbs"]
+particle_flag_disable_z = true
+emission_shape = 1
+emission_sphere_radius = 128.0
+angle_min = -720.0
+angle_max = -488.0
+initial_velocity_min = 1000.0
+initial_velocity_max = 1000.0
+angular_velocity_min = -720.0
+angular_velocity_max = -720.0
+orbit_velocity_min = 1000.0
+orbit_velocity_max = 1000.0
+gravity = Vector3(10000, 2000, 0)
+linear_accel_min = 100.0
+linear_accel_max = 100.0
+color_initial_ramp = SubResource("GradientTexture1D_epu05")
+hue_variation_min = -1.0
+hue_variation_max = 1.0
+anim_speed_min = 128.0
+anim_speed_max = 128.0
+anim_offset_min = 1.0
+anim_offset_max = 1.0
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_d17ky"]
+gradient = SubResource("Gradient_p6faf")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_yrhbd"]
+particle_flag_disable_z = true
+emission_shape = 1
+emission_sphere_radius = 128.0
+angle_min = -720.0
+angle_max = -488.0
+initial_velocity_min = 1000.0
+initial_velocity_max = 1000.0
+angular_velocity_min = -720.0
+angular_velocity_max = -720.0
+orbit_velocity_min = 1000.0
+orbit_velocity_max = 1000.0
+gravity = Vector3(10000, 2000, 0)
+linear_accel_min = 100.0
+linear_accel_max = 100.0
+color_initial_ramp = SubResource("GradientTexture1D_d17ky")
+hue_variation_min = -1.0
+hue_variation_max = 1.0
+anim_speed_min = 128.0
+anim_speed_max = 128.0
+anim_offset_min = 1.0
+anim_offset_max = 1.0
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_1r3cj"]
+gradient = SubResource("Gradient_p6faf")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_w7t6u"]
+particle_flag_disable_z = true
+emission_shape = 1
+emission_sphere_radius = 128.0
+angle_min = -720.0
+angle_max = -488.0
+initial_velocity_min = 1000.0
+initial_velocity_max = 1000.0
+angular_velocity_min = -720.0
+angular_velocity_max = -720.0
+orbit_velocity_min = 1000.0
+orbit_velocity_max = 1000.0
+gravity = Vector3(10000, 2000, 0)
+linear_accel_min = 100.0
+linear_accel_max = 100.0
+color_initial_ramp = SubResource("GradientTexture1D_1r3cj")
+hue_variation_min = -1.0
+hue_variation_max = 1.0
+anim_speed_min = 128.0
+anim_speed_max = 128.0
+anim_offset_min = 1.0
+anim_offset_max = 1.0
+
+[node name="finish_screen" type="Node2D" unique_id=426009476]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=86136942]
+offset_right = 1156.0
+offset_bottom = 648.0
+texture = ExtResource("1_p6faf")
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1169906673]
+
+[node name="CPUParticles2D" type="GPUParticles2D" parent="Node2D" unique_id=1667955241]
+position = Vector2(594.00006, 403.99997)
+scale = Vector2(5, 5)
+skew = -0.55152404
+amount = 50000
+lifetime = 0.06999999999999999
+speed_scale = 3.0
+fract_delta = false
+draw_order = 0
+trail_lifetime = 0.01
+process_material = SubResource("ParticleProcessMaterial_i2610")
+
+[node name="CPUParticles2D2" type="GPUParticles2D" parent="Node2D" unique_id=961968157]
+position = Vector2(913, 301)
+scale = Vector2(5, 5)
+skew = -0.55152404
+amount = 50000
+lifetime = 0.06999999999999999
+speed_scale = 3.0
+fract_delta = false
+draw_order = 0
+trail_lifetime = 0.01
+process_material = SubResource("ParticleProcessMaterial_d3xbs")
+
+[node name="CPUParticles2D3" type="GPUParticles2D" parent="Node2D" unique_id=462443518]
+position = Vector2(116.00006, 326)
+scale = Vector2(5, 5)
+skew = -0.55152404
+amount = 50000
+lifetime = 0.06999999999999999
+speed_scale = 3.0
+fract_delta = false
+draw_order = 0
+trail_lifetime = 0.01
+process_material = SubResource("ParticleProcessMaterial_yrhbd")
+
+[node name="CPUParticles2D4" type="GPUParticles2D" parent="Node2D" unique_id=2049509030]
+position = Vector2(432.99997, 457.99997)
+scale = Vector2(5, 5)
+skew = -0.55152404
+amount = 50000
+lifetime = 0.06999999999999999
+speed_scale = 3.0
+fract_delta = false
+draw_order = 0
+trail_lifetime = 0.01
+process_material = SubResource("ParticleProcessMaterial_w7t6u")
+
+[node name="CreditsContainer" type="VBoxContainer" parent="." unique_id=1426400003 node_paths=PackedStringArray("data_node")]
+offset_right = 1164.0
+offset_bottom = 969.0
+script = ExtResource("2_erjf3")
+data_node = NodePath("../Node")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CreditsContainer" unique_id=551846927]
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 12
+bbcode_enabled = true
+fit_content = true
+horizontal_alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="Node" type="Node" parent="." unique_id=257383412]
+script = ExtResource("3_5dik1")

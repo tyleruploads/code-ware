@@ -29,6 +29,7 @@ enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
 
 [physics]
 
+common/physics_ticks_per_second=30
 3d/physics_engine="Jolt Physics"
 
 [rendering]
@@ -37,4 +38,5 @@ textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+driver/threads/thread_model=2
 textures/vram_compression/import_etc2_astc=true

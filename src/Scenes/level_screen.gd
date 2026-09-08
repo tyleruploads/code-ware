@@ -30,14 +30,14 @@ func _ready() -> void:
 	else:
 		level.text = ""
 		prompt.text = "GAME COMPLETE"
-		description.text = "Heading home."
-		print("Game complete! Heading home.")
+		description.text = "The end is infinite :D!"
+		print("Game complete!")
 		
 		# Reset game
 		Global.minigames_done = 0
 		
-		await Timer(5.0)
-		get_tree().change_scene_to_file("res://Scenes/title_screen.tscn")
+		await Timer(3.0)
+		get_tree().change_scene_to_file("res://Scenes/finish_screen.tscn")
 
 func _process(delta: float) -> void: # runs every frame
 	if Global.lives <= 0:
