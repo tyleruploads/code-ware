@@ -6,6 +6,10 @@ CodeWare is a WarioWare-style video game where you have to complete various mini
 
 ---
 
+![Hero image containing start menu](./media/docs/title-screen-hero.png)
+
+---
+
 ## How to Play
 
 * **Objective:** Instruction prompts coming soon, complete the minigame objective, and definitely don't run out of time.
@@ -22,23 +26,29 @@ CodeWare is a WarioWare-style video game where you have to complete various mini
 
 In minigame 1, you have 25 seconds to collect 7 tyleruploads orbs. Each orb has a diameter of 60 pixels.
 
-![Hero image for the first minigame, platformer](./media/minigame_1_hero.png)
+![Hero image for the first minigame, platformer](./media/docs/minigame-1-hero.png)
 
 ### Minigame 2: Clicker
 
 In minigame 2, you have 12 seconds to click 18 tyleruploads circles. Each pixel has a diameter of 50 pixels.
 
-![Hero image for the second minigame, clicker](./media/minigame_2_hero.png)
+![Hero image for the second minigame, clicker](./media/docs/minigame-2-hero.png)
 
 ## Running the Game
 
 ### For Players
 
-THIS METHOD IS COMING SOON
+#### Website
+
+> This method is coming soon
+
+#### Manual Installation
 
 1. Go to the [Releases](https://github.com/tyleruploads/code-ware/releases) tab.
 2. Download the executable build for your operating system, or download the webpage.
 3. Launch `CodeWare` or the webpage and start playing!
+
+> If you are using the manual web option, you must start a local web server. I personally use `python3 -m http.server 8000`, which will make a web server hosting the site exposed on port 8000.
 
 ## For Developers / Contributors:
 
