@@ -13,6 +13,39 @@ extends Node2D
 var time: float = 0.0 # Updated each delta of _process
 
 func _ready() -> void:
+	# Handle resets
+	if Global.reset == true:
+		# First, change it back to false so this doesn't happen each time after first reset
+		Global.reset = false
+		
+		level.text = "Level ???"
+		prompt.text = "REPEAT!"
+		description.text = "The end is never. Continue, until you meet the real, end."
+
+		Global.minigames_done = 1
+		Global.lives = 5
+		
+		await Timer(10.0)
+		get_tree().change_scene_to_file("res://Scenes/minigame_1.tscn")
+		return
+		
+	# Handle lives
+	if Global.lives <= 0:
+		lives_container.hide()
+
+		level.text = "N/A"
+		prompt.text = "???"
+		description.text = "Ready? Set?"
+		
+		await Timer(5.0)
+		get_tree().change_scene_to_file("res://Scenes/death_scene.tscn")
+		return
+	else:
+		lives_container.show()
+		var children = lives_container.get_children()
+		for i in range(children.size()):
+			children[i].visible = i < Global.lives
+	
 	if Global.minigames_done < Global.minigames_until_end:
 		var new_scene_path := "res://Scenes/minigame_{x}.tscn".format({'x': Global.minigames_done + 1})
 		var new_scene_instance = load(new_scene_path).instantiate()
@@ -40,14 +73,6 @@ func _ready() -> void:
 		get_tree().change_scene_to_file("res://Scenes/finish_screen.tscn")
 
 func _process(delta: float) -> void: # runs every frame
-	if Global.lives <= 0:
-		lives_container.hide()
-	else:
-		lives_container.show()
-		var children = lives_container.get_children()
-		for i in range(children.size()):
-			children[i].visible = i < Global.lives
-
 	timer.text = str(snapped(time, 0.1))
 
 func Timer(start_time: float):

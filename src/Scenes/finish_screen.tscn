@@ -35,10 +35,36 @@ anim_speed_min = 128.0
 anim_speed_max = 128.0
 anim_offset_max = 0.68
 
-[sub_resource type="GradientTexture1D" id="GradientTexture1D_epu05"]
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_i2610"]
 gradient = SubResource("Gradient_p6faf")
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_d3xbs"]
+particle_flag_disable_z = true
+emission_shape = 1
+emission_sphere_radius = 128.0
+angle_min = -720.0
+angle_max = -488.0
+initial_velocity_min = 1000.0
+initial_velocity_max = 1000.0
+angular_velocity_min = -720.0
+angular_velocity_max = -720.0
+orbit_velocity_min = 1000.0
+orbit_velocity_max = 1000.0
+gravity = Vector3(10000, 2000, 0)
+linear_accel_min = 100.0
+linear_accel_max = 100.0
+color_initial_ramp = SubResource("GradientTexture1D_i2610")
+hue_variation_min = -1.0
+hue_variation_max = 1.0
+anim_speed_min = 128.0
+anim_speed_max = 128.0
+anim_offset_min = 1.0
+anim_offset_max = 1.0
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_epu05"]
+gradient = SubResource("Gradient_p6faf")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_yrhbd"]
 particle_flag_disable_z = true
 emission_shape = 1
 emission_sphere_radius = 128.0
@@ -61,33 +87,7 @@ anim_speed_max = 128.0
 anim_offset_min = 1.0
 anim_offset_max = 1.0
 
-[sub_resource type="GradientTexture1D" id="GradientTexture1D_d17ky"]
-gradient = SubResource("Gradient_p6faf")
-
-[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_yrhbd"]
-particle_flag_disable_z = true
-emission_shape = 1
-emission_sphere_radius = 128.0
-angle_min = -720.0
-angle_max = -488.0
-initial_velocity_min = 1000.0
-initial_velocity_max = 1000.0
-angular_velocity_min = -720.0
-angular_velocity_max = -720.0
-orbit_velocity_min = 1000.0
-orbit_velocity_max = 1000.0
-gravity = Vector3(10000, 2000, 0)
-linear_accel_min = 100.0
-linear_accel_max = 100.0
-color_initial_ramp = SubResource("GradientTexture1D_d17ky")
-hue_variation_min = -1.0
-hue_variation_max = 1.0
-anim_speed_min = 128.0
-anim_speed_max = 128.0
-anim_offset_min = 1.0
-anim_offset_max = 1.0
-
-[sub_resource type="GradientTexture1D" id="GradientTexture1D_1r3cj"]
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_d3xbs"]
 gradient = SubResource("Gradient_p6faf")
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_w7t6u"]
@@ -105,7 +105,7 @@ orbit_velocity_max = 1000.0
 gravity = Vector3(10000, 2000, 0)
 linear_accel_min = 100.0
 linear_accel_max = 100.0
-color_initial_ramp = SubResource("GradientTexture1D_1r3cj")
+color_initial_ramp = SubResource("GradientTexture1D_d3xbs")
 hue_variation_min = -1.0
 hue_variation_max = 1.0
 anim_speed_min = 128.0

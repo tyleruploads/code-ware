@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://b8lg7ycfwtsyu"]
 
 [ext_resource type="Script" uid="uid://cq1hqrjnjfkhj" path="res://Scenes/minigame_1.gd" id="1_5txvl"]
-[ext_resource type="Texture2D" uid="uid://3utbfv7mvh6w" path="res://assets/minigame-1-bg.png" id="1_enoba"]
 [ext_resource type="PackedScene" uid="uid://cdnk1d5up5lbm" path="res://Scenes/player.tscn" id="2_11mgy"]
 [ext_resource type="Texture2D" uid="uid://cl04wsoc8uem" path="res://meta/tyleruploads-tn.png" id="3_f6tb2"]
 [ext_resource type="Script" uid="uid://dxyhy3hk13sw8" path="res://Scenes/tyleruploads.gd" id="3_o6yob"]
+[ext_resource type="Texture2D" uid="uid://d3rhyl0a800hx" path="res://assets/minigame-1-bg.svg" id="5_0uv5o"]
 [ext_resource type="Script" uid="uid://c14kvx1xeeuol" path="res://Scenes/self_timer.gd" id="5_5txvl"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_cvnsp"]
@@ -318,6 +318,16 @@ z_index = 12
 position = Vector2(363, 505)
 polygon = PackedVector2Array(0, 0, 50, 0, 52, 447, 32, 445, 10, 445)
 
+[node name="Platform20" type="StaticBody2D" parent="." unique_id=1902901303]
+z_index = 1
+position = Vector2(-411, -302)
+physics_material_override = SubResource("PhysicsMaterial_cvnsp")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Platform20" unique_id=849004860]
+z_index = 12
+position = Vector2(363, 505)
+polygon = PackedVector2Array(-5, -203, 56, -201, 52, 447, 32, 445, 10, 445)
+
 [node name="Player" parent="." unique_id=1240348216 instance=ExtResource("2_11mgy")]
 position = Vector2(45, 503)
 
@@ -476,7 +486,7 @@ repeat_times = 7
 z_index = -1
 offset_right = 1156.0
 offset_bottom = 648.0
-texture = ExtResource("1_enoba")
+texture = ExtResource("5_0uv5o")
 expand_mode = 2
 metadata/_edit_lock_ = true
 

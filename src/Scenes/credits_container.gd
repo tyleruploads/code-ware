@@ -1,6 +1,6 @@
 extends VBoxContainer
 
-@export var scroll_speed: float = 150 # PPS (Pixels Per Second)
+@export var scroll_speed: float = 150.0 # PPS (Pixels Per Second)
 @export var start_delay: float = 3
 
 # Get the node with the script containing credits text attached to it

@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://qhalkd6yuku4"]
 
-[ext_resource type="Texture2D" uid="uid://3utbfv7mvh6w" path="res://assets/minigame-1-bg.png" id="1_l4g8r"]
 [ext_resource type="Script" uid="uid://d2bmumoba01ot" path="res://Scenes/minigame_2.gd" id="1_rfxq2"]
 [ext_resource type="Texture2D" uid="uid://cl04wsoc8uem" path="res://meta/tyleruploads-tn.png" id="2_dfb65"]
+[ext_resource type="Texture2D" uid="uid://bsnt7m8gq81cg" path="res://assets/minigame-2-bg.svg" id="2_rfxq2"]
 [ext_resource type="Script" uid="uid://cylmlo51rk7vf" path="res://Scenes/button.gd" id="3_rfxq2"]
 [ext_resource type="Script" uid="uid://d3qj44arei5s0" path="res://Scenes/minigame_2_timer.gd" id="4_dfb65"]
 
@@ -18,7 +18,7 @@ repeat_times = 7
 z_index = -1
 offset_right = 1156.0
 offset_bottom = 648.0
-texture = ExtResource("1_l4g8r")
+texture = ExtResource("2_rfxq2")
 expand_mode = 2
 metadata/_edit_lock_ = true
 

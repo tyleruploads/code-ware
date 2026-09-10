@@ -1,23 +1,21 @@
 [gd_scene format=3 uid="uid://c8k6x4bhacx4u"]
 
-[ext_resource type="Texture2D" uid="uid://de2rky4ir8rle" path="res://assets/tylerstreasure.png" id="1_klylv"]
 [ext_resource type="Script" uid="uid://cewu4attjdsup" path="res://Scenes/title_screen.gd" id="1_p3fck"]
+[ext_resource type="Texture2D" uid="uid://bup3t5wj76llj" path="res://assets/title-screen-bg.svg" id="2_p3fck"]
 
 [node name="TitleScreen" type="Node2D" unique_id=482817235]
 script = ExtResource("1_p3fck")
 
 [node name="Background" type="TextureRect" parent="." unique_id=224174637]
-offset_left = 18.0
-offset_top = 5.0
 offset_right = 1152.0
-offset_bottom = 650.0
-texture = ExtResource("1_klylv")
+offset_bottom = 648.0
+texture = ExtResource("2_p3fck")
 expand_mode = 1
 
 [node name="Title" type="RichTextLabel" parent="." unique_id=1201816605]
 clip_contents = false
 offset_left = 22.0
-offset_top = 104.0
+offset_top = 88.0
 offset_right = 1153.0
 offset_bottom = 248.0
 theme_override_constants/outline_size = 40
@@ -46,6 +44,17 @@ text = "Settings"
 layout_mode = 2
 theme_override_font_sizes/font_size = 34
 text = "Quit"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1603659815]
+offset_left = 68.0
+offset_top = 447.0
+offset_right = 358.0
+offset_bottom = 627.0
+theme_override_font_sizes/normal_font_size = 42
+text = "Tyleruploads
+Mountain
+Range"
+horizontal_alignment = 1
 
 [connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/Settings" to="." method="_on_settings_pressed"]

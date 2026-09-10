@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3utbfv7mvh6w"
-path="res://.godot/imported/minigame-1-bg.png-550e41d681d6c126116fbee6b9fb8997.ctex"
+uid="uid://bsnt7m8gq81cg"
+path="res://.godot/imported/minigame-2-bg.svg-826778cb15ed4f6385aea8a8bfd2a1ea.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/minigame-1-bg.png"
-dest_files=["res://.godot/imported/minigame-1-bg.png-550e41d681d6c126116fbee6b9fb8997.ctex"]
+source_file="res://assets/minigame-2-bg.svg"
+dest_files=["res://.godot/imported/minigame-2-bg.svg-826778cb15ed4f6385aea8a8bfd2a1ea.ctex"]
 
 [params]
 
@@ -38,3 +38,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false
