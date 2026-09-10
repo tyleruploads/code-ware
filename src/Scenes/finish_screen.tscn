@@ -186,3 +186,15 @@ metadata/_edit_lock_ = true
 
 [node name="Node" type="Node" parent="." unique_id=257383412]
 script = ExtResource("3_5dik1")
+
+[node name="Back" type="Button" parent="." unique_id=1183464669]
+custom_minimum_size = Vector2(200, 50)
+offset_left = -1.0
+offset_top = 3.0
+offset_right = 199.0
+offset_bottom = 58.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 34
+text = "Back"
+
+[connection signal="pressed" from="Back" to="CreditsContainer" method="_on_back_pressed"]

@@ -43,3 +43,8 @@ func start_loop() -> void:
 	
 	# Restart this function!
 	tween.tween_callback(start_loop)
+
+
+func _on_back_pressed() -> void:
+	Global.reset_after_death = true
+	get_tree().change_scene_to_file("res://Scenes/title_screen.tscn")

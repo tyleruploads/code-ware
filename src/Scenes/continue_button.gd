@@ -1,7 +1,7 @@
 extends TextureButton
 
 func _pressed() -> void:
-	Global.reset = true;
+	Global.reset_after_death = true;
 	
 	hide()
 	await get_tree().create_timer(3).timeout

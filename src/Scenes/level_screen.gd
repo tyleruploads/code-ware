@@ -14,9 +14,17 @@ var time: float = 0.0 # Updated each delta of _process
 
 func _ready() -> void:
 	# Handle resets
-	if Global.reset == true:
-		# First, change it back to false so this doesn't happen each time after first reset
+	
+	if Global.full_reset == true:
 		Global.reset = false
+		Global.full_reset = false
+		
+		Global.minigames_done = 1
+		Global.lives = 5
+	
+	if Global.reset_after_death == true:
+		# First, change it back to false so this doesn't happen each time after first reset
+		Global.reset_after_death = false
 		
 		level.text = "Level ???"
 		prompt.text = "REPEAT!"
@@ -28,7 +36,7 @@ func _ready() -> void:
 		await Timer(10.0)
 		get_tree().change_scene_to_file("res://Scenes/minigame_1.tscn")
 		return
-		
+	
 	# Handle lives
 	if Global.lives <= 0:
 		lives_container.hide()

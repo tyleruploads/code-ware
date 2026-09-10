@@ -1,6 +1,6 @@
 extends Control
 
-@export var scroll_speed: float = 150.0 # PPS (Pixels Per Second)
+@export var scroll_speed: float = 300.0 # PPS (Pixels Per Second)
 @export var start_delay: float = 5.0
 
 @onready var label = $VBoxContainer/RichTextLabel
