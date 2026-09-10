@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://24rmyi5dy1bi"]
+
+[ext_resource type="Texture2D" uid="uid://cfg3lxeqhe5c2" path="res://third-party-assets/black-color.png" id="1_1m3ku"]
+[ext_resource type="Script" uid="uid://dcrjnq3uf78wj" path="res://Scenes/gallery.gd" id="1_21use"]
+
+[node name="gallery" type="Node2D" unique_id=445760108]
+script = ExtResource("1_21use")
+
+[node name="Bg" type="TextureRect" parent="." unique_id=1944226087]
+offset_right = 1156.0
+offset_bottom = 648.0
+texture = ExtResource("1_1m3ku")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1560023748]
+offset_right = 1156.0
+offset_bottom = 648.0
+
+[node name="Assets List" type="VBoxContainer" parent="HBoxContainer" unique_id=87315951]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+
+[node name="Asset View" type="VBoxContainer" parent="HBoxContainer" unique_id=59748547]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/Asset View" unique_id=1269669332]
+layout_mode = 2
+size_flags_vertical = 3
+expand_mode = 1
+stretch_mode = 5
+
+[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/Asset View" unique_id=847800748]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+bbcode_enabled = true
+text = "[font_size=30]Name: Path[/font_size]"
+horizontal_alignment = 1
+
+[node name="Back" type="Button" parent="." unique_id=73736470]
+custom_minimum_size = Vector2(200, 50)
+offset_top = 593.0
+offset_right = 200.0
+offset_bottom = 648.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 34
+text = "Back"
+
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]

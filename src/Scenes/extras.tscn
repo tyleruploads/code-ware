@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://cvvdb0tfp1wbu"]
+
+[ext_resource type="Texture2D" uid="uid://bup3t5wj76llj" path="res://assets/title-screen-bg.svg" id="1_neogw"]
+[ext_resource type="Script" uid="uid://cu4pyw64td861" path="res://Scenes/extras.gd" id="1_pnj3x"]
+
+[node name="extras" type="Node2D" unique_id=1152104293]
+script = ExtResource("1_pnj3x")
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=804873103]
+repeat_size = Vector2(1156, 0)
+autoscroll = Vector2(-50, 0)
+repeat_times = 7
+
+[node name="ScrollingBackground" type="TextureRect" parent="Parallax2D" unique_id=1587454861]
+z_index = -1
+offset_right = 1156.0
+offset_bottom = 648.0
+texture = ExtResource("1_neogw")
+expand_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=1670164943]
+offset_left = 477.0
+offset_top = 278.0
+offset_right = 677.0
+offset_bottom = 478.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer" unique_id=588596519]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+
+[node name="Gallery" type="Button" parent="ScrollContainer/VBoxContainer" unique_id=1987547044]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 34
+text = "Gallery"
+
+[node name="Credits" type="Button" parent="ScrollContainer/VBoxContainer" unique_id=1164532508]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 34
+text = "Credits"
+
+[node name="Title" type="RichTextLabel" parent="." unique_id=1831434054]
+clip_contents = false
+offset_right = 1156.0
+offset_bottom = 227.0
+theme_override_constants/outline_size = 40
+theme_override_font_sizes/normal_font_size = 108
+bbcode_enabled = true
+text = "CodeWare
+[font_size=50]Extras[/font_size]"
+horizontal_alignment = 1
+
+[node name="Back" type="Button" parent="." unique_id=1816296877]
+custom_minimum_size = Vector2(200, 50)
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 220.0
+offset_bottom = 75.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 34
+text = "Back"
+
+[connection signal="pressed" from="ScrollContainer/VBoxContainer/Gallery" to="." method="_on_gallery_pressed"]
+[connection signal="pressed" from="ScrollContainer/VBoxContainer/Credits" to="." method="_on_credits_pressed"]
+[connection signal="button_down" from="Back" to="." method="_on_back_button_down"]
+[connection signal="pressed" from="Back" to="." method="_on_gallery_pressed"]

@@ -1,0 +1,123 @@
+[gd_scene format=3 uid="uid://cjh3xjlt6vaqx"]
+
+[ext_resource type="Script" uid="uid://bscs3g65nu7o1" path="res://Scenes/credits.gd" id="1_gryuy"]
+[ext_resource type="Texture2D" uid="uid://bup3t5wj76llj" path="res://assets/title-screen-bg.svg" id="1_r18jl"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r18jl"]
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[node name="credits" type="Node2D" unique_id=224107973]
+script = ExtResource("1_gryuy")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1013163922]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_r18jl")
+expand_mode = 1
+
+[node name="Back" type="Button" parent="." unique_id=731837169]
+custom_minimum_size = Vector2(200, 50)
+offset_left = -2.0
+offset_right = 198.0
+offset_bottom = 55.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 34
+text = "Back"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=838107570]
+offset_left = 136.0
+offset_top = 35.0
+offset_right = 1036.0
+offset_bottom = 635.0
+horizontal_scroll_mode = 0
+
+[node name="PanelContainer" type="PanelContainer" parent="ScrollContainer" unique_id=1023344885]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_r18jl")
+
+[node name="MarginContainer" type="MarginContainer" parent="ScrollContainer/PanelContainer" unique_id=1742396813]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_right = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/PanelContainer/MarginContainer" unique_id=787381739]
+custom_minimum_size = Vector2(900, 600)
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ScrollContainer/PanelContainer/MarginContainer/VBoxContainer" unique_id=115876238]
+custom_minimum_size = Vector2(100, 110)
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 80
+text = "CodeWare"
+horizontal_alignment = 1
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="ScrollContainer/PanelContainer/MarginContainer/VBoxContainer" unique_id=1704011204]
+custom_minimum_size = Vector2(0, 500)
+custom_maximum_size = Vector2(900, 500)
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 25
+bbcode_enabled = true
+text = "CodeWare is a WarioWare-style video game where you have to complete various minigames, written in Godot. Do as good as you can—time is tight.
+
+Created by Tyler N., (@tyleruploads GitHub).
+
+[font_size=40]LICENSE[/font_size]
+# Software & Asset License Agreement
+
+This repository contains work subject to different licences depending on their type and location within the directory tree.
+
+---
+
+# 1. Source Code - MIT License
+
+Unless explicitly noted, all original software, scripts, scene logic, GDScript code files located under the `/src` directory (excluding `/src/addons` and `/src/thid-party-assets`) are released under the **MIT License**.
+
+```text
+Copyright (c) 2026 Tyler N. <https://github.com/tyleruploads>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+```
+
+# 2. Original Game Assets (/src/assets) - CC-BY 4.0
+
+All creative artwork, visual assets, and media assets located inside the `/src/assets` directory (excluding third-party assets noted below) are licensed under the Creative Commons Attribution 4.0 International License (CC-BY 4.0).
+
+You are free to share and adapt these assets for any purpose, including commericially, provided you give appropriate credit to Tyler N. (@tyleruploads) with a link to [https://github.com/tyleruploads](https://github.com/tyleruploads).
+
++ **Full Legal Text:** [https://creativecommons.org/licenses/by/4.0/legalcode](https://creativecommons.org/licenses/by/4.0/legalcode)
+
+# 3. Metadata & Branding (src/meta) - CC0 1.0 (Public Domain Dedication)
+
+All profile pictures, avatars, logos, and meta graphics located at `/src/meta` are dedicated to the public domain under the CC0 1.0 Universal (CC0 1.0) Public Domain Dedication.
+
+No copyright or branding rights are reserved. Anyone is free to use, copy, modify, or distribute these profile pictures and meta graphics for any purpose without requiring permission or attribution.
+
++ **Full legal text:** [https://creativecommons.org/publicdomain/zero/1.0/](https://creativecommons.org/publicdomain/zero/1.0/)
+
+# 4. Third-Party Assets (/src/third-party-assets) & Addons (/src/addons) - No Claim / Original Licenses
+
+No copyright, ownership, or exclusive rights are claimed by the maintainers of this repository over any assets located in `/src/third-party-assets` or addons located in `/src/addons`.
+
++ All assets and plugins retain their respective original third-party licenses, public domain dedications, or open-source terms.
++ Basic geometric shapes, solid-color utility textures, and unoriginal utility graphs located in the `/src/third-party-assets` directory are uncopyrightable under public domain / CC0 standards.
+
+# 5. Auto-Generated & Build Artifacts
+
+This project contains automatically generated engine files, import configuration files, and build artifacts (such as .import files). These files are automatically created by engine processes and are not subject to copyright or additional licensing restrictions under this repository.
+"
+autowrap_mode = 2
+horizontal_alignment = 1
+
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]

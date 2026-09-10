@@ -26,19 +26,19 @@ horizontal_alignment = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=858153307]
 offset_left = 484.0
-offset_top = 253.0
-offset_right = 677.0
-offset_bottom = 429.0
+offset_top = 277.0
+offset_right = 684.0
+offset_bottom = 453.0
 
 [node name="Start" type="Button" parent="VBoxContainer" unique_id=2023553727]
 layout_mode = 2
 theme_override_font_sizes/font_size = 34
 text = "Start Game"
 
-[node name="Settings" type="Button" parent="VBoxContainer" unique_id=1564744465]
+[node name="Extras" type="Button" parent="VBoxContainer" unique_id=1564744465]
 layout_mode = 2
 theme_override_font_sizes/font_size = 34
-text = "Settings"
+text = "Extras"
 
 [node name="Quit" type="Button" parent="VBoxContainer" unique_id=659723297]
 layout_mode = 2
@@ -57,5 +57,6 @@ Range"
 horizontal_alignment = 1
 
 [connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="VBoxContainer/Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="VBoxContainer/Extras" to="." method="_on_extras_pressed"]
+[connection signal="pressed" from="VBoxContainer/Extras" to="." method="_on_settings_pressed"]
 [connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]
