@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://cl04wsoc8uem" path="res://meta/tyleruploads-tn.png" id="3_f6tb2"]
 [ext_resource type="Script" uid="uid://dxyhy3hk13sw8" path="res://Scenes/tyleruploads.gd" id="3_o6yob"]
 [ext_resource type="Texture2D" uid="uid://d3rhyl0a800hx" path="res://assets/minigame-1-bg.svg" id="5_0uv5o"]
-[ext_resource type="Script" uid="uid://c14kvx1xeeuol" path="res://Scenes/self_timer.gd" id="5_5txvl"]
+[ext_resource type="Script" uid="uid://c14kvx1xeeuol" path="res://Scenes/minigame_1_timer.gd" id="5_5txvl"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_cvnsp"]
 friction = 0.0
