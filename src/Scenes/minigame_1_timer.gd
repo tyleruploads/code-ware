@@ -18,7 +18,8 @@ func Timer(start_time: float) -> void:
 	var tree := Engine.get_main_loop() as SceneTree
 	
 	while time > 0.001:
-		await get_tree().create_timer(0.10).timeout
+		# Second argument automatically freezes when game is paused
+		await get_tree().create_timer(0.10, false).timeout
 		time -= 0.10
 		text = str(snapped(time, 0.1))
 		

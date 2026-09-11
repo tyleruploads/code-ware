@@ -5,12 +5,20 @@ var lives = 5
 var minigames_until_end = 2
 var reset_after_death: bool = false # When it is time to restart, set to true
 var full_reset: bool = false # Actual reset, without the fluff
+var paused: bool = false
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass
+func _enter_tree() -> void:
+	process_mode = Node.PROCESS_MODE_ALWAYS
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func _input(event: InputEvent) -> void:
+	# Check if input is a key press (not a release or any other input)
+	if event is InputEventKey and event.pressed and not event.echo:
+		print("Input")
+		match event.physical_keycode:
+			KEY_R:
+				# R for Reset, reloads the current scene
+				get_tree().reload_current_scene()
+			KEY_ESCAPE:
+				# Pauses or unpauses the game
+				paused = !paused
+				get_tree().paused = paused

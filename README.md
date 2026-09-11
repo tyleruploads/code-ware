@@ -16,7 +16,8 @@ CodeWare is a WarioWare-style video game where you have to complete various mini
 * **Controls:**
     * **Movement:** Arrow Keys & Spacebar
     * **Action / Aim:** Mouse Cursor + Left Click
-    * **Restart / Pause:** COMING SOON: `Esc` / `R`
+    * **Pause / Unpause:** Esc
+    * **Restart Current Scene:** R
 
 ---
 
