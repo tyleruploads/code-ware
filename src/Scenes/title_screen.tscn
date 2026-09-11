@@ -45,7 +45,7 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 34
 text = "Quit"
 
-[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1603659815]
+[node name="tyleruploads mountain range" type="RichTextLabel" parent="." unique_id=1603659815]
 offset_left = 68.0
 offset_top = 447.0
 offset_right = 358.0
@@ -55,6 +55,13 @@ text = "Tyleruploads
 Mountain
 Range"
 horizontal_alignment = 1
+
+[node name="Version" type="RichTextLabel" parent="." unique_id=81983574]
+offset_left = 300.0
+offset_top = 612.0
+offset_right = 441.0
+offset_bottom = 643.0
+text = "V"
 
 [connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/Extras" to="." method="_on_extras_pressed"]
