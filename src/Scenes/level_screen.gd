@@ -58,7 +58,10 @@ func _ready() -> void:
 		var new_scene_path := "res://Scenes/minigame_{x}.tscn".format({'x': Global.minigames_done + 1})
 		var new_scene_instance = load(new_scene_path).instantiate()
 		
-		level.text = "Level " + str(Global.minigames_done + 1)
+		level.text = "Level {level}: {name}".format({
+			"level": str(Global.minigames_done + 1),
+			"name": new_scene_instance.minigame_name
+		})
 		prompt.text = new_scene_instance.prompt
 		description.text = new_scene_instance.description
 		

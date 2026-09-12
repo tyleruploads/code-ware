@@ -1,5 +1,6 @@
 extends Node2D
 
+@export var minigame_name: String = "Orb Collection Clicker"
 @export var prompt: String = "CLICK!"
 @export var description: String = "Click on 18 tyleruploads orbs in 12s with your mouse."
 

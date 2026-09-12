@@ -1,5 +1,6 @@
 extends Node2D
 
+@export var minigame_name: String = "Orb Collection Platformer"
 @export var prompt: String = "COLLECT!"
 @export var description: String = "Gather 7 tyleruploads orbs in 25s using Arrow Keys & Spacebar."
 
