@@ -1,6 +1,6 @@
 # CodeWare
 
-CodeWare is a WarioWare-style video game where you have to complete various minigames, written in Godot. Do as good as you can—time is tight.
+CodeWare is a WarioWare-style video game where you have to complete various minigames, written in Godot. Do as good as you can, time is tight.
 
 **5 lives, 5 chances.**
 
@@ -23,17 +23,23 @@ CodeWare is a WarioWare-style video game where you have to complete various mini
 
 ## Minigames
 
-### Minigame 1: Platformer
+### Minigame 1: Orb Collection Platformer
 
-In minigame 1, you have 25 seconds to collect 7 tyleruploads orbs. Each orb has a diameter of 60 pixels.
+In minigame 1, "Orb Collection Platformer," you have 25 seconds to collect 7 tyleruploads orbs. Each orb has a diameter of 60 pixels.
 
 ![Hero image for the first minigame, platformer](./media/docs/minigame-1-hero.png)
 
-### Minigame 2: Clicker
+### Minigame 2: Orb Collection Clicker
 
-In minigame 2, you have 12 seconds to click 18 tyleruploads circles. Each pixel has a diameter of 50 pixels.
+In minigame 2, "Orb Collection Clicker," you have 12 seconds to click 18 tyleruploads circles. Each pixel has a diameter of 50 pixels.
 
 ![Hero image for the second minigame, clicker](./media/docs/minigame-2-hero.png)
+
+### Minigame 3: Hit the Circles
+
+In minigame 3, you have 13 seconds to zero your balance of circles by clicking on any circle whenever you see it pop up!
+
+![Hero image for the third minigame, hit the circles](./media/docs/minigame-3-hero.png)
 
 ## Running the Game
 
