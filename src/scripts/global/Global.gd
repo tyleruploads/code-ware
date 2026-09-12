@@ -2,7 +2,7 @@ extends Node
 
 var minigames_done = 0
 var lives = 5
-var minigames_until_end = 2
+var minigames_until_end = 3
 var reset_after_death: bool = false # When it is time to restart, set to true
 var full_reset: bool = false # Actual reset, without the fluff
 var paused: bool = false
