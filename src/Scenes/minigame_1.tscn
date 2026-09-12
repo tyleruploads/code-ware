@@ -84,14 +84,14 @@ position = Vector2(166, -30)
 physics_material_override = SubResource("PhysicsMaterial_cvnsp")
 
 [node name="Polygon2D" type="Polygon2D" parent="Platform5" unique_id=1215998007]
-position = Vector2(363, 261.5)
+position = Vector2(387, 261.5)
 polygon = PackedVector2Array(0, 245, 50, 245, 50.00003, 269.63123, 50, 291, 1, 293)
 uv = PackedVector2Array(0, 245, 50, 245, 50, 291, 0, 245)
 vertex_colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Platform5" unique_id=2082916690]
 z_index = 12
-position = Vector2(363, 505)
+position = Vector2(389, 505)
 polygon = PackedVector2Array(0, 0, 50, 0, 50, 50, 21.291992, 50, 0, 50)
 
 [node name="Platform6" type="StaticBody2D" parent="." unique_id=7994659]
