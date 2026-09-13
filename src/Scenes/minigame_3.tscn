@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://bqpokw3vk73xp"]
+
+[ext_resource type="Texture2D" uid="uid://d3rhyl0a800hx" path="res://assets/minigame-1-bg.svg" id="1_asmx3"]
+[ext_resource type="Script" uid="uid://ig8py6fo0y3j" path="res://Scenes/minigame_3.gd" id="1_ihkhm"]
+[ext_resource type="Script" uid="uid://nhc3u2wtgvhf" path="res://Scenes/minigame_3_timer.gd" id="2_h40nw"]
+[ext_resource type="Texture2D" uid="uid://cl04wsoc8uem" path="res://meta/tyleruploads-tn.png" id="3_6sdpr"]
+
+[node name="minigame_3" type="Node2D" unique_id=1112769458]
+script = ExtResource("1_ihkhm")
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=697637688]
+repeat_size = Vector2(1156, 0)
+autoscroll = Vector2(-50, 0)
+repeat_times = 7
+
+[node name="ScrollingBackground" type="TextureRect" parent="Parallax2D" unique_id=651665124]
+z_index = -1
+offset_right = 1156.0
+offset_bottom = 648.0
+texture = ExtResource("1_asmx3")
+expand_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Circle" type="TextureButton" parent="." unique_id=1196995143]
+visible = false
+offset_left = 113.0
+offset_top = 289.0
+offset_right = 213.0
+offset_bottom = 389.0
+texture_normal = ExtResource("3_6sdpr")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="timer" type="Label" parent="." unique_id=68514715]
+modulate = Color(1, 0, 0, 1)
+offset_left = 39.0
+offset_top = 10.0
+offset_right = 159.0
+offset_bottom = 120.0
+theme_override_font_sizes/font_size = 80
+text = "13.0"
+script = ExtResource("2_h40nw")
+
+[node name="score" type="RichTextLabel" parent="." unique_id=1108715210]
+offset_left = 559.0
+offset_top = 6.0
+offset_right = 687.0
+offset_bottom = 104.0
+theme_override_colors/default_color = Color(0, 1, 0, 1)
+theme_override_font_sizes/normal_font_size = 69
+text = "-15"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1561279727]
+offset_left = 753.0
+offset_top = 20.0
+offset_right = 1000.0
+offset_bottom = 149.0
+theme_override_colors/default_color = Color(1, 0.5411765, 0, 1)
+theme_override_font_sizes/normal_font_size = 42
+text = "ZERO YOUR BALANCE!"
