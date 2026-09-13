@@ -38,7 +38,7 @@ offset_top = 10.0
 offset_right = 159.0
 offset_bottom = 120.0
 theme_override_font_sizes/font_size = 80
-text = "13.0"
+text = "17.0"
 script = ExtResource("2_h40nw")
 
 [node name="score" type="RichTextLabel" parent="." unique_id=1108715210]
