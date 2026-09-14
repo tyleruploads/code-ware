@@ -37,7 +37,7 @@ In minigame 2, "Orb Collection Clicker," you have 12 seconds to click 18 tylerup
 
 ### Minigame 3: Hit the Circles
 
-In minigame 3, you have 13 seconds to zero your balance of circles by clicking on any circle whenever you see it pop up!
+In minigame 3, you have 17 seconds to zero your balance of circles by clicking on any circle whenever you see it pop up!
 
 ![Hero image for the third minigame, hit the circles](./media/docs/minigame-3-hero.png)
 
