@@ -1,4 +1,4 @@
-name: 🚥 Status Checks
+name: Build and Deploy
 on:
   push:
     tags:
@@ -15,7 +15,7 @@ concurrency:
 
 jobs:
   tests:
-    name: 👀 Evaluate on ${{ matrix.os }}
+    name: Evaluate on ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     strategy:
       # Don't cancel other OS runners if one fails.
@@ -28,17 +28,17 @@ jobs:
         shell: bash
     steps:
       - uses: actions/checkout@v4
-        name: 🧾 Checkout
+        name: Checkout
 
       - uses: chickensoft-games/setup-godot@v2
-        name: 🤖 Setup Godot
+        name: Setup Godot
         with:
           version: 4.7.2
           use-dotnet: false
           # Include the Godot Export Templates (the default is false).
           include-templates: true
 
-      - name: 🔬 Verify Setup
+      - name: Verify Setup
         run: |
           godot --version
 
