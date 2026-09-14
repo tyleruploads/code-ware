@@ -2,7 +2,7 @@ extends Node2D
 
 @export var minigame_name: String = "Hit the Circles"
 @export var prompt: String = "CLICK!"
-@export var description: String = "Zero your balance of circles in 13 seconds by clicking on any circle whenever you see it pop up!"
+@export var description: String = "Zero your balance of circles in 17 seconds by clicking on any circle whenever you see it pop up!"
 
 @onready var exampleCircle = $Circle
 @onready var timer: Label = $timer
