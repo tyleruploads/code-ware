@@ -4,6 +4,7 @@ var time : float = 0.0
 
 # Called when the node enters the scene tree for the first time
 func _ready() -> void:
+	Global.minigames_done = 3
 	Timer(17.0)
 	pass
 
