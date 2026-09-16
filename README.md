@@ -47,6 +47,12 @@ In minigame 4, "Dodge the Flying Balls," you have 45 seconds to dodge the flying
 
 ![Hero image for the fourth minigame, hit the circles](./media/docs/minigame-4-hero.png)
 
+## Minigame 5: Click Very Fast
+
+In Minigame 5, "Click Very Fast," you have 20 seconds to click a button on the center of the screen 100 times.
+
+![Hero image for the fifth minigame, click very fast](./media/docs/minigame-5-hero.png)
+
 ## Running the Game
 
 ### For Players

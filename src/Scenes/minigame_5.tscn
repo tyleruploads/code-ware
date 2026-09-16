@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://canf8x5al8p62"]
+
+[ext_resource type="Script" uid="uid://dpjje5kxkg3wx" path="res://Scenes/minigame_5.gd" id="1_6fijl"]
+[ext_resource type="Texture2D" uid="uid://bup3t5wj76llj" path="res://assets/title-screen-bg.svg" id="1_bgv4i"]
+[ext_resource type="Script" uid="uid://be0kapdjmdgxg" path="res://Scenes/minigame_5_timer.gd" id="3_6fijl"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wqyxk"]
+bg_color = Color(1, 0, 0, 1)
+corner_radius_top_left = 1000
+corner_radius_top_right = 1000
+corner_radius_bottom_right = 1000
+corner_radius_bottom_left = 1000
+
+[node name="minigame_5" type="Node2D" unique_id=962195564]
+script = ExtResource("1_6fijl")
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=802509974]
+repeat_size = Vector2(1156, 0)
+autoscroll = Vector2(-50, 0)
+repeat_times = 7
+
+[node name="ScrollingBackground" type="TextureRect" parent="Parallax2D" unique_id=1037950678]
+z_index = -1
+offset_right = 1156.0
+offset_bottom = 648.0
+texture = ExtResource("1_bgv4i")
+expand_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="timer" type="Label" parent="." unique_id=924222690]
+modulate = Color(1, 0, 0, 1)
+offset_left = 39.0
+offset_top = 10.0
+offset_right = 159.0
+offset_bottom = 120.0
+theme_override_font_sizes/font_size = 80
+text = "30.0"
+script = ExtResource("3_6fijl")
+
+[node name="ClickScore" type="RichTextLabel" parent="." unique_id=584868718]
+offset_left = -3.0
+offset_top = -2.0
+offset_right = 1157.0
+offset_bottom = 148.0
+theme_override_colors/default_color = Color(0, 1, 0, 1)
+theme_override_font_sizes/normal_font_size = 69
+text = "00/100 Clicks"
+horizontal_alignment = 1
+
+[node name="ClickButton" type="Button" parent="." unique_id=1697310783]
+offset_left = 422.0
+offset_top = 219.0
+offset_right = 678.0
+offset_bottom = 475.0
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_wqyxk")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_wqyxk")
+theme_override_styles/hover = SubResource("StyleBoxFlat_wqyxk")
+text = "Click Me!"
