@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://dodrnp1nsd48u"]
+[gd_scene format=3 uid="uid://24rmyi5dy1bi"]
 
 [ext_resource type="Texture2D" uid="uid://cfg3lxeqhe5c2" path="res://third-party-assets/black-color.png" id="1_1m3ku"]
 [ext_resource type="Script" uid="uid://dcrjnq3uf78wj" path="res://scripts/nonglobal/extras/gallery.gd" id="1_21use"]

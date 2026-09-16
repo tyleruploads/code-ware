@@ -1,0 +1,69 @@
+[gd_scene format=3 uid="uid://c8k6x4bhacx4u"]
+
+[ext_resource type="Script" uid="uid://cewu4attjdsup" path="res://scripts/nonglobal/other/title_screen.gd" id="1_p3fck"]
+[ext_resource type="Texture2D" uid="uid://c45sm3lll67pb" path="res://assets/other/title-screen-bg.svg" id="2_p3fck"]
+
+[node name="TitleScreen" type="Node2D" unique_id=482817235]
+script = ExtResource("1_p3fck")
+
+[node name="Background" type="TextureRect" parent="." unique_id=224174637]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("2_p3fck")
+expand_mode = 1
+
+[node name="Title" type="RichTextLabel" parent="." unique_id=1201816605]
+clip_contents = false
+offset_left = 22.0
+offset_top = 88.0
+offset_right = 1153.0
+offset_bottom = 248.0
+theme_override_constants/outline_size = 40
+theme_override_font_sizes/normal_font_size = 108
+text = "CodeWare
+"
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=858153307]
+offset_left = 484.0
+offset_top = 277.0
+offset_right = 684.0
+offset_bottom = 453.0
+
+[node name="Start" type="Button" parent="VBoxContainer" unique_id=2023553727]
+layout_mode = 2
+theme_override_font_sizes/font_size = 34
+text = "Start Game"
+
+[node name="Extras" type="Button" parent="VBoxContainer" unique_id=1564744465]
+layout_mode = 2
+theme_override_font_sizes/font_size = 34
+text = "Extras"
+
+[node name="Quit" type="Button" parent="VBoxContainer" unique_id=659723297]
+layout_mode = 2
+theme_override_font_sizes/font_size = 34
+text = "Quit"
+
+[node name="tyleruploads mountain range" type="RichTextLabel" parent="." unique_id=1603659815]
+offset_left = 68.0
+offset_top = 447.0
+offset_right = 358.0
+offset_bottom = 627.0
+theme_override_font_sizes/normal_font_size = 42
+text = "Tyleruploads
+Mountain
+Range"
+horizontal_alignment = 1
+
+[node name="Version" type="RichTextLabel" parent="." unique_id=81983574]
+offset_left = 300.0
+offset_top = 612.0
+offset_right = 441.0
+offset_bottom = 643.0
+text = "V"
+
+[connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/Extras" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="VBoxContainer/Extras" to="." method="_on_extras_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]

@@ -1,0 +1,106 @@
+[gd_scene format=3 uid="uid://dl5e0ariy2k46"]
+
+[ext_resource type="Texture2D" uid="uid://cfg3lxeqhe5c2" path="res://third-party-assets/black-color.png" id="1_6yjli"]
+[ext_resource type="Script" uid="uid://b0ftargnqcuxo" path="res://scripts/nonglobal/other/level_screen.gd" id="1_glb20"]
+[ext_resource type="Texture2D" uid="uid://cl04wsoc8uem" path="res://meta/tyleruploads-tn.png" id="2_6yjli"]
+
+[node name="level_screen" type="Node2D" unique_id=438889296]
+script = ExtResource("1_glb20")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=720669567]
+offset_right = 1158.0
+offset_bottom = 650.0
+texture = ExtResource("1_6yjli")
+
+[node name="Lives Label" type="Label" parent="." unique_id=1670250845]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 470.0
+offset_top = 11.0
+offset_right = 668.0
+offset_bottom = 124.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 82
+text = "Lives"
+horizontal_alignment = 1
+
+[node name="LivesContainer" type="HBoxContainer" parent="." unique_id=1960962950]
+offset_left = 242.0
+offset_top = 137.0
+offset_right = 898.0
+offset_bottom = 265.0
+alignment = 1
+
+[node name="Life1" type="TextureRect" parent="LivesContainer" unique_id=530060594]
+layout_mode = 2
+texture = ExtResource("2_6yjli")
+expand_mode = 3
+
+[node name="Life2" type="TextureRect" parent="LivesContainer" unique_id=315190003]
+layout_mode = 2
+texture = ExtResource("2_6yjli")
+expand_mode = 3
+
+[node name="Life3" type="TextureRect" parent="LivesContainer" unique_id=1492768855]
+layout_mode = 2
+texture = ExtResource("2_6yjli")
+expand_mode = 3
+
+[node name="Life4" type="TextureRect" parent="LivesContainer" unique_id=580080319]
+layout_mode = 2
+texture = ExtResource("2_6yjli")
+expand_mode = 3
+
+[node name="Life5" type="TextureRect" parent="LivesContainer" unique_id=307113191]
+layout_mode = 2
+texture = ExtResource("2_6yjli")
+expand_mode = 3
+
+[node name="Level" type="RichTextLabel" parent="." unique_id=491872836]
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 6.0
+offset_top = 285.0
+offset_right = 1162.0
+offset_bottom = 401.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 42
+text = "Level #: Game Name"
+horizontal_alignment = 1
+
+[node name="Prompt" type="RichTextLabel" parent="." unique_id=1903280930]
+offset_left = 4.0
+offset_top = 353.0
+offset_right = 1161.0
+offset_bottom = 489.0
+theme_override_colors/default_color = Color(1, 0.5372549, 0, 1)
+theme_override_font_sizes/normal_font_size = 90
+text = "ACTION!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Description" type="RichTextLabel" parent="." unique_id=1678552872]
+offset_left = 4.0
+offset_top = 454.0
+offset_right = 1156.0
+offset_bottom = 555.0
+theme_override_font_sizes/normal_font_size = 30
+text = "Description"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Timer" type="RichTextLabel" parent="." unique_id=1470427690]
+offset_top = 548.0
+offset_right = 1164.0
+offset_bottom = 648.0
+theme_override_font_sizes/normal_font_size = 60
+text = "0.0"
+horizontal_alignment = 1
+vertical_alignment = 1

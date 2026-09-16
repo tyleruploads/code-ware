@@ -1,0 +1,509 @@
+[gd_scene format=3 uid="uid://b8lg7ycfwtsyu"]
+
+[ext_resource type="Script" uid="uid://cq1hqrjnjfkhj" path="res://scripts/nonglobal/minigames/1/minigame_1.gd" id="1_5txvl"]
+[ext_resource type="PackedScene" uid="uid://cdnk1d5up5lbm" path="res://Scenes/other/player.tscn" id="2_11mgy"]
+[ext_resource type="Texture2D" uid="uid://cl04wsoc8uem" path="res://meta/tyleruploads-tn.png" id="3_f6tb2"]
+[ext_resource type="Script" uid="uid://dxyhy3hk13sw8" path="res://scripts/nonglobal/minigames/1/tyleruploads.gd" id="3_o6yob"]
+[ext_resource type="Texture2D" uid="uid://cmtilg60egcn8" path="res://assets/minigame-bgs/mountain-bridge.svg" id="5_0uv5o"]
+[ext_resource type="Script" uid="uid://c14kvx1xeeuol" path="res://scripts/nonglobal/minigames/1/minigame_1_timer.gd" id="5_5txvl"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_cvnsp"]
+friction = 0.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1giwu"]
+radius = 30.0
+
+[node name="minigame_1" type="Node2D" unique_id=1330645649]
+script = ExtResource("1_5txvl")
+
+[node name="Platform1" type="StaticBody2D" parent="." unique_id=1298227282]
+z_index = 1
+position = Vector2(19.065306, 14.340607)
+physics_material_override = SubResource("PhysicsMaterial_cvnsp")
+
+[node name="ColorRect" type="ColorRect" parent="Platform1" unique_id=501766784]
+custom_minimum_size = Vector2(1152, 0)
+offset_left = -19.065306
+offset_top = 594.6594
+offset_right = 1132.9347
+offset_bottom = 634.6594
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Platform1" unique_id=250704563]
+polygon = PackedVector2Array(-19.065306, 594.6594, 1132.9347, 594.6594, 1132.9347, 635.6594, -19.065306, 635.6594)
+
+[node name="Platform2" type="StaticBody2D" parent="." unique_id=1803620454]
+z_index = 1
+physics_material_override = SubResource("PhysicsMaterial_cvnsp")
+
+[node name="Polygon2D" type="Polygon2D" parent="Platform2" unique_id=287291828]
+position = Vector2(292, 295.5)
+polygon = PackedVector2Array(0, 245, 50, 245, 50.00003, 269.63123, 50, 291, 1, 293)
+uv = PackedVector2Array(0, 245, 50, 245, 50, 291, 0, 245)
+vertex_colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Platform2" unique_id=861107335]
+z_index = 12
+position = Vector2(292, 539)
+polygon = PackedVector2Array(0, 0, 50, 0, 50, 50, 21.291992, 50, 0, 50)
+
+[node name="Platform3" type="StaticBody2D" parent="." unique_id=1180322513]
+z_index = 1
+physics_material_override = SubResource("PhysicsMaterial_cvnsp")
+
+[node name="Polygon2D" type="Polygon2D" parent="Platform3" unique_id=899685539]
+position = Vector2(363, 261.5)
+polygon = PackedVector2Array(0, 245, 50, 245, 50.00003, 269.63123, 50, 291, 1, 293)
+uv = PackedVector2Array(0, 245, 50, 245, 50, 291, 0, 245)
+vertex_colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Platform3" unique_id=461998431]
+z_index = 12
+position = Vector2(363, 505)
+polygon = PackedVector2Array(0, 0, 50, 0, 50, 50, 21.291992, 50, 0, 50)
+
+[node name="Platform4" type="StaticBody2D" parent="." unique_id=886599114]
+z_index = 1
+position = Vector2(67, -52)
+physics_material_override = SubResource("PhysicsMaterial_cvnsp")
+
+[node name="Polygon2D" type="Polygon2D" parent="Platform4" unique_id=1977235119]
+position = Vector2(363, 261.5)
+polygon = PackedVector2Array(0, 245, 50, 245, 50.00003, 269.63123, 50, 291, 1, 293)
+uv = PackedVector2Array(0, 245, 50, 245, 50, 291, 0, 245)
+vertex_colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Platform4" unique_id=1214109996]
+z_index = 12
+position = Vector2(363, 505)
+polygon = PackedVector2Array(0, 0, 50, 0, 50, 50, 21.291992, 50, 0, 50)
+
+[node name="Platform5" type="StaticBody2D" parent="." unique_id=49385815]
+z_index = 1
+position = Vector2(166, -30)
+physics_material_override = SubResource("PhysicsMaterial_cvnsp")
+
+[node name="Polygon2D" type="Polygon2D" parent="Platform5" unique_id=1215998007]
+position = Vector2(387, 261.5)
+polygon = PackedVector2Array(0, 245, 50, 245, 50.00003, 269.63123, 50, 291, 1, 293)
+uv = PackedVector2Array(0, 245, 50, 245, 50, 291, 0, 245)
+vertex_colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Platform5" unique_id=2082916690]
+z_index = 12
+position = Vector2(389, 505)
+polygon = PackedVector2Array(0, 0, 50, 0, 50, 50, 21.291992, 50, 0, 50)
+
+[node name="Platform6" type="StaticBody2D" parent="." unique_id=7994659]
+z_index = 1
+position = Vector2(322, 51)
+physics_material_override = SubResource("PhysicsMaterial_cvnsp")
+
+[node name="Polygon2D" type="Polygon2D" parent="Platform6" unique_id=2107830559]
+position = Vector2(363, 261.5)
+polygon = PackedVector2Array(0, 245, 50, 245, 50.00003, 269.63123, 50, 291, 1, 293)
+uv = PackedVector2Array(0, 245, 50, 245, 50, 291, 0, 245)
+vertex_colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Platform6" unique_id=618583412]
+z_index = 12
+position = Vector2(363, 505)
+polygon = PackedVector2Array(0, 0, 50, 0, 50, 50, 21.291992, 50, 0, 50)
+
+[node name="Platform7" type="StaticBody2D" parent="." unique_id=601854548]
+z_index = 1
+position = Vector2(427, -8)
+physics_material_override = SubResource("PhysicsMaterial_cvnsp")
+
+[node name="Polygon2D" type="Polygon2D" parent="Platform7" unique_id=1581187091]
+position = Vector2(363, 261.5)
+polygon = PackedVector2Array(0, 245, 50, 245, 50.00003, 269.63123, 50, 291, 1, 293)
+uv = PackedVector2Array(0, 245, 50, 245, 50, 291, 0, 245)
+vertex_colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Platform7" unique_id=71952807]
+z_index = 12
+position = Vector2(363, 505)
+polygon = PackedVector2Array(0, 0, 50, 0, 50, 50, 21.291992, 50, 0, 50)
+
+[node name="Platform8" type="StaticBody2D" parent="." unique_id=247982338]
+z_index = 1
+position = Vector2(347, -82)
+physics_material_override = SubResource("PhysicsMaterial_cvnsp")
+
+[node name="Polygon2D" type="Polygon2D" parent="Platform8" unique_id=63000472]
+position = Vector2(363, 261.5)
+polygon = PackedVector2Array(0, 245, 50, 245, 50.00003, 269.63123, 50, 291, 1, 293)
+uv = PackedVector2Array(0, 245, 50, 245, 50, 291, 0, 245)
+vertex_colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Platform8" unique_id=1739775938]
+z_index = 12
+position = Vector2(363, 505)
+polygon = PackedVector2Array(0, 0, 50, 0, 50, 50, 21.291992, 50, 0, 50)
+
+[node name="Platform9" type="StaticBody2D" parent="." unique_id=651710046]
+z_index = 1
+position = Vector2(433, -144)
+physics_material_override = SubResource("PhysicsMaterial_cvnsp")
+
+[node name="Polygon2D" type="Polygon2D" parent="Platform9" unique_id=2051573115]
+position = Vector2(363, 261.5)
+polygon = PackedVector2Array(0, 245, 50, 245, 50.00003, 269.63123, 50, 291, 1, 293)
+uv = PackedVector2Array(0, 245, 50, 245, 50, 291, 0, 245)
+vertex_colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Platform9" unique_id=889738361]
+z_index = 12
+position = Vector2(363, 505)
+polygon = PackedVector2Array(0, 0, 50, 0, 50, 50, 21.291992, 50, 0, 50)
+
+[node name="Platform10" type="StaticBody2D" parent="." unique_id=1961863618]
+z_index = 1
+position = Vector2(284, -202)
+physics_material_override = SubResource("PhysicsMaterial_cvnsp")
+
+[node name="Polygon2D" type="Polygon2D" parent="Platform10" unique_id=888337053]
+position = Vector2(363, 261.5)
+polygon = PackedVector2Array(0, 245, 50, 245, 50.00003, 269.63123, 50, 291, 1, 293)
+uv = PackedVector2Array(0, 245, 50, 245, 50, 291, 0, 245)
+vertex_colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Platform10" unique_id=1194506205]
+z_index = 12
+position = Vector2(363, 505)
+polygon = PackedVector2Array(0, 0, 50, 0, 50, 50, 21.291992, 50, 0, 50)
+
+[node name="Platform11" type="StaticBody2D" parent="." unique_id=2025823948]
+z_index = 1
+position = Vector2(196, -270)
+physics_material_override = SubResource("PhysicsMaterial_cvnsp")
+
+[node name="Polygon2D" type="Polygon2D" parent="Platform11" unique_id=891643972]
+position = Vector2(363, 261.5)
+polygon = PackedVector2Array(0, 245, 50, 245, 50.00003, 269.63123, 50, 291, 1, 293)
+uv = PackedVector2Array(0, 245, 50, 245, 50, 291, 0, 245)
+vertex_colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Platform11" unique_id=654988921]
+z_index = 12
+position = Vector2(363, 505)
+polygon = PackedVector2Array(0, 0, 50, 0, 50, 50, 21.291992, 50, 0, 50)
+
+[node name="Platform12" type="StaticBody2D" parent="." unique_id=699812039]
+z_index = 1
+position = Vector2(104, -329)
+physics_material_override = SubResource("PhysicsMaterial_cvnsp")
+
+[node name="Polygon2D" type="Polygon2D" parent="Platform12" unique_id=591064714]
+position = Vector2(363, 261.5)
+polygon = PackedVector2Array(0, 245, 50, 245, 50.00003, 269.63123, 50, 291, 1, 293)
+uv = PackedVector2Array(0, 245, 50, 245, 50, 291, 0, 245)
+vertex_colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Platform12" unique_id=1368966591]
+z_index = 12
+position = Vector2(363, 505)
+polygon = PackedVector2Array(0, 0, 50, 0, 50, 50, 21.291992, 50, 0, 50)
+
+[node name="Platform13" type="StaticBody2D" parent="." unique_id=1628034820]
+z_index = 1
+position = Vector2(-9, -329)
+physics_material_override = SubResource("PhysicsMaterial_cvnsp")
+
+[node name="Polygon2D" type="Polygon2D" parent="Platform13" unique_id=81988807]
+position = Vector2(363, 261.5)
+polygon = PackedVector2Array(0, 245, 50, 245, 50.00003, 269.63123, 50, 291, 1, 293)
+uv = PackedVector2Array(0, 245, 50, 245, 50, 291, 0, 245)
+vertex_colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Platform13" unique_id=1798529492]
+z_index = 12
+position = Vector2(363, 505)
+polygon = PackedVector2Array(0, 0, 50, 0, 50, 50, 21.291992, 50, 0, 50)
+
+[node name="Platform14" type="StaticBody2D" parent="." unique_id=1818240279]
+z_index = 1
+position = Vector2(-160, -357)
+physics_material_override = SubResource("PhysicsMaterial_cvnsp")
+
+[node name="Polygon2D" type="Polygon2D" parent="Platform14" unique_id=1656119186]
+position = Vector2(363, 261.5)
+polygon = PackedVector2Array(0, 245, 50, 245, 50.00003, 269.63123, 50, 291, 1, 293)
+uv = PackedVector2Array(0, 245, 50, 245, 50, 291, 0, 245)
+vertex_colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Platform14" unique_id=823819385]
+z_index = 12
+position = Vector2(363, 505)
+polygon = PackedVector2Array(0, 0, 50, 0, 50, 50, 21.291992, 50, 0, 50)
+
+[node name="Platform15" type="StaticBody2D" parent="." unique_id=1894009771]
+z_index = 1
+position = Vector2(-299, -168)
+physics_material_override = SubResource("PhysicsMaterial_cvnsp")
+
+[node name="Polygon2D" type="Polygon2D" parent="Platform15" unique_id=546884574]
+position = Vector2(363, 261.5)
+polygon = PackedVector2Array(0, 245, 50, 245, 50.00003, 269.63123, 50, 291, 1, 293)
+uv = PackedVector2Array(0, 245, 50, 245, 50, 291, 0, 245)
+vertex_colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Platform15" unique_id=1204342755]
+z_index = 12
+position = Vector2(363, 505)
+polygon = PackedVector2Array(0, 0, 50, 0, 50, 50, 21.291992, 50, 0, 50)
+
+[node name="Platform16" type="StaticBody2D" parent="." unique_id=581765000]
+z_index = 1
+position = Vector2(541, -220)
+physics_material_override = SubResource("PhysicsMaterial_cvnsp")
+
+[node name="Polygon2D" type="Polygon2D" parent="Platform16" unique_id=1073118523]
+position = Vector2(363, 261.5)
+polygon = PackedVector2Array(0, 245, 50, 245, 50.00003, 269.63123, 50, 291, 1, 293)
+uv = PackedVector2Array(0, 245, 50, 245, 50, 291, 0, 245)
+vertex_colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Platform16" unique_id=745591145]
+z_index = 12
+position = Vector2(363, 505)
+polygon = PackedVector2Array(0, 0, 50, 0, 50, 50, 21.291992, 50, 0, 50)
+
+[node name="Platform17" type="StaticBody2D" parent="." unique_id=1815398668]
+z_index = 1
+position = Vector2(476, -319)
+physics_material_override = SubResource("PhysicsMaterial_cvnsp")
+
+[node name="Polygon2D" type="Polygon2D" parent="Platform17" unique_id=115765559]
+position = Vector2(363, 261.5)
+polygon = PackedVector2Array(0, 245, 50, 245, 50.00003, 269.63123, 50, 291, 1, 293)
+uv = PackedVector2Array(0, 245, 50, 245, 50, 291, 0, 245)
+vertex_colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Platform17" unique_id=308450542]
+z_index = 12
+position = Vector2(363, 505)
+polygon = PackedVector2Array(0, 0, 50, 0, 50, 50, 21.291992, 50, 0, 50)
+
+[node name="Platform18" type="StaticBody2D" parent="." unique_id=2046058298]
+z_index = 1
+position = Vector2(563, -386)
+physics_material_override = SubResource("PhysicsMaterial_cvnsp")
+
+[node name="Polygon2D" type="Polygon2D" parent="Platform18" unique_id=1769824796]
+position = Vector2(363, 261.5)
+polygon = PackedVector2Array(0, 245, 50, 245, 50.00003, 269.63123, 50, 291, 1, 293)
+uv = PackedVector2Array(0, 245, 50, 245, 50, 291, 0, 245)
+vertex_colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Platform18" unique_id=1673445915]
+z_index = 12
+position = Vector2(363, 505)
+polygon = PackedVector2Array(0, 0, 50, 0, 50, 50, 21.291992, 50, 0, 50)
+
+[node name="Platform19" type="StaticBody2D" parent="." unique_id=1143392945]
+z_index = 1
+position = Vector2(613, -342)
+physics_material_override = SubResource("PhysicsMaterial_cvnsp")
+
+[node name="Polygon2D" type="Polygon2D" parent="Platform19" unique_id=370990556]
+position = Vector2(363, 261.5)
+polygon = PackedVector2Array(0, 245, 50, 245, 50.00003, 269.63123, 52, 692.5, 9, 690.5)
+uv = PackedVector2Array(0, 245, 50, 245, 50, 291, 0, 245)
+vertex_colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Platform19" unique_id=1868384104]
+z_index = 12
+position = Vector2(363, 505)
+polygon = PackedVector2Array(0, 0, 50, 0, 52, 447, 32, 445, 10, 445)
+
+[node name="Platform20" type="StaticBody2D" parent="." unique_id=1902901303]
+z_index = 1
+position = Vector2(-411, -302)
+physics_material_override = SubResource("PhysicsMaterial_cvnsp")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Platform20" unique_id=849004860]
+z_index = 12
+position = Vector2(363, 505)
+polygon = PackedVector2Array(-5, -203, 56, -201, 52, 447, 32, 445, 10, 445)
+
+[node name="Player" parent="." unique_id=1240348216 instance=ExtResource("2_11mgy")]
+position = Vector2(45, 503)
+
+[node name="tyleruploads1" type="Node2D" parent="." unique_id=1866193915]
+script = ExtResource("3_o6yob")
+
+[node name="Area2D" type="Area2D" parent="tyleruploads1" unique_id=186245739]
+position = Vector2(310, 533)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tyleruploads1/Area2D" unique_id=258912019]
+position = Vector2(3.3932753, -20.424522)
+shape = SubResource("CircleShape2D_1giwu")
+one_way_collision_margin = 7.4
+
+[node name="tyleruploads" type="TextureRect" parent="tyleruploads1" unique_id=1575899020]
+offset_left = 285.0
+offset_top = 476.0
+offset_right = 345.0
+offset_bottom = 536.0
+texture = ExtResource("3_f6tb2")
+expand_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="tyleruploads2" type="Node2D" parent="." unique_id=156497189]
+position = Vector2(-226, -201)
+script = ExtResource("3_o6yob")
+
+[node name="Area2D" type="Area2D" parent="tyleruploads2" unique_id=1416172577]
+position = Vector2(310, 533)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tyleruploads2/Area2D" unique_id=1938674482]
+position = Vector2(3.3932753, -20.424522)
+shape = SubResource("CircleShape2D_1giwu")
+one_way_collision_margin = 7.4
+
+[node name="tyleruploads" type="TextureRect" parent="tyleruploads2" unique_id=1736656766]
+offset_left = 285.0
+offset_top = 476.0
+offset_right = 345.0
+offset_bottom = 536.0
+texture = ExtResource("3_f6tb2")
+expand_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="tyleruploads3" type="Node2D" parent="." unique_id=1156734080]
+position = Vector2(268, -301)
+script = ExtResource("3_o6yob")
+
+[node name="Area2D" type="Area2D" parent="tyleruploads3" unique_id=1219880582]
+position = Vector2(310, 533)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tyleruploads3/Area2D" unique_id=50362201]
+position = Vector2(3.3932753, -20.424522)
+shape = SubResource("CircleShape2D_1giwu")
+one_way_collision_margin = 7.4
+
+[node name="tyleruploads" type="TextureRect" parent="tyleruploads3" unique_id=2114821949]
+offset_left = 285.0
+offset_top = 476.0
+offset_right = 345.0
+offset_bottom = 536.0
+texture = ExtResource("3_f6tb2")
+expand_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="tyleruploads4" type="Node2D" parent="." unique_id=2106240568]
+position = Vector2(747, -218)
+script = ExtResource("3_o6yob")
+
+[node name="Area2D" type="Area2D" parent="tyleruploads4" unique_id=1548444176]
+position = Vector2(310, 533)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tyleruploads4/Area2D" unique_id=1469517496]
+position = Vector2(3.3932753, -20.424522)
+shape = SubResource("CircleShape2D_1giwu")
+one_way_collision_margin = 7.4
+
+[node name="tyleruploads" type="TextureRect" parent="tyleruploads4" unique_id=99503916]
+offset_left = 285.0
+offset_top = 476.0
+offset_right = 345.0
+offset_bottom = 536.0
+texture = ExtResource("3_f6tb2")
+expand_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="tyleruploads5" type="Node2D" parent="." unique_id=1076288730]
+position = Vector2(799, 63)
+script = ExtResource("3_o6yob")
+
+[node name="Area2D" type="Area2D" parent="tyleruploads5" unique_id=1939242133]
+position = Vector2(310, 533)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tyleruploads5/Area2D" unique_id=1551763675]
+position = Vector2(3.3932753, -20.424522)
+shape = SubResource("CircleShape2D_1giwu")
+one_way_collision_margin = 7.4
+
+[node name="tyleruploads" type="TextureRect" parent="tyleruploads5" unique_id=1981554900]
+offset_left = 285.0
+offset_top = 476.0
+offset_right = 345.0
+offset_bottom = 536.0
+texture = ExtResource("3_f6tb2")
+expand_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="tyleruploads6" type="Node2D" parent="." unique_id=734693808]
+position = Vector2(400, 23)
+script = ExtResource("3_o6yob")
+
+[node name="Area2D" type="Area2D" parent="tyleruploads6" unique_id=214864028]
+position = Vector2(310, 533)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tyleruploads6/Area2D" unique_id=1604659252]
+position = Vector2(3.3932753, -20.424522)
+shape = SubResource("CircleShape2D_1giwu")
+one_way_collision_margin = 7.4
+
+[node name="tyleruploads" type="TextureRect" parent="tyleruploads6" unique_id=729377949]
+offset_left = 285.0
+offset_top = 476.0
+offset_right = 345.0
+offset_bottom = 536.0
+texture = ExtResource("3_f6tb2")
+expand_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="tyleruploads7" type="Node2D" parent="." unique_id=371625019]
+position = Vector2(606, -51)
+script = ExtResource("3_o6yob")
+
+[node name="Area2D" type="Area2D" parent="tyleruploads7" unique_id=1397800592]
+position = Vector2(310, 533)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tyleruploads7/Area2D" unique_id=174952824]
+position = Vector2(3.3932753, -20.424522)
+shape = SubResource("CircleShape2D_1giwu")
+one_way_collision_margin = 7.4
+
+[node name="tyleruploads" type="TextureRect" parent="tyleruploads7" unique_id=1728371269]
+offset_left = 285.0
+offset_top = 476.0
+offset_right = 345.0
+offset_bottom = 536.0
+texture = ExtResource("3_f6tb2")
+expand_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=1002748790]
+repeat_size = Vector2(1156, 0)
+autoscroll = Vector2(-50, 0)
+repeat_times = 7
+
+[node name="ScrollingBackground" type="TextureRect" parent="Parallax2D" unique_id=442738098]
+z_index = -1
+offset_right = 1156.0
+offset_bottom = 648.0
+texture = ExtResource("5_0uv5o")
+expand_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Label" type="Label" parent="." unique_id=2105423015]
+modulate = Color(1, 0, 0, 1)
+offset_left = 33.0
+offset_top = 33.0
+offset_right = 153.0
+offset_bottom = 143.0
+theme_override_font_sizes/font_size = 80
+text = "15.0"
+script = ExtResource("5_5txvl")
+
+[connection signal="tyler_collected" from="tyleruploads1" to="." method="tyler_collect"]
+[connection signal="tyler_collected" from="tyleruploads2" to="." method="tyler_collect"]
+[connection signal="tyler_collected" from="tyleruploads3" to="." method="tyler_collect"]
+[connection signal="tyler_collected" from="tyleruploads4" to="." method="tyler_collect"]
+[connection signal="tyler_collected" from="tyleruploads5" to="." method="tyler_collect"]
+[connection signal="tyler_collected" from="tyleruploads6" to="." method="tyler_collect"]
+[connection signal="tyler_collected" from="tyleruploads7" to="." method="tyler_collect"]
