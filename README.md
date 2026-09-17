@@ -49,9 +49,15 @@ In minigame 4, "Dodge the Flying Balls," you have 45 seconds to dodge the flying
 
 ## Minigame 5: Click Very Fast
 
-In Minigame 5, "Click Very Fast," you have 20 seconds to click a button on the center of the screen 100 times.
+In minigame 5, "Click Very Fast," you have 20 seconds to click a button on the center of the screen 100 times.
 
 ![Hero image for the fifth minigame, click very fast](./media/docs/minigame-5-hero.png)
+
+## Minigame 6: Unintelligent Arrows
+
+In minigame 6, "Unintelligent Arrows," you have 45 seconds to dodge a bunch of unintelligent arrows! The reason for their unintellectuality is their inability to change direction once they are fired. It is not recomended to stay in one place. You should always be moving.
+
+![Hero image for the sixth minigame, unintelligent arrows](./media/docs/minigame-6-hero.png)
 
 ## Running the Game
 
