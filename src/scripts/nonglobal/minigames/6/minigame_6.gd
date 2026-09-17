@@ -1,6 +1,6 @@
 extends Node2D
 
-@export var minigame_name: String = "Unintellignt Arrows"
+@export var minigame_name: String = "Unintelligent Arrows"
 @export var prompt: String = "DODGE!"
 @export var description: String = "Don't get hit by the unintelligent (and fast) arrows! They can only go in one direction. Don't stay still."
 
