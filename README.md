@@ -55,7 +55,7 @@ In minigame 5, "Click Very Fast," you have 20 seconds to click a button on the c
 
 ## Minigame 6: Unintelligent Arrows
 
-In minigame 6, "Unintelligent Arrows," you have 45 seconds to dodge a bunch of unintelligent arrows! The reason for their unintellectuality is their inability to change direction once they are fired. It is not recomended to stay in one place. You should always be moving.
+In minigame 6, "Unintelligent Arrows," you have 45 seconds to dodge a bunch of unintelligent arrows! The reason for their unintellectuality is their inability to change direction once they are fired. Don't stay near the edges, or you won't have much time to react!
 
 ![Hero image for the sixth minigame, unintelligent arrows](./media/docs/minigame-6-hero.png)
 
