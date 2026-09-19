@@ -12,7 +12,7 @@ CodeWare is a WarioWare-style video game where you have to complete various mini
 
 ## How to Play
 
-* **Objective:** Complete the minigame objective, and definitely don't run out of time.
+* **Objective:** Complete the minigame objective in the given time frame.
 * **Controls:**
     * **Movement:** WASD, Arrow Keys, and Spacebar
     * **Action / Aim:** Mouse Cursor + Left Click
