@@ -2,7 +2,7 @@ extends Node2D
 
 @export var minigame_name: String = "Dodge the Flying Balls!"
 @export var prompt: String = "DODGE!"
-@export var description: String = "Don't get hit by the balls! Move left and right with your arrow keys!"
+@export var description: String = "Don't get hit by the balls! Move left and right to dodge!"
 
 @onready var player: CharacterBody2D = $Player
 @onready var exampleMeteor = $Meteor

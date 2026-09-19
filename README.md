@@ -14,7 +14,7 @@ CodeWare is a WarioWare-style video game where you have to complete various mini
 
 * **Objective:** Complete the minigame objective, and definitely don't run out of time.
 * **Controls:**
-    * **Movement:** Arrow Keys & Spacebar
+    * **Movement:** WASD, Arrow Keys, and Spacebar
     * **Action / Aim:** Mouse Cursor + Left Click
     * **Pause / Unpause:** Esc
     * **Restart Current Scene:** R
@@ -43,7 +43,7 @@ In minigame 3, you have 17 seconds to zero your balance of circles by clicking o
 
 ### Minigame 4: Dodge the Flying Balls
 
-In minigame 4, "Dodge the Flying Balls," you have 45 seconds to dodge the flying balls using your left and right arrow keys. Each hit takes away 10% health.
+In minigame 4, "Dodge the Flying Balls," you have 45 seconds to dodge the flying balls by moving left and right. Each hit takes away 10% health.
 
 ![Hero image for the fourth minigame, hit the circles](./media/docs/minigame-4-hero.png)
 
