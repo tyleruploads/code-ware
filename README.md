@@ -65,7 +65,7 @@ In minigame 6, "Unintelligent Arrows," you have 45 seconds to dodge a bunch of u
 
 #### Website
 
-> This method is coming soon
+You can access the game on GitHub Pages at [https://tyleruploads.github.io/code-ware/](https://tyleruploads.github.io/code-ware/). It is automatically updated every release.
 
 #### Manual Installation
 
