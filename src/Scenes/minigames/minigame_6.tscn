@@ -3,13 +3,13 @@
 [ext_resource type="Texture2D" uid="uid://cmtilg60egcn8" path="res://assets/minigame-bgs/mountain-bridge.svg" id="1_4cp4u"]
 [ext_resource type="Script" uid="uid://b0sbsh64fbmyv" path="res://scripts/nonglobal/minigames/6/minigame_6.gd" id="1_gga4u"]
 [ext_resource type="Script" uid="uid://dklglckjtnauj" path="res://scripts/nonglobal/minigames/6/minigame_6_player.gd" id="2_gga4u"]
-[ext_resource type="Texture2D" uid="uid://cfg3lxeqhe5c2" path="res://third-party-assets/black-color.png" id="3_k5od5"]
 [ext_resource type="Script" uid="uid://fjw0xjg5c1x4" path="res://scripts/nonglobal/minigames/6/minigame_6_timer.gd" id="3_l3kln"]
+[ext_resource type="Texture2D" uid="uid://blmcdivj7c6vk" path="res://assets/other/minigame-6.png" id="5_l3kln"]
 [ext_resource type="Texture2D" uid="uid://wrx80a7145c2" path="res://assets/other/arrow.svg" id="6_epg5a"]
 [ext_resource type="Script" uid="uid://cus6cjpgv47q7" path="res://scripts/nonglobal/minigames/6/minigame_6_arrow.gd" id="6_l3kln"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_epg5a"]
-size = Vector2(100, 35)
+size = Vector2(200, 75)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l3kln"]
 size = Vector2(200, 20)
@@ -60,12 +60,12 @@ script = ExtResource("2_gga4u")
 shape = SubResource("RectangleShape2D_epg5a")
 
 [node name="TextureRect" type="TextureRect" parent="Player" unique_id=1666528012]
-custom_maximum_size = Vector2(100, 35)
-offset_left = -50.0
-offset_top = -17.1
-offset_right = 50.0
-offset_bottom = 17.9
-texture = ExtResource("3_k5od5")
+custom_maximum_size = Vector2(200, 75)
+offset_left = -100.0
+offset_top = -36.0
+offset_right = 100.0
+offset_bottom = 39.0
+texture = ExtResource("5_l3kln")
 
 [node name="Arrow" type="Area2D" parent="." unique_id=1414682418]
 visible = false
