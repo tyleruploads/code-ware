@@ -3,13 +3,13 @@
 [ext_resource type="Script" uid="uid://ectgwipm8y83" path="res://scripts/nonglobal/minigames/4/minigame_4.gd" id="1_wcvdo"]
 [ext_resource type="Texture2D" uid="uid://c45sm3lll67pb" path="res://assets/other/title-screen-bg.svg" id="2_lrixb"]
 [ext_resource type="Script" uid="uid://mt04twiv1p3b" path="res://scripts/nonglobal/minigames/4/minigame_4_body.gd" id="3_57wpc"]
-[ext_resource type="Texture2D" uid="uid://cfg3lxeqhe5c2" path="res://third-party-assets/black-color.png" id="3_xea2i"]
+[ext_resource type="Texture2D" uid="uid://ba1qbk0urt2oi" path="res://assets/other/minigame-4-player.png" id="4_30r0p"]
 [ext_resource type="Script" uid="uid://gsvs6m0fp5ek" path="res://scripts/nonglobal/minigames/4/minigame_4_timer.gd" id="5_57wpc"]
 [ext_resource type="Script" uid="uid://0rqgkuok6gli" path="res://scripts/nonglobal/minigames/4/minigame_4_meteor.gd" id="6_57wpc"]
 [ext_resource type="Texture2D" uid="uid://cl04wsoc8uem" path="res://meta/tyleruploads-tn.png" id="6_ake4f"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wqyxk"]
-size = Vector2(150, 75)
+size = Vector2(150, 50)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_we0jk"]
 radius = 36.013885
@@ -37,19 +37,20 @@ expand_mode = 2
 metadata/_edit_lock_ = true
 
 [node name="Player" type="CharacterBody2D" parent="." unique_id=856117936]
-position = Vector2(575, 559)
+position = Vector2(583, 604)
 script = ExtResource("3_57wpc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=1272852584]
-position = Vector2(3, 38)
+position = Vector2(0, 3)
 shape = SubResource("RectangleShape2D_wqyxk")
 
 [node name="TextureRect" type="TextureRect" parent="Player" unique_id=494375025]
-custom_maximum_size = Vector2(150, 75)
+custom_maximum_size = Vector2(150, 50)
 offset_left = -72.0
+offset_top = -23.0
 offset_right = 78.0
-offset_bottom = 75.0
-texture = ExtResource("3_xea2i")
+offset_bottom = 27.0
+texture = ExtResource("4_30r0p")
 metadata/_edit_use_anchors_ = true
 
 [node name="timer" type="Label" parent="." unique_id=1472340313]
