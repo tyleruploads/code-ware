@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://dpjje5kxkg3wx" path="res://scripts/nonglobal/minigames/5/minigame_5.gd" id="1_6fijl"]
 [ext_resource type="Texture2D" uid="uid://c45sm3lll67pb" path="res://assets/other/title-screen-bg.svg" id="1_bgv4i"]
 [ext_resource type="Script" uid="uid://be0kapdjmdgxg" path="res://scripts/nonglobal/minigames/5/minigame_5_timer.gd" id="3_6fijl"]
+[ext_resource type="AudioStream" uid="uid://dcqw84on0i6hb" path="res://third-party-assets/sounds/click.wav" id="4_vla6o"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wqyxk"]
 bg_color = Color(1, 0, 0, 1)
@@ -57,3 +58,9 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_wqyxk")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_wqyxk")
 theme_override_styles/hover = SubResource("StyleBoxFlat_wqyxk")
 text = "Click Me!"
+
+[node name="Sounds" type="Node2D" parent="." unique_id=1967530354]
+
+[node name="click" type="AudioStreamPlayer2D" parent="Sounds" unique_id=1378958992]
+stream = ExtResource("4_vla6o")
+volume_db = -6.0

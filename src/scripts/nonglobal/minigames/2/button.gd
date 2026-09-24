@@ -1,5 +1,6 @@
 extends TextureButton
 @onready var parent = $".."
+@onready var click_sound: AudioStreamPlayer2D = $"../Sounds/click"
 
 func _ready():
 	pressed.connect(_on_pressed)
@@ -17,4 +18,4 @@ func _ready():
 func _on_pressed() -> void:
 	hide()
 	parent.buttons_pressed += 1
-	print("{name} pressed for a total of {presses} presses".format({"name": name, "presses": parent.buttons_pressed}))
+	click_sound.play()

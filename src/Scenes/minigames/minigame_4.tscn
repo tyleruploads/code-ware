@@ -7,6 +7,8 @@
 [ext_resource type="Script" uid="uid://gsvs6m0fp5ek" path="res://scripts/nonglobal/minigames/4/minigame_4_timer.gd" id="5_57wpc"]
 [ext_resource type="Script" uid="uid://0rqgkuok6gli" path="res://scripts/nonglobal/minigames/4/minigame_4_meteor.gd" id="6_57wpc"]
 [ext_resource type="Texture2D" uid="uid://cl04wsoc8uem" path="res://meta/tyleruploads-tn.png" id="6_ake4f"]
+[ext_resource type="AudioStream" uid="uid://cffqitd2gxtl1" path="res://third-party-assets/sounds/ball-throw.wav" id="8_mxde8"]
+[ext_resource type="AudioStream" uid="uid://c4buokudolqev" path="res://third-party-assets/sounds/hit.wav" id="9_emgxl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wqyxk"]
 size = Vector2(150, 50)
@@ -97,3 +99,15 @@ shape = SubResource("RectangleShape2D_1giwu")
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Horizontal Barriers" unique_id=380400937]
 position = Vector2(1161, 329)
 shape = SubResource("RectangleShape2D_1giwu")
+
+[node name="Sounds" type="Node2D" parent="." unique_id=2009859531]
+
+[node name="throw" type="AudioStreamPlayer2D" parent="Sounds" unique_id=1216009495]
+stream = ExtResource("8_mxde8")
+volume_db = -20.0
+max_distance = 4096.0
+
+[node name="hit" type="AudioStreamPlayer2D" parent="Sounds" unique_id=2089613107]
+stream = ExtResource("9_emgxl")
+volume_db = -6.0
+max_distance = 4096.0

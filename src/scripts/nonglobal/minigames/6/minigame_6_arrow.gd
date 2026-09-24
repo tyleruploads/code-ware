@@ -3,6 +3,8 @@ extends Area2D
 @onready var shape_cast_2d: ShapeCast2D = $ShapeCast2D
 var last_position: Vector2
 
+signal arrow_hit
+
 func _ready() -> void:
 	last_position = global_position
 
@@ -23,8 +25,7 @@ func _process(_delta: float) -> void:
 			if body and body.name == "Player":
 				shape_cast_2d.enabled = false
 				
-				var scene = get_tree().current_scene
+				arrow_hit.emit()
 				
-				scene.health -= 2.5
 				queue_free()
 	last_position = global_position

@@ -8,6 +8,8 @@ extends Node2D
 @onready var exampleArrow = $Arrow
 @onready var timer: Label = $timer
 @onready var health_node: RichTextLabel = $health
+@onready var shoot_noise: AudioStreamPlayer2D = $"Sounds/shoot"
+@onready var hit_noise: AudioStreamPlayer2D = $"Sounds/hit"
 
 var health: float = 100.0
 var wait_to_spawn: float = 0.25
@@ -103,10 +105,17 @@ func make_arrow():
 	var arrow_tween = arrow.create_tween()
 	
 	arrow_tween.tween_interval(0.2) # This makes it wait for 0.2s first
+	shoot_noise.play()
 	arrow_tween.tween_property(arrow, "global_position", far_dest, flight_time)
 	
 	arrow_tween.tween_callback(arrow.queue_free)
+	
+	arrow.arrow_hit.connect(_on_arrow_hit)
 
 	get_parent().add_child(arrow)
 	arrow.look_at(target_dest)
 	arrow.show()
+
+func _on_arrow_hit() -> void:
+	health -= 2.5
+	hit_noise.play()

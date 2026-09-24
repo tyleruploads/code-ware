@@ -8,6 +8,8 @@ extends Node2D
 @onready var exampleMeteor = $Meteor
 @onready var timer: Label = $timer
 @onready var health_node: RichTextLabel = $health
+@onready var throw_noise: AudioStreamPlayer2D = $"Sounds/throw"
+@onready var hit_noise: AudioStreamPlayer2D = $"Sounds/hit"
 
 var health: float = 100.0
 var wait_to_spawn: float = 0.5
@@ -65,3 +67,11 @@ func make_meteor():
 	meteor_tween.tween_property(meteor, "global_position", player.global_position, time_till_hit)
 	
 	meteor_tween.tween_callback(meteor.queue_free)
+	
+	meteor.meteor_hit.connect(_on_meteor_hit)
+	
+	throw_noise.play()
+
+func _on_meteor_hit() -> void:
+	health -= 10
+	hit_noise.play()

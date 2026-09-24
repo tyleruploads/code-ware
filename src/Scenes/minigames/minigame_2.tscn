@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://bo4r28ddhivwu" path="res://assets/minigame-bgs/eyes-in-rectangles.svg" id="2_rfxq2"]
 [ext_resource type="Script" uid="uid://cylmlo51rk7vf" path="res://scripts/nonglobal/minigames/2/button.gd" id="3_rfxq2"]
 [ext_resource type="Script" uid="uid://d3qj44arei5s0" path="res://scripts/nonglobal/minigames/2/minigame_2_timer.gd" id="4_dfb65"]
+[ext_resource type="AudioStream" uid="uid://dcqw84on0i6hb" path="res://third-party-assets/sounds/click.wav" id="6_uui5k"]
 
 [node name="minigame_2" type="Node2D" unique_id=522839407]
 script = ExtResource("1_rfxq2")
@@ -211,3 +212,10 @@ offset_bottom = 120.0
 theme_override_font_sizes/font_size = 80
 text = "12.0"
 script = ExtResource("4_dfb65")
+
+[node name="Sounds" type="Node2D" parent="." unique_id=79250037]
+
+[node name="click" type="AudioStreamPlayer2D" parent="Sounds" unique_id=1405664857]
+stream = ExtResource("6_uui5k")
+volume_db = -6.0
+max_distance = 4096.0

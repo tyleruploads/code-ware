@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cfg3lxeqhe5c2" path="res://third-party-assets/black-color.png" id="1_mmcc8"]
 [ext_resource type="Script" uid="uid://dh1gh6x40a5mh" path="res://scripts/nonglobal/die/death_container.gd" id="3_5wyn5"]
 [ext_resource type="Script" uid="uid://cv1fj1l3wg1ma" path="res://scripts/nonglobal/die/continue_button.gd" id="3_w30ie"]
+[ext_resource type="AudioStream" uid="uid://divb3rmxpm11d" path="res://third-party-assets/sounds/timer-ticking.wav" id="4_ylk3h"]
 
 [sub_resource type="Gradient" id="Gradient_1s3mq"]
 offsets = PackedFloat32Array(0)
@@ -432,5 +433,11 @@ fract_delta = false
 draw_order = 0
 trail_lifetime = 0.01
 process_material = SubResource("ParticleProcessMaterial_nmymg")
+
+[node name="timer" type="AudioStreamPlayer2D" parent="." unique_id=247075427]
+stream = ExtResource("4_ylk3h")
+volume_db = 12.0
+autoplay = true
+max_distance = 4096.0
 
 [connection signal="pressed" from="ContinueButton" to="ContinueButton" method="_on_pressed"]

@@ -1,10 +1,13 @@
 extends Area2D
 
 @onready var shape_cast_2d: ShapeCast2D = $ShapeCast2D
+
 var last_position: Vector2
 
 func _ready() -> void:
 	last_position = global_position
+	
+signal meteor_hit
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -19,8 +22,7 @@ func _process(delta: float) -> void:
 			if body and body.name == "Player":
 				shape_cast_2d.enabled = false
 				
-				var scene = get_tree().current_scene
-				
-				scene.health -= 10
+				meteor_hit.emit()
+
 				queue_free()
 	last_position = global_position

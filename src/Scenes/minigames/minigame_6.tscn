@@ -7,6 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://blmcdivj7c6vk" path="res://assets/other/minigame-6.png" id="5_l3kln"]
 [ext_resource type="Texture2D" uid="uid://wrx80a7145c2" path="res://assets/other/arrow.svg" id="6_epg5a"]
 [ext_resource type="Script" uid="uid://cus6cjpgv47q7" path="res://scripts/nonglobal/minigames/6/minigame_6_arrow.gd" id="6_l3kln"]
+[ext_resource type="AudioStream" uid="uid://d0rqt7wuo5ne2" path="res://third-party-assets/sounds/upward-energy-released.wav" id="8_33d24"]
+[ext_resource type="AudioStream" uid="uid://717d2mbibnki" path="res://third-party-assets/sounds/arrow-hit.wav" id="9_33d24"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_epg5a"]
 size = Vector2(200, 75)
@@ -86,3 +88,15 @@ shape = SubResource("RectangleShape2D_l3kln")
 position = Vector2(-0.11291504, -2.9978354)
 shape = SubResource("RectangleShape2D_ep6gt")
 target_position = Vector2(-1.9609375, 1.074585)
+
+[node name="Sounds" type="Node2D" parent="." unique_id=315167356]
+
+[node name="shoot" type="AudioStreamPlayer2D" parent="Sounds" unique_id=1183963891]
+stream = ExtResource("8_33d24")
+volume_db = -6.0
+max_distance = 4096.0
+
+[node name="hit" type="AudioStreamPlayer2D" parent="Sounds" unique_id=1393952556]
+stream = ExtResource("9_33d24")
+volume_db = -3.0
+max_distance = 4096.0

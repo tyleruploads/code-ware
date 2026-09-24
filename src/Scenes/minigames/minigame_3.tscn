@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://ig8py6fo0y3j" path="res://scripts/nonglobal/minigames/3/minigame_3.gd" id="1_ihkhm"]
 [ext_resource type="Script" uid="uid://nhc3u2wtgvhf" path="res://scripts/nonglobal/minigames/3/minigame_3_timer.gd" id="2_h40nw"]
 [ext_resource type="Texture2D" uid="uid://cl04wsoc8uem" path="res://meta/tyleruploads-tn.png" id="3_6sdpr"]
+[ext_resource type="AudioStream" uid="uid://elyhduh0dr82" path="res://third-party-assets/sounds/collect-orb.wav" id="5_k11un"]
 
 [node name="minigame_3" type="Node2D" unique_id=1112769458]
 script = ExtResource("1_ihkhm")
@@ -58,3 +59,10 @@ offset_bottom = 149.0
 theme_override_colors/default_color = Color(1, 0.5411765, 0, 1)
 theme_override_font_sizes/normal_font_size = 42
 text = "ZERO YOUR BALANCE!"
+
+[node name="Sounds" type="Node2D" parent="." unique_id=1441242495]
+
+[node name="hit" type="AudioStreamPlayer2D" parent="Sounds" unique_id=1936405601]
+stream = ExtResource("5_k11un")
+volume_db = -6.0
+max_distance = 4096.0

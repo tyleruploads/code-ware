@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://0ychyb6wdxct"]
+
+[ext_resource type="AudioStream" uid="uid://divb3rmxpm11d" path="res://third-party-assets/sounds/timer-ticking.wav" id="1_iyev5"]
+
+[node name="GlobalSounds" type="Node2D" unique_id=1629814579]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=817672047]
+stream = ExtResource("1_iyev5")
+volume_db = -20.0
+autoplay = true

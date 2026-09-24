@@ -4,6 +4,8 @@ extends Node2D
 @export var prompt: String = "COLLECT!"
 @export var description: String = "Gather 7 tyleruploads orbs in 25s by jumping onto them!"
 
+@onready var collect_orb_sound: AudioStreamPlayer2D = $"Sounds/collect-orb"
+
 var tylers_collected = 0
 
 func _ready() -> void:
@@ -18,4 +20,5 @@ func _process(delta: float) -> void:
 		
 func tyler_collect() -> void:
 	tylers_collected += 1
+	collect_orb_sound.play()
 	return

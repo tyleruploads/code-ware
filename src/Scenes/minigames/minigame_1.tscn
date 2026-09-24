@@ -6,6 +6,8 @@
 [ext_resource type="Script" uid="uid://dxyhy3hk13sw8" path="res://scripts/nonglobal/minigames/1/tyleruploads.gd" id="3_o6yob"]
 [ext_resource type="Texture2D" uid="uid://cmtilg60egcn8" path="res://assets/minigame-bgs/mountain-bridge.svg" id="5_0uv5o"]
 [ext_resource type="Script" uid="uid://c14kvx1xeeuol" path="res://scripts/nonglobal/minigames/1/minigame_1_timer.gd" id="5_5txvl"]
+[ext_resource type="AudioStream" uid="uid://elyhduh0dr82" path="res://third-party-assets/sounds/collect-orb.wav" id="7_it1dw"]
+[ext_resource type="AudioStream" uid="uid://d0rqt7wuo5ne2" path="res://third-party-assets/sounds/upward-energy-released.wav" id="8_p68ok"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_cvnsp"]
 friction = 0.0
@@ -499,6 +501,17 @@ offset_bottom = 143.0
 theme_override_font_sizes/font_size = 80
 text = "15.0"
 script = ExtResource("5_5txvl")
+
+[node name="Sounds" type="Node2D" parent="." unique_id=1480864412]
+
+[node name="collect-orb" type="AudioStreamPlayer2D" parent="Sounds" unique_id=1030759813]
+stream = ExtResource("7_it1dw")
+volume_db = -7.0
+max_distance = 4096.0
+
+[node name="jump" type="AudioStreamPlayer2D" parent="Sounds" unique_id=762887881]
+stream = ExtResource("8_p68ok")
+volume_db = -6.0
 
 [connection signal="tyler_collected" from="tyleruploads1" to="." method="tyler_collect"]
 [connection signal="tyler_collected" from="tyleruploads2" to="." method="tyler_collect"]

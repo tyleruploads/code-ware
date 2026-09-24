@@ -19,6 +19,7 @@ config/icon="uid://c0uhhxkx5vfjt"
 [autoload]
 
 Global="*uid://pmqfkc2csmp1"
+GlobalSounds="*uid://0ychyb6wdxct"
 
 [display]
 

@@ -7,6 +7,7 @@ extends Node2D
 @onready var exampleCircle = $Circle
 @onready var timer: Label = $timer
 @onready var score_node: RichTextLabel = $score
+@onready var hit_noise: AudioStreamPlayer2D = $"Sounds/hit"
 
 var balance: int = -15
 var wait_to_spawn: float = 0.5
@@ -18,8 +19,10 @@ func _process(delta: float) -> void:
 	if balance == 0:
 		if Global.minigames_done > Global.minigames_until_end:
 			get_tree().change_scene_to_file("res://Scenes/end/finish_screen.tscn")
+			return
 		else:
 			get_tree().change_scene_to_file("res://Scenes/other/level_screen.tscn")
+			return
 			
 	# Handle timing
 	if wait_to_spawn <= 0:
@@ -52,4 +55,5 @@ func make_circle():
 func _on_circle_pressed(circle):
 	balance += 1
 	score_node.text = str(balance)
+	hit_noise.play()
 	circle.queue_free()

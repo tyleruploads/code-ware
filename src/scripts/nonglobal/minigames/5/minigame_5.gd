@@ -7,6 +7,7 @@ extends Node2D
 @onready var clickButton = $ClickButton
 @onready var timer: Label = $timer
 @onready var scoreNode: RichTextLabel = $ClickScore
+@onready var click_noise: AudioStreamPlayer2D = $"Sounds/click"
 
 var required_clicks: int = 100
 var clicks: int = 0
@@ -27,6 +28,8 @@ func buttonPressed() -> void:
 		"clicks": str(clicks).pad_zeros(2),
 		"req_clicks": required_clicks
 	})
+	
+	click_noise.play()
 	
 	if clicks >= required_clicks:
 		var tree := Engine.get_main_loop() as SceneTree
