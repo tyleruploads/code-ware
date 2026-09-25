@@ -26,7 +26,6 @@ func Timer(start_time: float) -> void:
 		
 	time = 0.0
 	text = "0.0"
-	print("Timer finished")
 	
 	if is_inside_tree() and get_tree():
 		get_tree().change_scene_to_file("res://Scenes/other/level_screen.tscn")
