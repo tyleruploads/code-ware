@@ -492,7 +492,7 @@ texture = ExtResource("5_0uv5o")
 expand_mode = 2
 metadata/_edit_lock_ = true
 
-[node name="Label" type="Label" parent="." unique_id=2105423015]
+[node name="timer" type="Label" parent="." unique_id=2105423015]
 modulate = Color(1, 0, 0, 1)
 offset_left = 33.0
 offset_top = 33.0
