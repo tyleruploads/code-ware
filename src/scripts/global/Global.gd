@@ -13,7 +13,6 @@ func _enter_tree() -> void:
 func _input(event: InputEvent) -> void:
 	# Check if input is a key press (not a release or any other input)
 	if event is InputEventKey and event.pressed and not event.echo:
-		print("Input")
 		match event.physical_keycode:
 			KEY_R:
 				# R for Reset, reloads the current scene
