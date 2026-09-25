@@ -59,6 +59,12 @@ In minigame 6, "Unintelligent Arrows," you have 45 seconds to dodge a bunch of u
 
 ![Hero image for the sixth minigame, unintelligent arrows](./media/docs/minigame-6-hero.png)
 
+## Minigame 7: Pick the Lock
+
+In minigame 7, "Pick the Lock," you have 10 seconds to pick the lock four times by pressing the spacebar once the slider reaches the green zone in the middle!
+
+![Hero image for the seventh minigame, pick the lock](./media/docs/minigame-7-hero.png)
+
 ## Running the Game
 
 ### For Players
