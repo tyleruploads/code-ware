@@ -26,12 +26,10 @@ func Timer(start_time: float) -> void:
 		
 	time = 0.0
 	text = "0.0"
-	print("Timer finished")
 	
 	Global.minigames_done -= 1
 	Global.lives -= 1
 	
-	print("Subtracted one minigame and life")
 	
 	if is_inside_tree() and get_tree():
 		get_tree().change_scene_to_file("res://Scenes/other/level_screen.tscn")
