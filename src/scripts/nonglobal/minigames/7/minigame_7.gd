@@ -73,7 +73,6 @@ func check_for_win() -> void:
 		increment_score(1)
 	else:  
 		fail.emit()
-		print("Slider value: ", slider.value)
 		
 	set_process(true)
 

@@ -26,7 +26,6 @@ func Timer(start_time: float) -> void:
 		
 	time = 0.0
 	text = "0.0"
-	print("Timer finished")
 	
 	Global.lives -= 1
 	Global.minigames_done -= 1
