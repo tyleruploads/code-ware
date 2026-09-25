@@ -203,7 +203,7 @@ ignore_texture_size = true
 stretch_mode = 0
 script = ExtResource("3_rfxq2")
 
-[node name="Label" type="Label" parent="." unique_id=1495632849]
+[node name="timer" type="Label" parent="." unique_id=1495632849]
 modulate = Color(1, 0, 0, 1)
 offset_left = 39.0
 offset_top = 10.0
