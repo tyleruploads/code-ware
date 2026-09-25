@@ -67,7 +67,6 @@ func _ready() -> void:
 		
 		new_scene_instance.queue_free()
 
-		print(Global.minigames_done, " minigames done")
 		await Timer(5.0)
 		Global.minigames_done += 1
 		get_tree().change_scene_to_file(new_scene_path)
@@ -75,7 +74,6 @@ func _ready() -> void:
 		level.text = ""
 		prompt.text = "GAME COMPLETE"
 		description.text = "The end is infinite :D!"
-		print("Game complete!")
 		
 		# Reset game
 		Global.minigames_done = 0
