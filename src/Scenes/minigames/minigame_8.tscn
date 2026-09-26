@@ -1,0 +1,115 @@
+[gd_scene format=3 uid="uid://c7r58lar8om0k"]
+
+[ext_resource type="Texture2D" uid="uid://c45sm3lll67pb" path="res://assets/other/title-screen-bg.svg" id="1_pgllc"]
+[ext_resource type="Script" uid="uid://phmxb2hmtn1k" path="res://scripts/nonglobal/minigames/8/minigame_8.gd" id="1_tbeyc"]
+[ext_resource type="Script" uid="uid://4uykn4qwhkrq" path="res://scripts/nonglobal/minigames/8/minigame_8_timer.gd" id="3_3oh2w"]
+[ext_resource type="AudioStream" uid="uid://c4buokudolqev" path="res://third-party-assets/sounds/hit.wav" id="4_3oh2w"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wpjk6"]
+bg_color = Color(1, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yg7wo"]
+bg_color = Color(0, 1, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jy6au"]
+bg_color = Color(0, 0, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lvw1f"]
+bg_color = Color(1, 1, 0, 1)
+
+[node name="minigame_8" type="Node2D" unique_id=429401539]
+script = ExtResource("1_tbeyc")
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=877098376]
+repeat_size = Vector2(1156, 0)
+autoscroll = Vector2(-50, 0)
+repeat_times = 7
+
+[node name="ScrollingBackground" type="TextureRect" parent="Parallax2D" unique_id=1479300015]
+z_index = -1
+offset_right = 1156.0
+offset_bottom = 648.0
+texture = ExtResource("1_pgllc")
+expand_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="timer" type="Label" parent="." unique_id=1078841152]
+modulate = Color(1, 0, 0, 1)
+offset_left = 39.0
+offset_top = 10.0
+offset_right = 198.0
+offset_bottom = 120.0
+theme_override_font_sizes/font_size = 80
+text = "30.0"
+script = ExtResource("3_3oh2w")
+
+[node name="score" type="RichTextLabel" parent="." unique_id=633993766]
+offset_left = 2.0
+offset_right = 1150.0
+offset_bottom = 136.0
+theme_override_colors/default_color = Color(0, 1, 0, 1)
+theme_override_font_sizes/normal_font_size = 82
+text = "0/20"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CenterButtonContainer" type="VBoxContainer" parent="." unique_id=2006307543]
+offset_left = 6.0
+offset_top = 250.0
+offset_right = 1156.0
+offset_bottom = 380.0
+
+[node name="Button" type="Button" parent="CenterButtonContainer" unique_id=1612397787]
+custom_minimum_size = Vector2(125, 125)
+custom_maximum_size = Vector2(125, 125)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="BottomButtonsContainer" type="HBoxContainer" parent="." unique_id=819651466]
+offset_top = 504.0
+offset_right = 1154.0
+offset_bottom = 651.0
+size_flags_horizontal = 6
+size_flags_vertical = 4
+theme_override_constants/separation = 185
+alignment = 1
+
+[node name="Red" type="Button" parent="BottomButtonsContainer" unique_id=1644141950]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_vertical = 5
+theme_override_styles/normal = SubResource("StyleBoxFlat_wpjk6")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_wpjk6")
+theme_override_styles/hover = SubResource("StyleBoxFlat_wpjk6")
+
+[node name="Green" type="Button" parent="BottomButtonsContainer" unique_id=628114161]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_vertical = 5
+theme_override_styles/normal = SubResource("StyleBoxFlat_yg7wo")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_yg7wo")
+theme_override_styles/hover = SubResource("StyleBoxFlat_yg7wo")
+
+[node name="Blue" type="Button" parent="BottomButtonsContainer" unique_id=955769354]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_vertical = 5
+theme_override_styles/normal = SubResource("StyleBoxFlat_jy6au")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jy6au")
+theme_override_styles/hover = SubResource("StyleBoxFlat_jy6au")
+
+[node name="Yellow" type="Button" parent="BottomButtonsContainer" unique_id=2060222074]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_vertical = 5
+theme_override_styles/normal = SubResource("StyleBoxFlat_lvw1f")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_lvw1f")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lvw1f")
+
+[node name="Sounds" type="Node2D" parent="." unique_id=201006041]
+
+[node name="click" type="AudioStreamPlayer2D" parent="Sounds" unique_id=75995175]
+stream = ExtResource("4_3oh2w")
+volume_db = -6.0
+max_distance = 4096.0

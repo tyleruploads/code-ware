@@ -65,6 +65,12 @@ In minigame 7, "Pick the Lock," you have 10 seconds to pick the lock four times 
 
 ![Hero image for the seventh minigame, pick the lock](./media/docs/minigame-7-hero.png)
 
+## Minigame 8: Choose the Boxes
+
+In minigame 8, "Choose the Boxes," you have 30 seconds to match 20 boxes. When the color of the box in the center changes, click the box on the bottom that has its color!
+
+![Hero image for the eighth minigame, choose the boxes](./media/docs/minigame-8-hero.png)
+
 ## Running the Game
 
 ### For Players
