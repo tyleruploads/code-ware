@@ -64,6 +64,10 @@ func _process(delta: float) -> void:
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_accept"):
 		check_for_win()
+		
+		if not is_inside_tree():
+			return
+		
 		click_noise.play()
 		
 func check_for_win() -> void:
