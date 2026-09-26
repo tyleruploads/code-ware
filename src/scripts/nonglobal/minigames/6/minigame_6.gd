@@ -43,7 +43,7 @@ func _process(delta: float) -> void:
 			printerr("Could not access SceneTree to change scene!")
 			return
 
-func generate_arrow_vals(arrow):
+func generate_arrow_vals():
 	var reaction_time: float = 0.45 # Seconds
 	var arrow_speed: float = 600.0
 	
@@ -54,15 +54,7 @@ func generate_arrow_vals(arrow):
 	
 	var window_size = get_viewport_rect().size
 	
-	# Get coordinates for arrow
-	var length = arrow.get_node("CollisionShape2D").shape.size.x
-	var height = arrow.get_node("CollisionShape2D").shape.size.y
-	
 	var player_pos = player.get_child(0).global_position
-
-	# Determine the offset direction for arrow position, 50/50 +/-
-	var x_sign := 1.0 if randf() > 0.5 else -1.0
-	var y_sign := 1.0 if randf() > 0.5 else -1.0
 	
 	var random_angle: float = randf_range(0, 6.28318530718) # Two PI
 	var target_distance: float = randf_range(min_distance, max_distance)
@@ -90,9 +82,8 @@ func make_arrow():
 	
 	arrow.name = "Duplicate Arrow"
 	
-	var vals = generate_arrow_vals(arrow)
+	var vals = generate_arrow_vals()
 	var arrow_pos = vals["arrow_pos"]
-	var time_till_hit = vals["time_till_hit"]
 
 	arrow.global_position = arrow_pos
 	 
