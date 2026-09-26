@@ -9,8 +9,7 @@ func _ready() -> void:
 	
 signal meteor_hit
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	var move_vector = global_position - last_position
 	
 	shape_cast_2d.target_position = shape_cast_2d.to_local(global_position + move_vector)

@@ -5,7 +5,7 @@ extends Node2D
 
 signal tyler_collected # Create signal, doesn't send yet
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if player_area.overlaps_area(self_area): # Triggers if player on tyler
 		# This emits the signal that the tyler has been collected to minigame_1.gd
 		emit_signal("tyler_collected")

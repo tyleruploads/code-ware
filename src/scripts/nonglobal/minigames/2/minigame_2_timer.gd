@@ -6,11 +6,6 @@ var time : float = 0.0
 func _ready() -> void:
 	Timer(12.0)
 	pass
-
-# Called every frame
-# Delta is elapsed time since previous frame
-func _process(delta: float) -> void:
-	pass
 	
 func Timer(start_time: float) -> void:
 	time = start_time

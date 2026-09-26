@@ -3,7 +3,7 @@ extends CharacterBody2D
 
 const SPEED = 2000.0
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	# Get the input direction and handle the movement/deceleration.
 	var direction := Input.get_axis("move_left", "move_right")
 	if direction:

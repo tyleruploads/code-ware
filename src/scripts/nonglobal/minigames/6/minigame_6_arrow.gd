@@ -8,7 +8,6 @@ signal arrow_hit
 func _ready() -> void:
 	last_position = global_position
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
 	if "Duplicate" not in name and "@" not in name:
 		print(name, " has been disabled")

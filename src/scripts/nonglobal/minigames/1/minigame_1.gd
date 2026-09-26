@@ -11,7 +11,7 @@ var tylers_collected = 0
 func _ready() -> void:
 	Global.minigames_done = 1
 	
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if tylers_collected == 7:
 		if Global.minigames_done > Global.minigames_until_end:
 			get_tree().change_scene_to_file("res://Scenes/end/finish_screen.tscn")

@@ -17,11 +17,6 @@ func _ready() -> void:
 	Global.minigames_done = 5
 	clickButton.pressed.connect(buttonPressed)
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-
 func buttonPressed() -> void:
 	clicks += 1
 	scoreNode.text = "{clicks}/{req_clicks} Clicks".format({

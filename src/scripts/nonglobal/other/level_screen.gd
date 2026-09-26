@@ -81,7 +81,7 @@ func _ready() -> void:
 		await Timer(3.0)
 		get_tree().change_scene_to_file("res://Scenes/end/finish_screen.tscn")
 
-func _process(delta: float) -> void: # runs every frame
+func _process(_delta: float) -> void:
 	timer.text = str(snapped(time, 0.1))
 
 func Timer(start_time: float):

@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	# Handle jump.
 	if Input.is_action_pressed("move_up"):
 		position.y += -30
