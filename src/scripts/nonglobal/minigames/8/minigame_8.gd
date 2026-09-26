@@ -90,6 +90,8 @@ func _on_button_pressed(color_pressed) -> void:
 	else:
 		increment_score(-1)
 
+	if not is_inside_tree():
+		return
+
 	click_noise.play()
 	change_color()
-	color_timer.start()
