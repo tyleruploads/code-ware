@@ -71,6 +71,12 @@ In minigame 8, "Choose the Boxes," you have 30 seconds to match 20 boxes. When t
 
 ![Hero image for the eighth minigame, choose the boxes](./media/docs/minigame-8-hero.png)
 
+## Minigame 9: The Maze
+
+In minigame 9, "The Maze," you have 18 seconds to get to the center of the maze. It's pretty self explanatory. Don't think too hard, or you'll run out of time!
+
+![Hero image for the ninth minigame, the maze](./media/docs/minigame-9-hero.png)
+
 ## Running the Game
 
 ### For Players
