@@ -12,7 +12,6 @@ func _ready() -> void:
 	center_orb.maze_finished.connect(_on_maze_finish)
 
 func _on_maze_finish() -> void:
-	print("Finish")
 	var tree := Engine.get_main_loop() as SceneTree
 	if is_inside_tree() and get_tree():
 		get_tree().call_deferred("change_scene_to_file", "res://Scenes/other/level_screen.tscn")
