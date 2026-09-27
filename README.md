@@ -31,7 +31,7 @@ In minigame 1, "Orb Collection Platformer," you have 25 seconds to collect 7 tyl
 
 ### Minigame 2: Orb Collection Clicker
 
-In minigame 2, "Orb Collection Clicker," you have 12 seconds to click 18 tyleruploads circles. Each pixel has a diameter of 50 pixels.
+In minigame 2, "Orb Collection Clicker," you have 12 seconds to click on 18 orbs.
 
 ![Hero image for the second minigame, clicker](./media/docs/minigame-2-hero.png)
 
