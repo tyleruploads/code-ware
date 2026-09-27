@@ -28,7 +28,7 @@ texture = ExtResource("1_bgv4i")
 expand_mode = 2
 metadata/_edit_lock_ = true
 
-[node name="timer" type="Label" parent="." unique_id=924222690]
+[node name="Timer" type="Label" parent="." unique_id=924222690]
 modulate = Color(1, 0, 0, 1)
 offset_left = 39.0
 offset_top = 10.0
@@ -38,7 +38,7 @@ theme_override_font_sizes/font_size = 80
 text = "30.0"
 script = ExtResource("3_6fijl")
 
-[node name="ClickScore" type="RichTextLabel" parent="." unique_id=584868718]
+[node name="Score" type="RichTextLabel" parent="." unique_id=584868718]
 offset_left = -3.0
 offset_top = -2.0
 offset_right = 1157.0
@@ -48,7 +48,7 @@ theme_override_font_sizes/normal_font_size = 69
 text = "00/100 Clicks"
 horizontal_alignment = 1
 
-[node name="ClickButton" type="Button" parent="." unique_id=1697310783]
+[node name="Button" type="Button" parent="." unique_id=1697310783]
 offset_left = 422.0
 offset_top = 219.0
 offset_right = 678.0

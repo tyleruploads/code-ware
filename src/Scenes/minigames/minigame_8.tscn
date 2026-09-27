@@ -33,7 +33,7 @@ texture = ExtResource("1_pgllc")
 expand_mode = 2
 metadata/_edit_lock_ = true
 
-[node name="timer" type="Label" parent="." unique_id=1078841152]
+[node name="Timer" type="Label" parent="." unique_id=1078841152]
 modulate = Color(1, 0, 0, 1)
 offset_left = 39.0
 offset_top = 10.0
@@ -43,7 +43,7 @@ theme_override_font_sizes/font_size = 80
 text = "30.0"
 script = ExtResource("3_3oh2w")
 
-[node name="score" type="RichTextLabel" parent="." unique_id=633993766]
+[node name="Score" type="RichTextLabel" parent="." unique_id=633993766]
 offset_left = 2.0
 offset_right = 1150.0
 offset_bottom = 136.0
@@ -109,7 +109,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_lvw1f")
 
 [node name="Sounds" type="Node2D" parent="." unique_id=201006041]
 
-[node name="click" type="AudioStreamPlayer2D" parent="Sounds" unique_id=75995175]
+[node name="Click" type="AudioStreamPlayer2D" parent="Sounds" unique_id=75995175]
 stream = ExtResource("4_3oh2w")
 volume_db = -6.0
 max_distance = 4096.0

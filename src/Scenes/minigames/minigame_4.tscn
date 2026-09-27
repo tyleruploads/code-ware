@@ -55,7 +55,7 @@ offset_bottom = 27.0
 texture = ExtResource("4_30r0p")
 metadata/_edit_use_anchors_ = true
 
-[node name="timer" type="Label" parent="." unique_id=1472340313]
+[node name="Timer" type="Label" parent="." unique_id=1472340313]
 modulate = Color(1, 0, 0, 1)
 offset_left = 39.0
 offset_top = 10.0
@@ -65,7 +65,7 @@ theme_override_font_sizes/font_size = 80
 text = "45.0"
 script = ExtResource("5_57wpc")
 
-[node name="health" type="RichTextLabel" parent="." unique_id=2047459401]
+[node name="Health" type="RichTextLabel" parent="." unique_id=2047459401]
 offset_left = 503.0
 offset_top = 7.0
 offset_right = 751.0
@@ -102,12 +102,12 @@ shape = SubResource("RectangleShape2D_1giwu")
 
 [node name="Sounds" type="Node2D" parent="." unique_id=2009859531]
 
-[node name="throw" type="AudioStreamPlayer2D" parent="Sounds" unique_id=1216009495]
+[node name="Throw" type="AudioStreamPlayer2D" parent="Sounds" unique_id=1216009495]
 stream = ExtResource("8_mxde8")
 volume_db = -20.0
 max_distance = 4096.0
 
-[node name="hit" type="AudioStreamPlayer2D" parent="Sounds" unique_id=2089613107]
+[node name="Hit" type="AudioStreamPlayer2D" parent="Sounds" unique_id=2089613107]
 stream = ExtResource("9_emgxl")
 volume_db = -6.0
 max_distance = 4096.0

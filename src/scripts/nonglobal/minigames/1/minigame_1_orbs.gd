@@ -1,10 +1,10 @@
 extends Node2D
 
+signal tyler_collected # Create signal, doesn't send yet
 
 @onready var self_area = $Area2D
 @onready var player_area = $"../../Player/Area2D"
 
-signal tyler_collected # Create signal, doesn't send yet
 
 func _process(_delta: float) -> void:
 	if player_area.overlaps_area(self_area): # Triggers if player on tyler

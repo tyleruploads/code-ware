@@ -33,7 +33,7 @@ texture = ExtResource("1_tps1v")
 expand_mode = 2
 metadata/_edit_lock_ = true
 
-[node name="timer" type="Label" parent="." unique_id=1203569698]
+[node name="Timer" type="Label" parent="." unique_id=1203569698]
 modulate = Color(1, 0, 0, 1)
 offset_left = 39.0
 offset_top = 10.0
@@ -49,13 +49,6 @@ offset_bottom = 96.0
 bbcode_enabled = true
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="Sounds" type="Node2D" parent="." unique_id=35674024]
-
-[node name="Submit" type="AudioStreamPlayer2D" parent="Sounds" unique_id=1539402765]
-stream = ExtResource("4_udxda")
-pitch_scale = 2.0
-max_distance = 4096.0
 
 [node name="ColorDisplays" type="HBoxContainer" parent="." unique_id=406736104]
 offset_left = 3.0
@@ -150,3 +143,10 @@ text = "Submit"
 [node name="Control5" type="Control" parent="Guessing" unique_id=994310113]
 layout_mode = 2
 size_flags_vertical = 3
+
+[node name="Sounds" type="Node2D" parent="." unique_id=35674024]
+
+[node name="Submit" type="AudioStreamPlayer2D" parent="Sounds" unique_id=1539402765]
+stream = ExtResource("4_udxda")
+pitch_scale = 2.0
+max_distance = 4096.0

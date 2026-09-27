@@ -32,7 +32,7 @@ texture_normal = ExtResource("3_6sdpr")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="timer" type="Label" parent="." unique_id=68514715]
+[node name="Timer" type="Label" parent="." unique_id=68514715]
 modulate = Color(1, 0, 0, 1)
 offset_left = 39.0
 offset_top = 10.0
@@ -42,7 +42,7 @@ theme_override_font_sizes/font_size = 80
 text = "17.0"
 script = ExtResource("2_h40nw")
 
-[node name="score" type="RichTextLabel" parent="." unique_id=1108715210]
+[node name="Score" type="RichTextLabel" parent="." unique_id=1108715210]
 offset_left = 559.0
 offset_top = 6.0
 offset_right = 687.0
@@ -51,7 +51,7 @@ theme_override_colors/default_color = Color(0, 1, 0, 1)
 theme_override_font_sizes/normal_font_size = 69
 text = "-15"
 
-[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1561279727]
+[node name="ZeroYourBalance" type="RichTextLabel" parent="." unique_id=1561279727]
 offset_left = 753.0
 offset_top = 20.0
 offset_right = 1000.0
@@ -62,7 +62,7 @@ text = "ZERO YOUR BALANCE!"
 
 [node name="Sounds" type="Node2D" parent="." unique_id=1441242495]
 
-[node name="hit" type="AudioStreamPlayer2D" parent="Sounds" unique_id=1936405601]
+[node name="Hit" type="AudioStreamPlayer2D" parent="Sounds" unique_id=1936405601]
 stream = ExtResource("5_k11un")
 volume_db = -6.0
 max_distance = 4096.0

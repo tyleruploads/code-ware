@@ -1,33 +1,33 @@
 extends Label
 
-var time : float = 0.0
+var time: float = 0.0
+
 
 # Called when the node enters the scene tree for the first time
 func _ready() -> void:
 	Global.minigames_done = 4
-	Timer(45.0)
-	pass
+	timer(45.0)
 
-func Timer(start_time: float) -> void:
+
+func timer(start_time: float) -> void:
 	time = start_time
-	
+
 	var tree := Engine.get_main_loop() as SceneTree
-	
+
 	while time > 0.001:
 		# Second argument automatically freezes when game is paused
 		await get_tree().create_timer(0.10, false).timeout
 		time -= 0.10
 		text = str(snapped(time, 0.1))
-		
+
 	time = 0.0
 	text = "0.0"
-	
+
 	if is_inside_tree() and get_tree():
 		get_tree().change_scene_to_file("res://Scenes/other/level_screen.tscn")
-		return
 	elif tree:
 		tree.change_scene_to_file("res://Scenes/other/level_screen.tscn")
-		return
 	else:
 		printerr("Could not access SceneTree to change scene!")
-		return
+
+	return

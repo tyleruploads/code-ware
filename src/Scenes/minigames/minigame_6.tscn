@@ -35,7 +35,7 @@ texture = ExtResource("1_4cp4u")
 expand_mode = 2
 metadata/_edit_lock_ = true
 
-[node name="health" type="RichTextLabel" parent="." unique_id=381075429]
+[node name="Health" type="RichTextLabel" parent="." unique_id=381075429]
 offset_left = 503.0
 offset_top = 7.0
 offset_right = 751.0
@@ -44,7 +44,7 @@ theme_override_colors/default_color = Color(0, 1, 0, 1)
 theme_override_font_sizes/normal_font_size = 69
 text = "100%"
 
-[node name="timer" type="Label" parent="." unique_id=2146877964]
+[node name="Timer" type="Label" parent="." unique_id=2146877964]
 modulate = Color(1, 0, 0, 1)
 offset_left = 39.0
 offset_top = 10.0
@@ -91,12 +91,12 @@ target_position = Vector2(-1.9609375, 1.074585)
 
 [node name="Sounds" type="Node2D" parent="." unique_id=315167356]
 
-[node name="shoot" type="AudioStreamPlayer2D" parent="Sounds" unique_id=1183963891]
+[node name="Shoot" type="AudioStreamPlayer2D" parent="Sounds" unique_id=1183963891]
 stream = ExtResource("8_33d24")
 volume_db = -6.0
 max_distance = 4096.0
 
-[node name="hit" type="AudioStreamPlayer2D" parent="Sounds" unique_id=1393952556]
+[node name="Hit" type="AudioStreamPlayer2D" parent="Sounds" unique_id=1393952556]
 stream = ExtResource("9_33d24")
 volume_db = -3.0
 max_distance = 4096.0

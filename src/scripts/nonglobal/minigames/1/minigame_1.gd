@@ -4,20 +4,23 @@ extends Node2D
 @export var prompt: String = "COLLECT!"
 @export var description: String = "Gather 7 orbs in 25s by jumping onto them!"
 
-@onready var collect_orb_sound: AudioStreamPlayer2D = $"Sounds/collect-orb"
-
 var tylers_collected = 0
+
+@onready var collect_orb_sound: AudioStreamPlayer2D = $"Sounds/CollectOrb"
+
 
 func _ready() -> void:
 	Global.minigames_done = 1
-	
+
+
 func _process(_delta: float) -> void:
 	if tylers_collected == 7:
 		if Global.minigames_done > Global.minigames_until_end:
 			get_tree().change_scene_to_file("res://Scenes/end/finish_screen.tscn")
 		else:
 			get_tree().change_scene_to_file("res://Scenes/other/level_screen.tscn")
-		
+
+
 func tyler_collect() -> void:
 	tylers_collected += 1
 	collect_orb_sound.play()

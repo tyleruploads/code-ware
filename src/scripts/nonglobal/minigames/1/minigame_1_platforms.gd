@@ -7,8 +7,10 @@ extends StaticBody2D
 		shape_color = value
 		queue_redraw()
 
+
 func _ready() -> void:
 	queue_redraw()
+
 
 func _draw() -> void:
 	for child in get_children():
@@ -18,7 +20,7 @@ func _draw() -> void:
 				var adjusted_points = PackedVector2Array()
 				for point in polygon_points:
 					adjusted_points.append(point + child.position)
-					
+
 				var colors = PackedColorArray([shape_color])
-				
+
 				draw_polygon(adjusted_points, colors)

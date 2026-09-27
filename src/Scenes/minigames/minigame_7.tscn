@@ -22,7 +22,7 @@ texture = ExtResource("1_s7pvn")
 expand_mode = 2
 metadata/_edit_lock_ = true
 
-[node name="timer" type="Label" parent="." unique_id=602793676]
+[node name="Timer" type="Label" parent="." unique_id=602793676]
 modulate = Color(1, 0, 0, 1)
 offset_left = 39.0
 offset_top = 10.0
@@ -32,7 +32,7 @@ theme_override_font_sizes/font_size = 80
 text = "10.0"
 script = ExtResource("2_emsy5")
 
-[node name="score" type="RichTextLabel" parent="." unique_id=148942563]
+[node name="Score" type="RichTextLabel" parent="." unique_id=148942563]
 offset_left = 2.0
 offset_right = 1150.0
 offset_bottom = 136.0
@@ -101,7 +101,7 @@ vertical_alignment = 1
 
 [node name="Sounds" type="Node2D" parent="." unique_id=1735560646]
 
-[node name="click" type="AudioStreamPlayer2D" parent="Sounds" unique_id=61086763]
+[node name="Click" type="AudioStreamPlayer2D" parent="Sounds" unique_id=61086763]
 stream = ExtResource("5_bckhx")
 volume_db = -6.0
 max_distance = 4096.0

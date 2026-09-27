@@ -1,4 +1,5 @@
 extends Node2D
+
 @onready var v_text_label = $Version
 
 
@@ -7,12 +8,14 @@ func _ready() -> void:
 	var version: String = ProjectSettings.get_setting("application/config/version")
 	v_text_label.text = version
 
+
 func _on_start_pressed() -> void:
 	get_tree().change_scene_to_file("res://Scenes/other/level_screen.tscn")
 
 
 func _on_extras_pressed() -> void:
 	get_tree().change_scene_to_file("res://Scenes/extras/extras.tscn")
+
 
 func _on_quit_pressed() -> void:
 	get_tree().quit()

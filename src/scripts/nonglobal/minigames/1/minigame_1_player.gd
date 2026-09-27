@@ -1,9 +1,10 @@
 extends CharacterBody2D
 
-@onready var jump_sound: AudioStreamPlayer2D = $"../Sounds/jump"
-
 const SPEED = 300.0
 const JUMP_VELOCITY = -500
+
+@onready var jump_sound: AudioStreamPlayer2D = $"../Sounds/Jump"
+
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.

@@ -6,8 +6,10 @@ extends Node2D
 
 var buttons_pressed: int = 0
 
+
 func _ready() -> void:
 	Global.minigames_done = 2
+
 
 func _process(_delta: float) -> void:
 	if buttons_pressed == 18:

@@ -1,7 +1,7 @@
-# This script stores the very long credits text for the end!
-
-extends Node
 class_name CreditsText
+# This script stores the very long credits text for the end!
+extends Node
+
 @export_multiline var credits_text = """
 [font_size=86]GAME COMPLETE![/font_size]
 [font_size=28]By Tyler N. (@tyleruploads) 2026[/font_size]

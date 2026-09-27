@@ -6,19 +6,20 @@ extends Node
 
 @onready var player: CharacterBody2D = $Player
 @onready var center_orb = $CenterOrb
-@onready var timer: Label = $timer
+@onready var timer: Label = $Timer
+
 
 func _ready() -> void:
 	center_orb.maze_finished.connect(_on_maze_finish)
+
 
 func _on_maze_finish() -> void:
 	var tree := Engine.get_main_loop() as SceneTree
 	if is_inside_tree() and get_tree():
 		get_tree().call_deferred("change_scene_to_file", "res://Scenes/other/level_screen.tscn")
-		return
 	elif tree:
 		tree.call_deferred("change_scene_to_file", "res://Scenes/other/level_screen.tscn")
-		return
 	else:
 		printerr("Could not access SceneTree to change scene!")
-		return
+
+	return

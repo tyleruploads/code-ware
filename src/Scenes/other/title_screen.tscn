@@ -64,6 +64,6 @@ offset_bottom = 643.0
 text = "V"
 
 [connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="VBoxContainer/Extras" to="." method="_on_settings_pressed"]
 [connection signal="pressed" from="VBoxContainer/Extras" to="." method="_on_extras_pressed"]
+[connection signal="pressed" from="VBoxContainer/Extras" to="." method="_on_settings_pressed"]
 [connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]
