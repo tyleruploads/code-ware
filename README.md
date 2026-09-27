@@ -77,6 +77,12 @@ In minigame 9, "The Maze," you have 18 seconds to get to the center of the maze.
 
 ![Hero image for the ninth minigame, the maze](./media/docs/minigame-9-hero.png)
 
+## Minigame 10: RGB Skills
+
+In minigame 10, "RGB Skills," you have one minute to match two colors with at least 80% accuracy. The color on the right is controlled with RGB sliders near the bottom of the screen.
+
+![Hero image for the tenth minigame, rgb skills](./media/docs/minigame-10-hero.png)
+
 ## Running the Game
 
 ### For Players

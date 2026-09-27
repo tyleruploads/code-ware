@@ -1,0 +1,152 @@
+[gd_scene format=3 uid="uid://ssgiplo3wsh1"]
+
+[ext_resource type="Texture2D" uid="uid://c45sm3lll67pb" path="res://assets/other/title-screen-bg.svg" id="1_tps1v"]
+[ext_resource type="Script" uid="uid://c5r8dftun7udu" path="res://scripts/nonglobal/minigames/10/minigame_10.gd" id="1_udxda"]
+[ext_resource type="Script" uid="uid://by484jm3n14qo" path="res://scripts/nonglobal/minigames/10/minigame_10_timer.gd" id="2_tps1v"]
+[ext_resource type="AudioStream" uid="uid://dcqw84on0i6hb" path="res://third-party-assets/sounds/click.wav" id="4_udxda"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5t0c5"]
+bg_color = Color(1, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tps1v"]
+bg_color = Color(0, 1, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_udxda"]
+bg_color = Color(0, 0, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i74cx"]
+bg_color = Color(0, 1, 0, 1)
+
+[node name="minigame_10" type="Node2D" unique_id=35544749]
+script = ExtResource("1_udxda")
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=1212186143]
+repeat_size = Vector2(1156, 0)
+autoscroll = Vector2(-50, 0)
+repeat_times = 7
+
+[node name="ScrollingBackground" type="TextureRect" parent="Parallax2D" unique_id=104872626]
+z_index = -1
+offset_right = 1156.0
+offset_bottom = 648.0
+texture = ExtResource("1_tps1v")
+expand_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="timer" type="Label" parent="." unique_id=1203569698]
+modulate = Color(1, 0, 0, 1)
+offset_left = 39.0
+offset_top = 10.0
+offset_right = 198.0
+offset_bottom = 120.0
+theme_override_font_sizes/font_size = 80
+text = "60.0"
+script = ExtResource("2_tps1v")
+
+[node name="Accuracy" type="RichTextLabel" parent="." unique_id=1155141694]
+offset_right = 1156.0
+offset_bottom = 96.0
+bbcode_enabled = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sounds" type="Node2D" parent="." unique_id=35674024]
+
+[node name="Submit" type="AudioStreamPlayer2D" parent="Sounds" unique_id=1539402765]
+stream = ExtResource("4_udxda")
+pitch_scale = 2.0
+max_distance = 4096.0
+
+[node name="ColorDisplays" type="HBoxContainer" parent="." unique_id=406736104]
+offset_left = 3.0
+offset_top = 172.0
+offset_right = 1157.0
+offset_bottom = 325.0
+size_flags_horizontal = 4
+alignment = 1
+
+[node name="Control1" type="Control" parent="ColorDisplays" unique_id=1143274126]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="RealColor" type="ColorRect" parent="ColorDisplays" unique_id=1739876443]
+custom_minimum_size = Vector2(150, 0)
+custom_maximum_size = Vector2(-1, 150)
+layout_mode = 2
+
+[node name="Control2" type="Control" parent="ColorDisplays" unique_id=1867467533]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="GuessColor" type="ColorRect" parent="ColorDisplays" unique_id=447910143]
+custom_minimum_size = Vector2(150, 0)
+custom_maximum_size = Vector2(-1, 150)
+layout_mode = 2
+
+[node name="Control3" type="Control" parent="ColorDisplays" unique_id=988121151]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Guessing" type="VBoxContainer" parent="." unique_id=1282288094]
+offset_top = 338.0
+offset_right = 1153.0
+offset_bottom = 621.0
+size_flags_horizontal = 3
+
+[node name="Control2" type="Control" parent="Guessing" unique_id=224944511]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Red" type="HSlider" parent="Guessing" unique_id=2089237475]
+layout_mode = 2
+theme_override_styles/grabber_area = SubResource("StyleBoxFlat_5t0c5")
+max_value = 255.0
+value = 128.0
+rounded = true
+tick_count = 25
+ticks_on_borders = true
+
+[node name="Control3" type="Control" parent="Guessing" unique_id=859778485]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Green" type="HSlider" parent="Guessing" unique_id=847997736]
+layout_mode = 2
+theme_override_styles/grabber_area = SubResource("StyleBoxFlat_tps1v")
+max_value = 255.0
+value = 128.0
+rounded = true
+tick_count = 25
+ticks_on_borders = true
+
+[node name="Control4" type="Control" parent="Guessing" unique_id=1698626869]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Blue" type="HSlider" parent="Guessing" unique_id=1161978988]
+layout_mode = 2
+theme_override_styles/grabber_area = SubResource("StyleBoxFlat_udxda")
+max_value = 255.0
+value = 128.0
+rounded = true
+tick_count = 25
+ticks_on_borders = true
+
+[node name="Control" type="Control" parent="Guessing" unique_id=1560051498]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Submit" type="Button" parent="Guessing" unique_id=160401319]
+custom_minimum_size = Vector2(175, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 42
+theme_override_styles/normal = SubResource("StyleBoxFlat_i74cx")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_i74cx")
+theme_override_styles/hover = SubResource("StyleBoxFlat_i74cx")
+text = "Submit"
+
+[node name="Control5" type="Control" parent="Guessing" unique_id=994310113]
+layout_mode = 2
+size_flags_vertical = 3
