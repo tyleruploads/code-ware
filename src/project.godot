@@ -24,6 +24,7 @@ GlobalSounds="*uid://0ychyb6wdxct"
 [display]
 
 window/stretch/mode="canvas_items"
+window/vsync/vsync_mode=2
 
 [editor_plugins]
 
