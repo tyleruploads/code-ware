@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="50mm"
+   height="60mm"
+   viewBox="0 0 50 60"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="player.svg"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     inkscape:zoom="2.9255612"
+     inkscape:cx="78.104674"
+     inkscape:cy="103.05715"
+     inkscape:window-width="1920"
+     inkscape:window-height="1008"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="-1.5374543 : 33.844651 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="48.462545 : 33.844651 : 1"
+       inkscape:persp3d-origin="23.462545 : 23.844651 : 1"
+       id="perspective33" />
+    <linearGradient
+       id="linearGradient1"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#ff00ff;stop-opacity:1;"
+         offset="0"
+         id="stop1" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0.46083513;"
+         offset="0.47154889"
+         id="stop3" />
+      <stop
+         style="stop-color:#0000ff;stop-opacity:1;"
+         offset="1"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1"
+       id="linearGradient2"
+       x1="0"
+       y1="30"
+       x2="50"
+       y2="30"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-0.09043849,0.09043849)" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <ellipse
+       style="fill:url(#linearGradient2);stroke-width:1;stroke-linejoin:bevel;paint-order:markers stroke fill"
+       id="path1"
+       cx="24.909561"
+       cy="30.090439"
+       rx="25"
+       ry="30" />
+    <g
+       id="g9"
+       inkscape:label="Eyes">
+      <g
+         id="g5"
+         inkscape:label="Left Eye"
+         transform="translate(-1.0583333)">
+        <rect
+           style="fill:#ffffff;fill-opacity:1;stroke-width:0.550001;stroke-linejoin:bevel;paint-order:markers stroke fill"
+           id="rect3"
+           width="5.9689407"
+           height="5.9689407"
+           x="11.485688"
+           y="8.410778"
+           inkscape:label="Sclera" />
+        <rect
+           style="fill:#ff00ff;fill-opacity:1;stroke-width:0.300001;stroke-linejoin:bevel;paint-order:markers stroke fill"
+           id="rect4"
+           width="3.2557859"
+           height="3.2557859"
+           x="12.842266"
+           y="9.7673559"
+           inkscape:label="Iris" />
+        <rect
+           style="fill:#000000;fill-opacity:1;stroke-width:0.116667;stroke-linejoin:bevel;paint-order:markers stroke fill"
+           id="rect5"
+           width="1.2661393"
+           height="1.2661393"
+           x="13.83709"
+           y="10.762179"
+           inkscape:label="Pupil" />
+      </g>
+      <g
+         id="g8"
+         inkscape:label="Right Eye">
+        <rect
+           style="fill:#ffffff;fill-opacity:1;stroke-width:0.550001;stroke-linejoin:bevel;paint-order:markers stroke fill"
+           id="rect6"
+           width="5.9689407"
+           height="5.9689407"
+           x="33.71069"
+           y="8.410778"
+           inkscape:label="Sclera" />
+        <rect
+           style="fill:#4042ff;fill-opacity:1;stroke-width:0.300001;stroke-linejoin:bevel;paint-order:markers stroke fill"
+           id="rect7"
+           width="3.2557859"
+           height="3.2557859"
+           x="35.067265"
+           y="9.7673559"
+           inkscape:label="Iris" />
+        <rect
+           style="fill:#000000;fill-opacity:1;stroke-width:0.116667;stroke-linejoin:bevel;paint-order:markers stroke fill"
+           id="rect8"
+           width="1.2661393"
+           height="1.2661393"
+           x="36.062088"
+           y="10.762179"
+           inkscape:label="Pupil" />
+      </g>
+    </g>
+    <g
+       id="g15"
+       inkscape:label="Eyes"
+       transform="translate(0,37.041668)">
+      <g
+         id="g11"
+         inkscape:label="Left Eye"
+         transform="translate(-1.0583333)">
+        <rect
+           style="fill:#ffffff;fill-opacity:1;stroke-width:0.550001;stroke-linejoin:bevel;paint-order:markers stroke fill"
+           id="rect9"
+           width="5.9689407"
+           height="5.9689407"
+           x="11.485688"
+           y="8.410778"
+           inkscape:label="Sclera" />
+        <rect
+           style="fill:#ff00ff;fill-opacity:1;stroke-width:0.300001;stroke-linejoin:bevel;paint-order:markers stroke fill"
+           id="rect10"
+           width="3.2557859"
+           height="3.2557859"
+           x="12.842266"
+           y="9.7673559"
+           inkscape:label="Iris" />
+        <rect
+           style="fill:#000000;fill-opacity:1;stroke-width:0.116667;stroke-linejoin:bevel;paint-order:markers stroke fill"
+           id="rect11"
+           width="1.2661393"
+           height="1.2661393"
+           x="13.83709"
+           y="10.762179"
+           inkscape:label="Pupil" />
+      </g>
+      <g
+         id="g14"
+         inkscape:label="Right Eye">
+        <rect
+           style="fill:#ffffff;fill-opacity:1;stroke-width:0.550001;stroke-linejoin:bevel;paint-order:markers stroke fill"
+           id="rect12"
+           width="5.9689407"
+           height="5.9689407"
+           x="33.71069"
+           y="8.410778"
+           inkscape:label="Sclera" />
+        <rect
+           style="fill:#4042ff;fill-opacity:1;stroke-width:0.300001;stroke-linejoin:bevel;paint-order:markers stroke fill"
+           id="rect13"
+           width="3.2557859"
+           height="3.2557859"
+           x="35.067265"
+           y="9.7673559"
+           inkscape:label="Iris" />
+        <rect
+           style="fill:#000000;fill-opacity:1;stroke-width:0.116667;stroke-linejoin:bevel;paint-order:markers stroke fill"
+           id="rect14"
+           width="1.2661393"
+           height="1.2661393"
+           x="36.062088"
+           y="10.762179"
+           inkscape:label="Pupil" />
+      </g>
+    </g>
+    <g
+       id="g21"
+       inkscape:label="Eyes"
+       transform="translate(0,17.991668)">
+      <g
+         id="g17"
+         inkscape:label="Left Eye"
+         transform="translate(-1.0583333)">
+        <rect
+           style="fill:#ffffff;fill-opacity:1;stroke-width:0.550001;stroke-linejoin:bevel;paint-order:markers stroke fill"
+           id="rect15"
+           width="5.9689407"
+           height="5.9689407"
+           x="11.485688"
+           y="8.410778"
+           inkscape:label="Sclera" />
+        <rect
+           style="fill:#ff00ff;fill-opacity:1;stroke-width:0.300001;stroke-linejoin:bevel;paint-order:markers stroke fill"
+           id="rect16"
+           width="3.2557859"
+           height="3.2557859"
+           x="12.842266"
+           y="9.7673559"
+           inkscape:label="Iris" />
+        <rect
+           style="fill:#000000;fill-opacity:1;stroke-width:0.116667;stroke-linejoin:bevel;paint-order:markers stroke fill"
+           id="rect17"
+           width="1.2661393"
+           height="1.2661393"
+           x="13.83709"
+           y="10.762179"
+           inkscape:label="Pupil" />
+      </g>
+      <g
+         id="g20"
+         inkscape:label="Right Eye">
+        <rect
+           style="fill:#ffffff;fill-opacity:1;stroke-width:0.550001;stroke-linejoin:bevel;paint-order:markers stroke fill"
+           id="rect18"
+           width="5.9689407"
+           height="5.9689407"
+           x="33.71069"
+           y="8.410778"
+           inkscape:label="Sclera" />
+        <rect
+           style="fill:#4042ff;fill-opacity:1;stroke-width:0.300001;stroke-linejoin:bevel;paint-order:markers stroke fill"
+           id="rect19"
+           width="3.2557859"
+           height="3.2557859"
+           x="35.067265"
+           y="9.7673559"
+           inkscape:label="Iris" />
+        <rect
+           style="fill:#000000;fill-opacity:1;stroke-width:0.116667;stroke-linejoin:bevel;paint-order:markers stroke fill"
+           id="rect20"
+           width="1.2661393"
+           height="1.2661393"
+           x="36.062088"
+           y="10.762179"
+           inkscape:label="Pupil" />
+      </g>
+    </g>
+    <g
+       id="g27"
+       inkscape:label="Eyes"
+       transform="translate(0,8.9958344)">
+      <g
+         id="g23"
+         inkscape:label="Left Eye"
+         transform="translate(-1.0583333)">
+        <rect
+           style="fill:#ffffff;fill-opacity:1;stroke-width:0.550001;stroke-linejoin:bevel;paint-order:markers stroke fill"
+           id="rect21"
+           width="5.9689407"
+           height="5.9689407"
+           x="11.485688"
+           y="8.410778"
+           inkscape:label="Sclera" />
+        <rect
+           style="fill:#ff00ff;fill-opacity:1;stroke-width:0.300001;stroke-linejoin:bevel;paint-order:markers stroke fill"
+           id="rect22"
+           width="3.2557859"
+           height="3.2557859"
+           x="12.842266"
+           y="9.7673559"
+           inkscape:label="Iris" />
+        <rect
+           style="fill:#000000;fill-opacity:1;stroke-width:0.116667;stroke-linejoin:bevel;paint-order:markers stroke fill"
+           id="rect23"
+           width="1.2661393"
+           height="1.2661393"
+           x="13.83709"
+           y="10.762179"
+           inkscape:label="Pupil" />
+      </g>
+      <g
+         id="g26"
+         inkscape:label="Right Eye">
+        <rect
+           style="fill:#ffffff;fill-opacity:1;stroke-width:0.550001;stroke-linejoin:bevel;paint-order:markers stroke fill"
+           id="rect24"
+           width="5.9689407"
+           height="5.9689407"
+           x="33.71069"
+           y="8.410778"
+           inkscape:label="Sclera" />
+        <rect
+           style="fill:#4042ff;fill-opacity:1;stroke-width:0.300001;stroke-linejoin:bevel;paint-order:markers stroke fill"
+           id="rect25"
+           width="3.2557859"
+           height="3.2557859"
+           x="35.067265"
+           y="9.7673559"
+           inkscape:label="Iris" />
+        <rect
+           style="fill:#000000;fill-opacity:1;stroke-width:0.116667;stroke-linejoin:bevel;paint-order:markers stroke fill"
+           id="rect26"
+           width="1.2661393"
+           height="1.2661393"
+           x="36.062088"
+           y="10.762179"
+           inkscape:label="Pupil" />
+      </g>
+    </g>
+    <g
+       id="g33"
+       inkscape:label="Eyes"
+       transform="translate(0,27.516668)">
+      <g
+         id="g29"
+         inkscape:label="Left Eye"
+         transform="translate(-1.0583333)">
+        <rect
+           style="fill:#ffffff;fill-opacity:1;stroke-width:0.550001;stroke-linejoin:bevel;paint-order:markers stroke fill"
+           id="rect27"
+           width="5.9689407"
+           height="5.9689407"
+           x="11.485688"
+           y="8.410778"
+           inkscape:label="Sclera" />
+        <rect
+           style="fill:#ff00ff;fill-opacity:1;stroke-width:0.300001;stroke-linejoin:bevel;paint-order:markers stroke fill"
+           id="rect28"
+           width="3.2557859"
+           height="3.2557859"
+           x="12.842266"
+           y="9.7673559"
+           inkscape:label="Iris" />
+        <rect
+           style="fill:#000000;fill-opacity:1;stroke-width:0.116667;stroke-linejoin:bevel;paint-order:markers stroke fill"
+           id="rect29"
+           width="1.2661393"
+           height="1.2661393"
+           x="13.83709"
+           y="10.762179"
+           inkscape:label="Pupil" />
+      </g>
+      <g
+         id="g32"
+         inkscape:label="Right Eye">
+        <rect
+           style="fill:#ffffff;fill-opacity:1;stroke-width:0.550001;stroke-linejoin:bevel;paint-order:markers stroke fill"
+           id="rect30"
+           width="5.9689407"
+           height="5.9689407"
+           x="33.71069"
+           y="8.410778"
+           inkscape:label="Sclera" />
+        <rect
+           style="fill:#4042ff;fill-opacity:1;stroke-width:0.300001;stroke-linejoin:bevel;paint-order:markers stroke fill"
+           id="rect31"
+           width="3.2557859"
+           height="3.2557859"
+           x="35.067265"
+           y="9.7673559"
+           inkscape:label="Iris" />
+        <rect
+           style="fill:#000000;fill-opacity:1;stroke-width:0.116667;stroke-linejoin:bevel;paint-order:markers stroke fill"
+           id="rect32"
+           width="1.2661393"
+           height="1.2661393"
+           x="36.062088"
+           y="10.762179"
+           inkscape:label="Pupil" />
+      </g>
+    </g>
+    <g
+       id="g34"
+       style="fill:#4042ff;fill-opacity:1;stroke-width:3.77953;stroke-linejoin:bevel;paint-order:markers stroke fill"
+       transform="translate(0.048699,0.110084)">
+      <path
+         d="M 24.811817,11.830506 28.197365,9.9899454 V 48.811283 l -3.385548,-2.57956 z"
+         style="fill:#e9e9ff;fill-rule:evenodd;stroke:none;stroke-linejoin:round"
+         id="path40" />
+      <path
+         d="M 21.705237,9.9489037 V 48.868803 l 3.10658,-2.63708 V 11.830506 Z"
+         style="fill:#353564;fill-rule:evenodd;stroke:none;stroke-linejoin:round"
+         id="path41" />
+      <path
+         d="m 21.705237,48.868803 3.436662,3.358409 3.055466,-3.415929 -3.385548,-2.57956 z"
+         style="fill:#afafde;fill-rule:evenodd;stroke:none;stroke-linejoin:round"
+         id="path42" />
+      <path
+         d="M 21.705237,9.9489037 25.141899,7.55262 28.197365,9.9899454 24.811817,11.830506 Z"
+         style="fill:#4d4d9f;fill-rule:evenodd;stroke:none;stroke-linejoin:round"
+         id="path43" />
+      <path
+         d="m 25.141899,7.55262 v 44.674592 l 3.055466,-3.415929 V 9.9899454 Z"
+         style="fill:#d7d7ff;fill-rule:evenodd;stroke:none;stroke-linejoin:round"
+         id="path44" />
+      <path
+         d="M 21.705237,9.9489037 25.141899,7.55262 v 44.674592 l -3.436662,-3.358409 z"
+         style="fill:#8686bf;fill-rule:evenodd;stroke:none;stroke-linejoin:round"
+         id="path45" />
+    </g>
+  </g>
+</svg>

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cdnk1d5up5lbm"]
 
-[ext_resource type="Script" uid="uid://b7dhqa4dnafg" path="res://scripts/nonglobal/minigames/1/player.gd" id="1_cvnsp"]
+[ext_resource type="Script" uid="uid://b7dhqa4dnafg" path="res://scripts/nonglobal/minigames/1/minigame_1_player.gd" id="1_cvnsp"]
 [ext_resource type="Texture2D" uid="uid://qrdnmwu5yyna" path="res://third-party-assets/github-logo.png" id="1_v0iea"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_11mgy"]

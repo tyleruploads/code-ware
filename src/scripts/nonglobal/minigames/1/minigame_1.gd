@@ -2,7 +2,7 @@ extends Node2D
 
 @export var minigame_name: String = "Orb Collection Platformer"
 @export var prompt: String = "COLLECT!"
-@export var description: String = "Gather 7 tyleruploads orbs in 25s by jumping onto them!"
+@export var description: String = "Gather 7 orbs in 25s by jumping onto them!"
 
 @onready var collect_orb_sound: AudioStreamPlayer2D = $"Sounds/collect-orb"
 
