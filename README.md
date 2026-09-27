@@ -25,7 +25,7 @@ CodeWare is a WarioWare-style video game where you have to complete various mini
 
 ### Minigame 1: Orb Collection Platformer
 
-In minigame 1, "Orb Collection Platformer," you have 25 seconds to collect 7 tyleruploads orbs. Each orb has a diameter of 60 pixels.
+In minigame 1, "Orb Collection Platformer," you have 25 seconds to collect 7 orbs.
 
 ![Hero image for the first minigame, platformer](./media/docs/minigame-1-hero.png)
 
