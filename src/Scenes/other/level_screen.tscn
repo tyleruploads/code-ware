@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cfg3lxeqhe5c2" path="res://third-party-assets/black-color.png" id="1_6yjli"]
 [ext_resource type="Script" uid="uid://b0ftargnqcuxo" path="res://scripts/nonglobal/other/level_screen.gd" id="1_glb20"]
-[ext_resource type="Texture2D" uid="uid://cl04wsoc8uem" path="res://meta/tyleruploads-tn.png" id="2_6yjli"]
+[ext_resource type="Texture2D" uid="uid://dcdihhbi2p26y" path="res://assets/other/gem.svg" id="3_828lb"]
 
 [node name="level_screen" type="Node2D" unique_id=438889296]
 script = ExtResource("1_glb20")
@@ -37,27 +37,27 @@ alignment = 1
 
 [node name="Life1" type="TextureRect" parent="LivesContainer" unique_id=530060594]
 layout_mode = 2
-texture = ExtResource("2_6yjli")
+texture = ExtResource("3_828lb")
 expand_mode = 3
 
 [node name="Life2" type="TextureRect" parent="LivesContainer" unique_id=315190003]
 layout_mode = 2
-texture = ExtResource("2_6yjli")
+texture = ExtResource("3_828lb")
 expand_mode = 3
 
 [node name="Life3" type="TextureRect" parent="LivesContainer" unique_id=1492768855]
 layout_mode = 2
-texture = ExtResource("2_6yjli")
+texture = ExtResource("3_828lb")
 expand_mode = 3
 
 [node name="Life4" type="TextureRect" parent="LivesContainer" unique_id=580080319]
 layout_mode = 2
-texture = ExtResource("2_6yjli")
+texture = ExtResource("3_828lb")
 expand_mode = 3
 
 [node name="Life5" type="TextureRect" parent="LivesContainer" unique_id=307113191]
 layout_mode = 2
-texture = ExtResource("2_6yjli")
+texture = ExtResource("3_828lb")
 expand_mode = 3
 
 [node name="Level" type="RichTextLabel" parent="." unique_id=491872836]
