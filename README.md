@@ -35,11 +35,11 @@ In minigame 2, "Orb Collection Clicker," you have 12 seconds to click on 18 orbs
 
 ![Hero image for the second minigame, clicker](./media/docs/minigame-2-hero.png)
 
-### Minigame 3: Hit the Circles
+### Minigame 3: Hit the Orbs
 
-In minigame 3, you have 17 seconds to zero your balance of circles by clicking on any circle whenever you see it pop up!
+In minigame 3, you have 17 seconds to zero your balance of orbs by hitting any orb whenever you see it pop up!
 
-![Hero image for the third minigame, hit the circles](./media/docs/minigame-3-hero.png)
+![Hero image for the third minigame, hit the orbs](./media/docs/minigame-3-hero.png)
 
 ### Minigame 4: Dodge the Flying Balls
 

@@ -1,9 +1,9 @@
 extends Node2D
 
-@export var minigame_name: String = "Hit the Circles"
-@export var prompt: String = "CLICK!"
-@export var description: String = "Zero your balance of circles in 17 seconds " \
-		+ "by clicking on any circle whenever you see it pop up!"
+@export var minigame_name: String = "Hit the Orbs"
+@export var prompt: String = "HIT!"
+@export var description: String = "Zero your balance of orbs in 17 seconds " \
+		+ "by hitting any orb whenever you see it pop up!"
 
 var balance: int = -15
 var wait_to_spawn: float = 0.5
