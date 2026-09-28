@@ -5,6 +5,10 @@ var assets: Array[Dictionary] = [
 	{ "n": "Game Icon Image", "p": "res://assets/icon/icon.png" },
 	{ "n": "Mountain Bridge Image", "p": "res://assets/minigame-bgs/mountain-bridge.svg" },
 	{ "n": "Eyes in Rectangles", "p": "res://assets/minigame-bgs/eyes-in-rectangles.svg" },
+	{ "n": "Arrow", "p": "res://assets/other/arrow.svg" },
+	{ "n": "Orb/Gem", "p": "res://assets/other/gem.svg" },
+	{ "n": "Player for Minigame 4", "p": "res://assets/other/minigame-4-player.png" },
+	{ "n": "Player for Minigame 6", "p": "res://assets/other/minigame-6.png" },
 ]
 
 @onready var assets_list = $"HBoxContainer/Assets List"
