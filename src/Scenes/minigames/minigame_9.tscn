@@ -5,8 +5,9 @@
 [ext_resource type="Script" uid="uid://cjwlm1a0kn4ru" path="res://scripts/nonglobal/minigames/9/minigame_9_timer.gd" id="3_bobsj"]
 [ext_resource type="Script" uid="uid://cs8gwofkjips" path="res://scripts/nonglobal/minigames/9/minigame_9_walls.gd" id="4_bobsj"]
 [ext_resource type="Script" uid="uid://cbc60fl4vkhae" path="res://scripts/nonglobal/minigames/9/minigame_9_character_body_2d.gd" id="5_tljff"]
+[ext_resource type="Texture2D" uid="uid://b0mdn6bt4tlu2" path="res://assets/other/player.svg" id="6_7pblp"]
 [ext_resource type="Script" uid="uid://e50iadv3nfgh" path="res://scripts/nonglobal/minigames/9/minigame_9_center_orb.gd" id="7_fvnl6"]
-[ext_resource type="Texture2D" uid="uid://cl04wsoc8uem" path="res://meta/tyleruploads-tn.png" id="8_7pblp"]
+[ext_resource type="Texture2D" uid="uid://dcdihhbi2p26y" path="res://assets/other/gem.svg" id="8_f6msf"]
 [ext_resource type="AudioStream" uid="uid://xqexqjjf2ifb" path="res://third-party-assets/sounds/bump.wav" id="9_7pblp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bobsj"]
@@ -373,7 +374,7 @@ offset_left = -11.0
 offset_top = -10.0
 offset_right = 9.0
 offset_bottom = 10.0
-texture = ExtResource("8_7pblp")
+texture = ExtResource("6_7pblp")
 
 [node name="Area2D" type="StaticBody2D" parent="Player" unique_id=2048323115]
 
@@ -397,7 +398,7 @@ offset_left = -24.0
 offset_top = -51.0
 offset_right = 36.0
 offset_bottom = 9.0
-texture = ExtResource("8_7pblp")
+texture = ExtResource("8_f6msf")
 expand_mode = 2
 metadata/_edit_use_anchors_ = true
 

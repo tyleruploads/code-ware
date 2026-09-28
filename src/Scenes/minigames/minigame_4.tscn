@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://ba1qbk0urt2oi" path="res://assets/other/minigame-4-player.png" id="4_30r0p"]
 [ext_resource type="Script" uid="uid://gsvs6m0fp5ek" path="res://scripts/nonglobal/minigames/4/minigame_4_timer.gd" id="5_57wpc"]
 [ext_resource type="Script" uid="uid://0rqgkuok6gli" path="res://scripts/nonglobal/minigames/4/minigame_4_meteor.gd" id="6_57wpc"]
-[ext_resource type="Texture2D" uid="uid://b0mdn6bt4tlu2" path="res://assets/other/player.svg" id="7_emgxl"]
+[ext_resource type="Texture2D" uid="uid://dcdihhbi2p26y" path="res://assets/other/gem.svg" id="7_emgxl"]
 [ext_resource type="AudioStream" uid="uid://cffqitd2gxtl1" path="res://third-party-assets/sounds/ball-throw.wav" id="8_mxde8"]
 [ext_resource type="AudioStream" uid="uid://c4buokudolqev" path="res://third-party-assets/sounds/hit.wav" id="9_emgxl"]
 
