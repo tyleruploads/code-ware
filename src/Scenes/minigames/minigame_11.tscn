@@ -1,0 +1,106 @@
+[gd_scene format=3 uid="uid://cwfxfcq1p8owm"]
+
+[ext_resource type="Script" uid="uid://dqdpnfj1fytyq" path="res://scripts/nonglobal/minigames/11/minigame_11.gd" id="1_2n011"]
+[ext_resource type="Texture2D" uid="uid://c45sm3lll67pb" path="res://assets/other/title-screen-bg.svg" id="1_3h7v8"]
+[ext_resource type="Script" uid="uid://d03rdx3iwj47" path="res://scripts/nonglobal/minigames/11/minigame_11_timer.gd" id="2_7qmj8"]
+[ext_resource type="AudioStream" uid="uid://dcqw84on0i6hb" path="res://third-party-assets/sounds/click.wav" id="4_0xs1c"]
+
+[node name="minigame_11" type="Node2D" unique_id=1452495942]
+script = ExtResource("1_2n011")
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=604874511]
+repeat_size = Vector2(1156, 0)
+autoscroll = Vector2(-50, 0)
+repeat_times = 7
+
+[node name="ScrollingBackground" type="TextureRect" parent="Parallax2D" unique_id=1935116849]
+z_index = -1
+offset_right = 1156.0
+offset_bottom = 648.0
+texture = ExtResource("1_3h7v8")
+expand_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Timer" type="Label" parent="." unique_id=1261602847]
+modulate = Color(1, 0, 0, 1)
+offset_left = 15.0
+offset_top = 2.0
+offset_right = 174.0
+offset_bottom = 112.0
+theme_override_font_sizes/font_size = 80
+text = "60.0"
+script = ExtResource("2_7qmj8")
+
+[node name="ScoreNode" type="RichTextLabel" parent="." unique_id=609234882]
+offset_right = 1157.0
+offset_bottom = 114.0
+theme_override_font_sizes/normal_font_size = 80
+text = "0/15"
+horizontal_alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=601907499]
+offset_left = 343.0
+offset_top = 113.0
+offset_right = 855.0
+offset_bottom = 299.0
+
+[node name="TextNode" type="RichTextLabel" parent="ColorRect" unique_id=2119143181]
+layout_mode = 0
+offset_left = 9.0
+offset_top = -3.0
+offset_right = 504.0
+offset_bottom = 185.0
+bbcode_enabled = true
+text = "[font_size=60][color=red]Write the string:[/color][/font_size]
+[font_size=40][color=blue]UvtiY[/color][/font_size]"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1827117599]
+offset_left = 1.0
+offset_top = 320.0
+offset_right = 1154.0
+offset_bottom = 372.0
+
+[node name="Control" type="Control" parent="HBoxContainer" unique_id=2061479117]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="LineEdit" type="LineEdit" parent="HBoxContainer" unique_id=947788998]
+custom_minimum_size = Vector2(350, 0)
+layout_mode = 2
+
+[node name="Control2" type="Control" parent="HBoxContainer" unique_id=668101337]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="NoticeNode" type="ColorRect" parent="." unique_id=893607912]
+custom_minimum_size = Vector2(300, 100)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 405.0
+offset_top = 427.0
+offset_right = 756.0
+offset_bottom = 527.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextNode" type="Label" parent="NoticeNode" unique_id=552511740]
+layout_mode = 0
+offset_left = 1.0
+offset_right = 351.0
+offset_bottom = 104.0
+theme_override_font_sizes/font_size = 60
+text = "NOTICE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sounds" type="Node2D" parent="." unique_id=1190788756]
+
+[node name="Submit" type="AudioStreamPlayer2D" parent="Sounds" unique_id=1787091028]
+stream = ExtResource("4_0xs1c")
+pitch_scale = 2.0
+max_distance = 4096.0

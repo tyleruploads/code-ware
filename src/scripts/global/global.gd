@@ -2,7 +2,7 @@ extends Node
 
 var minigames_done = 0
 var lives = 5
-var minigames_until_end = 10
+var minigames_until_end = 11
 var reset_after_death: bool = false # When it is time to restart, set to true
 var full_reset: bool = false # Actual reset, without the fluff
 var paused: bool = false
@@ -18,7 +18,9 @@ func _input(event: InputEvent) -> void:
 		match event.physical_keycode:
 			KEY_R:
 				# R for Reset, reloads the current scene
-				get_tree().reload_current_scene()
+				if get_tree().current_scene.name != "minigame_11":
+					# Minigame 11 is a typing game
+					get_tree().reload_current_scene()
 			KEY_ESCAPE:
 				# Pauses or unpauses the game
 				paused = not paused
