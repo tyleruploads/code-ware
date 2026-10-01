@@ -89,6 +89,12 @@ In minigame 11, "Type the Strings," you have one minute to type 15 5-character s
 
 ![Hero image for the eleventh minigame, type the strings](./media/docs/minigame-11-hero.png)
 
+## Minigame 12: Catch the Falling Orbs
+
+In minigame 12, "Catch the Falling Orbs," you have 45 seconds to capture 35 falling orbs. In order to collect an orb, you need to position yourself in the correct horizontal position so the orb will hit you.
+
+![Hero image for the twelfth minigame, catch the falling orbs](./media/docs/minigame-12-hero.png)
+
 ## Running the Game
 
 ### For Players

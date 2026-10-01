@@ -1,0 +1,114 @@
+[gd_scene format=3 uid="uid://b62gon4l552gr"]
+
+[ext_resource type="Script" uid="uid://bk5isub4j37dm" path="res://scripts/nonglobal/minigames/12/minigame_12.gd" id="1_bfomq"]
+[ext_resource type="Texture2D" uid="uid://c45sm3lll67pb" path="res://assets/other/title-screen-bg.svg" id="2_c70or"]
+[ext_resource type="Script" uid="uid://mm52wrwxcuux" path="res://scripts/nonglobal/minigames/12/minigame_12_player.gd" id="3_c70or"]
+[ext_resource type="Texture2D" uid="uid://ba1qbk0urt2oi" path="res://assets/other/minigame-4-player.png" id="4_iyo7u"]
+[ext_resource type="Script" uid="uid://c0l8enf02736h" path="res://scripts/nonglobal/minigames/12/minigame_12_timer.gd" id="5_nwoey"]
+[ext_resource type="Script" uid="uid://cqh5kr2inm7sj" path="res://scripts/nonglobal/minigames/12/minigame_12_orb.gd" id="6_c70or"]
+[ext_resource type="Texture2D" uid="uid://dcdihhbi2p26y" path="res://assets/other/gem.svg" id="7_bkkdk"]
+[ext_resource type="AudioStream" uid="uid://cffqitd2gxtl1" path="res://third-party-assets/sounds/ball-throw.wav" id="8_lit3k"]
+[ext_resource type="AudioStream" uid="uid://c4buokudolqev" path="res://third-party-assets/sounds/hit.wav" id="9_abdeb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0gl52"]
+size = Vector2(150, 50)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_w8m8t"]
+radius = 40.0
+height = 90.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_lccdd"]
+radius = 40.0
+height = 90.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aunps"]
+size = Vector2(10, 659)
+
+[node name="minigame_12" type="Node2D" unique_id=1836245383]
+script = ExtResource("1_bfomq")
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=310554061]
+repeat_size = Vector2(1156, 0)
+autoscroll = Vector2(-50, 0)
+repeat_times = 7
+
+[node name="ScrollingBackground" type="TextureRect" parent="Parallax2D" unique_id=933231917]
+z_index = -1
+offset_right = 1156.0
+offset_bottom = 648.0
+texture = ExtResource("2_c70or")
+expand_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Player" type="CharacterBody2D" parent="." unique_id=773238334]
+position = Vector2(583, 604)
+script = ExtResource("3_c70or")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=72970468]
+position = Vector2(0, 3)
+shape = SubResource("RectangleShape2D_0gl52")
+
+[node name="TextureRect" type="TextureRect" parent="Player" unique_id=334489373]
+custom_maximum_size = Vector2(150, 50)
+offset_left = -72.0
+offset_top = -23.0
+offset_right = 78.0
+offset_bottom = 27.0
+texture = ExtResource("4_iyo7u")
+
+[node name="Timer" type="Label" parent="." unique_id=1134292387]
+modulate = Color(1, 0, 0, 1)
+offset_left = 39.0
+offset_top = 10.0
+offset_right = 159.0
+offset_bottom = 120.0
+theme_override_font_sizes/font_size = 80
+text = "45.0"
+script = ExtResource("5_nwoey")
+
+[node name="Score" type="RichTextLabel" parent="." unique_id=1063331525]
+offset_left = 503.0
+offset_top = 7.0
+offset_right = 751.0
+offset_bottom = 189.0
+theme_override_colors/default_color = Color(0, 1, 0, 1)
+theme_override_font_sizes/normal_font_size = 69
+text = "0/35"
+
+[node name="Orb" type="Area2D" parent="." unique_id=241112233]
+visible = false
+position = Vector2(340, 67)
+script = ExtResource("6_c70or")
+
+[node name="Sprite2D" type="Sprite2D" parent="Orb" unique_id=1665641797]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("7_bkkdk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Orb" unique_id=1401976146]
+shape = SubResource("CapsuleShape2D_w8m8t")
+
+[node name="ShapeCast2D" type="ShapeCast2D" parent="Orb" unique_id=998025250]
+shape = SubResource("CapsuleShape2D_lccdd")
+target_position = Vector2(0, -1)
+
+[node name="Horizontal Barriers" type="StaticBody2D" parent="." unique_id=1721265297]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Horizontal Barriers" unique_id=1081685417]
+position = Vector2(-5, 319.5)
+shape = SubResource("RectangleShape2D_aunps")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Horizontal Barriers" unique_id=1050025598]
+position = Vector2(1161, 329)
+shape = SubResource("RectangleShape2D_aunps")
+
+[node name="Sounds" type="Node2D" parent="." unique_id=330214478]
+
+[node name="Throw" type="AudioStreamPlayer2D" parent="Sounds" unique_id=530362194]
+stream = ExtResource("8_lit3k")
+volume_db = -20.0
+max_distance = 4096.0
+
+[node name="Hit" type="AudioStreamPlayer2D" parent="Sounds" unique_id=42119753]
+stream = ExtResource("9_abdeb")
+volume_db = -6.0
+max_distance = 4096.0
