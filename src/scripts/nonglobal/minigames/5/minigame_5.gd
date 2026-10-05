@@ -2,7 +2,7 @@ extends Node2D
 
 @export var minigame_name: String = "Click Very Fast!"
 @export var prompt: String = "CLICK!"
-@export var description: String = "Click as fast as you can on the red circle in" \
+@export var description: String = "Click as fast as you can on the red circle in " \
 		+ "the middle! Get at least 100 clicks in 20 seconds"
 
 var required_clicks: int = 100
