@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://v0aujwdshbw2"]
+
+[ext_resource type="AudioStream" uid="uid://divb3rmxpm11d" path="res://third-party-assets/sounds/timer-ticking.wav" id="1_7ha15"]
+[ext_resource type="Script" uid="uid://cpuj0kspx3qe3" path="res://scripts/nonglobal/other/MusicManager.gd" id="1_pqgv0"]
+
+[node name="MusicManager" type="Node2D" unique_id=867472645]
+script = ExtResource("1_pqgv0")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1519499590]
+stream = ExtResource("1_7ha15")
+volume_db = -20.0

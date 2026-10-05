@@ -15,6 +15,7 @@ var time: float = 0.0 # Updated each delta of _process
 
 
 func _ready() -> void:
+	MusicManager.audio.play() # Makes sure audio is played on first load of script
 	# The following if statements also execute the functions
 	if await handle_resets():
 		return
@@ -48,6 +49,8 @@ func handle_resets() -> bool:
 		Global.lives = 5
 
 		await timer(10.0)
+
+		_update_music("res://Scenes/minigames/minigame_1.tscn")
 		get_tree().change_scene_to_file("res://Scenes/minigames/minigame_1.tscn")
 		return true
 
@@ -65,6 +68,7 @@ func handle_lives() -> bool:
 		description.text = "Ready? Set?"
 
 		await timer(5.0)
+		_update_music("res://Scenes/end/death_scene.tscn")
 		get_tree().change_scene_to_file("res://Scenes/end/death_scene.tscn")
 		return true
 
@@ -90,6 +94,7 @@ func handle_lives() -> bool:
 		await timer(5.0)
 		Global.minigames_done += 1
 
+		_update_music(new_scene_path)
 		get_tree().change_scene_to_file(new_scene_path)
 		return true
 
@@ -101,6 +106,8 @@ func handle_lives() -> bool:
 	Global.minigames_done = 0
 
 	await timer(3.0)
+
+	_update_music("res://Scenes/end/finish_screen.tscn")
 	get_tree().change_scene_to_file("res://Scenes/end/finish_screen.tscn")
 	return true
 
@@ -116,3 +123,11 @@ func timer(start_time: float):
 	timer_node.text = "0.0"
 
 	return
+
+
+func _update_music(target_path: String) -> void:
+	if "res://Scenes/minigames/" in target_path or "res://Scenes/end/" in target_path:
+		MusicManager.audio.play()
+	else:
+		print("Stopping audio")
+		MusicManager.audio.stop()
