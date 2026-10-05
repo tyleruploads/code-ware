@@ -4,6 +4,7 @@ CodeWare is a WarioWare-style video game where you have to complete various mini
 
 **5 lives, 5 chances.**
 
+[![Play on Itch.io](https://img.shields.io/badge/Play-Itch.io-brightgreen?logo=Itch.io)](https://tyleruploads.itch.io/codeware)
 [![Play on GitHub Pages](https://img.shields.io/badge/Play-GitHub_Pages-brightgreen?logo=github)](https://tyleruploads.github.io/code-ware/)
 [![Made with Godot](https://img.shields.io/badge/Made_with-Godot_4-blue?logo=godotengine)](https://godotengine.org)
 ![GitHub Release](https://img.shields.io/github/v/release/tyleruploads/code-ware?label=Version)
@@ -38,7 +39,10 @@ CodeWare is a WarioWare-style video game where you have to complete various mini
 
 #### Website
 
-You can access the game on GitHub Pages at [https://tyleruploads.github.io/code-ware/](https://tyleruploads.github.io/code-ware/). It is automatically updated every release.
+You can play CodeWare on either of the following sites.
+
+* **Itch\.io:** [https://tyleruploads.itch.io/codeware](https://tyleruploads.itch.io/codeware)
+* **GitHub Pages:** [https://tyleruploads.github.io/code-ware/](https://tyleruploads.github.io/code-ware/)
 
 #### Manual Installation
 
