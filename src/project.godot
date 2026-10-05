@@ -26,6 +26,12 @@ GlobalSounds="*uid://0ychyb6wdxct"
 window/stretch/mode="canvas_items"
 window/vsync/vsync_mode=2
 
+[editor]
+
+movie_writer/movie_file="/home/tyler/Videos/CodeWare/gameplay.avi"
+movie_writer/disable_vsync=true
+movie_writer/fps=30
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/GDQuest_GDScript_formatter/plugin.cfg", "res://addons/godot_super-wakatime/plugin.cfg")
