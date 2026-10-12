@@ -134,7 +134,7 @@ In minigame 10, "RGB Skills," you have one minute to match two colors with at le
 
 ### Minigame 11: Type the Strings
 
-In minigame 11, "Type the Strings," you have one minute to type 15 5-character strings! The text is auto-submitted once its length is correct.
+In minigame 11, "Type the Strings," you have one minute to type 7 5-character strings! The text is auto-submitted once its length is correct.
 
 <img src="./media/docs/minigame-11-hero.png" width="400" />
 

@@ -1,5 +1,6 @@
 extends Node
 
+# Lookalikes removed from array
 const CHARS = [
 	"a",
 	"b",
@@ -55,12 +56,12 @@ const CHARS = [
 	"8",
 	"9",
 ]
-const TARGET_SCORE: int = 15
+const TARGET_SCORE: int = 7
 
 @export var minigame_name: String = "Type the Strings!"
 @export var prompt: String = "TYPE!"
 @export var description: String = """
-Type 15 5-character strings into the entry box in less than one minute!
+Type 7 5-character strings into the entry box in less than one minute!
 """
 
 var target_text: String
@@ -83,7 +84,20 @@ var score: int = 0
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	notice_color_node.hide()
-	line_edit.edit() # Focuses on LineEdit automatically
+
+	# Ensure input is always focused
+	line_edit.grab_focus()
+	line_edit.focus_exited.connect(
+		func():
+			line_edit.call_deferred("grab_focus"),
+	)
+	line_edit.gui_input.connect(
+		func(ev):
+			if ev.is_action_pressed("ui_cancel") or ev.is_action_pressed("ui_text_submit"):
+				line_edit.accept_event()
+				line_edit.call_deferred("grab_focus"),
+	)
+
 	line_edit.text_changed.connect(_on_text_changed)
 
 	generate_str(target_len)
